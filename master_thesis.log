@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.30)  19 APR 2025 17:34
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.30)  19 APR 2025 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2014,12 +2014,80 @@ File: hse_logo.png Graphic file (type bmp)
 
  [2
 
-] [3
-
-] [4
-
 ]
-(./master_thesis.aux)
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
+(Font)              scaled to size 14.40152pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
+(Font)              scaled to size 10.5131pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
+(Font)              scaled to size 8.64091pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
+(Font)              scaled to size 14.39845pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
+(Font)              scaled to size 10.51086pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
+(Font)              scaled to size 8.63907pt on input line 398.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 398
+.
+
+(/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/umsa.
+fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 398
+.
+
+(/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/umsb.
+fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 398.
+LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 398.
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+[][]\TU/TimesNewRoman(0)/m/n/10 https://nafi.ru/analytics/dolya-polzovateley-mo
+bilnogo-banka-rastet-no-rossiyane-stanovyatsya-menee-
+ []
+
+[3
+
+] [4] [5] [6]
+Underfull \hbox (badness 4621) in paragraph at lines 466--467
+[]\TU/TimesNewRoman(0)/m/n/14.4 Центральный Банк Российской Федерации. Основные
+ направления
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+[]\TU/TimesNewRoman(0)/m/n/14.4 Центральный Банк Российской Федерации. Основные
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+\TU/TimesNewRoman(0)/m/n/14.4 направления повышения доступности финансовых услу
+г
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+\TU/TimesNewRoman(0)/m/n/14.4 в Российской Федерации на период 2025-2027 годов.
+ //
+ []
+
+[7
+
+] (./master_thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2029,18 +2097,18 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `master_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 316D99FBDB64087718D3A5455490EF1A;302.
+(rerunfilecheck)             Checksum: CCDF3594B10D6281A33F08275A18F620;298.
 Package logreq Info: Writing requests to 'master_thesis.run.xml'.
 \openout1 = `master_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51294 strings out of 474773
- 1161738 string characters out of 5749267
- 2345306 words of memory out of 5000000
- 72701 multiletter control sequences out of 15000+600000
- 559671 words of font info for 64 fonts, out of 8000000 for 9000
+ 51387 strings out of 474773
+ 1164487 string characters out of 5749267
+ 2348492 words of memory out of 5000000
+ 72758 multiletter control sequences out of 15000+600000
+ 564343 words of font info for 99 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,11n,117p,1177b,3850s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,117p,1555b,3850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on master_thesis.pdf (4 pages).
+Output written on master_thesis.pdf (7 pages).
