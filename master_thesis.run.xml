@@ -62,8 +62,6 @@
       <file>numeric-comp.cbx</file>
       <file>gost-numeric.cbx</file>
       <file>biblatex.cfg</file>
-      <file>russian.lbx</file>
-      <file>russian-gost.lbx</file>
       <file>english.lbx</file>
       <file>english-gost.lbx</file>
     </requires>
@@ -85,9 +83,6 @@
     </provides>
     <requires type="dynamic">
       <file>master_thesis.bcf</file>
-    </requires>
-    <requires type="editable">
-      <file>diploma.bib</file>
     </requires>
   </external>
 </requests>
