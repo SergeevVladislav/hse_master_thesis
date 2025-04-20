@@ -1,5 +1,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Introduction}{3}{chapter*.2}%
-\contentsline {chapter}{References}{7}{Item.8}%
-\contentsline {chapter}{Bibliography}{7}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Theoretical foundations and operational principles of the Russian National Payment System in the context of demographic changes}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The operational principles of the Russian national payment system}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Theoretical aspects of the relationship between demography and national payment systems}{7}{section.1.2}%
+\contentsline {chapter}{References}{19}{table.1.1}%
+\contentsline {chapter}{Bibliography}{19}{chapter*.3}%
 \contentsfinish 
