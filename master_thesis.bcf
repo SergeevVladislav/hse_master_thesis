@@ -1671,6 +1671,16 @@
   </bcf:datafieldset>
   <!-- SOURCEMAP -->
   <bcf:sourcemap>
+    <bcf:maps datatype="bibtex" level="user">
+      <bcf:map>
+        <bcf:map_step map_field_source="langid" map_match="english" map_final="1"/>
+        <bcf:map_step map_field_set="presort" map_field_value="a"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_field_source="langid" map_notmatch="english" map_final="1"/>
+        <bcf:map_step map_field_set="presort" map_field_value="z"/>
+      </bcf:map>
+    </bcf:maps>
     <bcf:maps datatype="bibtex" level="style">
       <bcf:map map_overwrite="1">
         <bcf:map_step map_field_source="author" map_match="(.+\s+and\s+){3,}|and\s+others\s*$" map_final="1"/>

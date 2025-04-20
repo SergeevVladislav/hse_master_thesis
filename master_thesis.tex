@@ -301,16 +301,32 @@
 % gost-numeric затекстовые ссылки
 % gost-authoryear тоже затекстовые ссылки, но немного другие
 
-% Подробнее смотри страницу 4 документации. Она на русском.
+% Подробнее смотри страницу 4 документации. Она на русском
+\DefineBibliographyStrings{english}{%
+	pages = {P\adddot},
+	number = {№},
+}
+
+\DeclareSourcemap{
+	\maps[datatype=bibtex]{
+		\map{
+			\step[fieldsource=langid, match=english, final]
+			\step[fieldset=presort, fieldvalue={a}]
+		}
+		\map{
+			\step[fieldsource=langid, notmatch=english, final]
+			\step[fieldset=presort, fieldvalue={z}]
+		}
+	}
+}
+
 
 % Ещё немного настроек
 \DeclareFieldFormat{postnote}{#1} %убирает с. и p.
 \renewcommand*{\mkgostheading}[1]{#1} % только лишь убираем курсив с авторов
 % Переопределение названия оглавления
 \renewcommand{\contentsname}{Contents}
-\renewcommand{\bibname}{References}
-\addto\captionsenglish{\renewcommand{\refname}{References}}
-\usepackage[nottoc]{tocbibind}
+
 
 \begin{document} % Начала документа
 	
@@ -669,7 +685,7 @@
 	
 	Based on the evaluation results (Table \ref{tab:conclusion_theory}), it appears that the life cycle hypothesis is the most suitable approach, as it comprehensively reflects the impact of demographic factors on the evolution of national payment systems, considering both dynamic and geographical variations. Therefore, our future work will be based on the theory proposed by Franco Modigliani, whose studies have demonstrated their applicability and relevance in this context.
 	
-	
+	\section{Application of the  Modigliani Life Cycle Hypothesis to analyze the impact of demographic factors on the development of the national payment system}
 	
 
 	%%%%%%%%%%% References	%%%%%%%%%%%
