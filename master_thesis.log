@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.30)  29 APR 2025 19:46
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.30)  1 MAY 2025 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2070,39 +2070,77 @@ Overfull \hbox (0.76347pt too wide) in paragraph at lines 747--747
 Chapter 2.
 [25
 
-] [26] [27] [28] [29] [30] [31] [32]
-Underfull \hbox (badness 4621) in paragraph at lines 921--922
+] [26] [27] [28] [29] [30] [31] [32] [33]
+Overfull \hbox (2.44934pt too wide) in alignment at lines 953--961
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.44934pt too wide) in alignment at lines 961--964
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.44934pt too wide) in alignment at lines 964--967
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.44934pt too wide) in alignment at lines 967--970
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.44934pt too wide) in alignment at lines 970--985
+ [] [] [] [] 
+ []
+
+[34]
+File: corr.png Graphic file (type bmp)
+<corr.png>
+ [35]
+File: losers.png Graphic file (type bmp)
+<losers.png>
+File: top.png Graphic file (type bmp)
+<top.png>
+File: middle.png Graphic file (type bmp)
+<middle.png>
+ [36]
+File: index_whole.png Graphic file (type bmp)
+<index_whole.png>
+ [37] [38] [39]
+Underfull \hbox (badness 4621) in paragraph at lines 1079--1080
 []\TU/TimesNewRoman(0)/m/n/14.4 Центральный Банк Российской Федерации. Основные
  направления
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 923--924
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1082
 []\TU/TimesNewRoman(0)/m/n/14.4 Центральный Банк Российской Федерации. Основные
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 923--924
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1082
 \TU/TimesNewRoman(0)/m/n/14.4 направления повышения доступности финансовых услу
 г
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 923--924
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1082
 \TU/TimesNewRoman(0)/m/n/14.4 в Российской Федерации на период 2025-2027 годов.
  //
  []
 
-[33
+[40
 
-] [34] [35]
-Underfull \hbox (badness 2150) in paragraph at lines 987--988
+] [41] [42]
+Underfull \hbox (badness 2150) in paragraph at lines 1145--1146
 []\TU/TimesNewRoman(0)/m/n/14.4 Тишин, А. (2020). Влияние демографии на развити
 е финансового
  []
 
-[36] (./master_thesis.aux)
+[43] (./master_thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2112,18 +2150,18 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `master_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 729BD110B957D202D60BDE0066545796;4071.
+(rerunfilecheck)             Checksum: 8701CFE7D91803C5587AD838FC08CA4B;5279.
 Package logreq Info: Writing requests to 'master_thesis.run.xml'.
 \openout1 = `master_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51361 strings out of 474773
- 1163926 string characters out of 5749267
- 2361039 words of memory out of 5000000
- 72733 multiletter control sequences out of 15000+600000
- 564367 words of font info for 102 fonts, out of 8000000 for 9000
+ 51429 strings out of 474773
+ 1165230 string characters out of 5749267
+ 2362004 words of memory out of 5000000
+ 72795 multiletter control sequences out of 15000+600000
+ 564391 words of font info for 105 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,12n,117p,2071b,3850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on master_thesis.pdf (36 pages).
+Output written on master_thesis.pdf (43 pages).

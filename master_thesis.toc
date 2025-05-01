@@ -6,5 +6,7 @@
 \contentsline {section}{\numberline {1.3}Application of the Modigliani Life Cycle Hypothesis to analyze the impact of demographic factors on the development of the national payment system}{24}{section.1.3}%
 \contentsline {chapter}{\numberline {2}An empirical study of the impact of demographic factors on the development of the Russian national payment system}{25}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Analysis of empirical approaches to assess the impact of demographic factors on the development of national payment systems}{25}{section.2.1}%
-\contentsline {chapter}{References}{33}{table.2.1}%
+\contentsline {section}{\numberline {2.2}Construction of an index for the development of the national payment system in Russia}{32}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Developing an econometric model to estimate the impact of demographic variables on the share of cashless transactions}{39}{section.2.3}%
+\contentsline {chapter}{References}{40}{section.2.3}%
 \contentsfinish 

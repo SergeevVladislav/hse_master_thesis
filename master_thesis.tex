@@ -853,7 +853,7 @@
 	The key conclusion of the article is that age is a significant factor: 38\% of the variation in the share of mobile payments is explained by the age of users. Young consumers (18-30 years old) use mobile payments twice as often as older groups (60+). This is consistent with Rogers theory of innovation diffusion, where young people act as <<early adopters>>.
 	
 	
-	Another important factor to consider is the Covid-19 pandemic. In this regard, the authors\footnote{Graziano, E. A., Musella, F., \& Petroccione, G. (2024). Cashless payment: behavior changes and gender dynamics during the COVID-19 pandemic. EuroMed Journal of Business, 20(5), 54-74.
+	It is also important to identify the control variables that influence the development of national payment systems. For example, Carvalho's article analyzes the impact of demographic trends on real interest rates in countries with insufficient capital mobility. The authors have developed a multidimensional general equilibrium model that takes into account various demographic characteristics and constraints on international capital flows. The main conclusion of the study is that the aging of the population, a decrease in the birth rate and an increase in life expectancy account for about a third of the global decline in real interest rates between 1990 and 2019. Another important factor to consider is the Covid-19 pandemic. In this regard, the authors\footnote{Graziano, E. A., Musella, F., \& Petroccione, G. (2024). Cashless payment: behavior changes and gender dynamics during the COVID-19 pandemic. EuroMed Journal of Business, 20(5), 54-74.
 	} examine the impact of the pandemic on the adoption of cashless payments in Italy, focusing on demographic factors, financial literacy, and gender differences. The study is based on data collected through an online survey conducted among 836 respondents between November 2021 and February 2022. Panel regression analysis was used to analyze the data. Fear of COVID-19 was found to have a direct positive impact on the use of non-cash payment methods. However, the level of financial literacy was found to be less influential. Gender analysis revealed no significant differences in the acceptance of non-cash payments between men and women. Additionally, it was noted that media coverage of the pandemic indirectly influenced attitudes towards cashless payments through the fear of infection.
 	
 	
@@ -906,7 +906,165 @@
 	In conclusion, to track the progress of the national payment system, the Bank of Russia can rely on demographic data such as age and gender differences, as well as control variables, including the key interest rate. By analyzing changes in these indicators, the Bank of Russia is able to identify potential areas for improvement and take appropriate steps. The review of empirical studies provides a deeper understanding of the effectiveness of various indicators and methods, which are summarized in the table \ref{tab:conclusion}.
 	
 	
+	
+	\section{Construction of an index for the development of the national payment system in Russia}
+	
+	
+	The level of development of national payment systems in Russia is often characterized by a high degree of regional heterogeneity, making it difficult to implement a unified strategy for regulating and supporting them. To address this issue, it is necessary to create a comprehensive index that can quantify the state of payment infrastructure across different regions, identify imbalances, and serve as a basis for Central Bank policy. In this chapter, we will develop a methodology to calculate an integral index for the development of the national payment system (NPSI) in Russia. This index will allow us to measure objectively the level of payment infrastructure development across regions and establish a connection between the development of payment systems and demographic factors.
+	
+	
+	The construction of integral indexes is a common practice in economic and social research. Such indexes, which combine several different indicators into a single indicator, allow for a comprehensive and comparable assessment of the phenomenon under study. Among the most famous examples are the Human Development Index (HDI)\footnote{Ul Haq, M. (1995). Reflections on human development. oxford university Press.}, Digital Economy and Society Index (DESI) \footnote{Bánhidi, Z., Dobos, I., \& Nemeslaki, A. (2020). What the overall Digital Economy and Society Index reveals: A statistical analysis of the DESI EU28 dimensions. Regional Statistics, 10(2).}, the index, as well as Urban Health Index (UHI)\footnote{World Health Organization. (2014). The urban health index: A handbook for its calculation and use. In Kobe, Japan.} from the World Health Organization.
+	
+	
+	Sympathize with the UHI methodologies used to build the indexes in this study, they are versatile and flexible. This methodology provides for the standardization of individual indicators with subsequent aggregation by means of a geometric mean, which minimizes the impact of extreme values and makes the index resistant to data variability. This approach makes it possible to effectively assess and compare the development of complex multifactorial phenomena, which include the national payment system.
+	
+	
+	The UHI methodology was selected to evaluate the development of Russia's national payment system due to several factors. First, a payment system similar to urban infrastructure and healthcare has a wide range of components with different units of measurement. Second, this methodology takes into account spatial and regional differences in Russia's diverse socio-economic and demographic landscape. Third, standardization and averaging minimize potential errors caused by extreme regional variations.
+	
+	To calculate the integral index, the following sets of Bank of Russia indicators were selected for the period from 2013 to 2023 for all regions\footnote{Except of Crymia, Sevastopol, DPR, LPR, Zaporizhia Oblast and Kherson Oblast of the fact that there is lack of data for these regions} of Russia\footnote{https://www.cbr.ru/statistics/nps/psrf/}:
+	
+	\begin{enumerate}
+		\item Institutional provision of payment services in the territorial context -- It shows the degree of development of the infrastructure of financial institutions and the availability of banking services in a particular region;
+		\item Number of accounts opened by institutions of the banking system, by territory  -- it reflects the level of financial accessibility and involvement of the region's population in the banking sector;
+		\item Number of payments made through credit institutions (by payment instruments) in the territorial context -- it allows to assess the intensity of the population's use of payment services and the prevalence of non-cash payments;
+		\item Volume of payments made through credit institutions (for payment instruments) in the territorial context -- complements the previous indicator, characterizing not only the number of transactions, but also their financial significance;
+		\item Number of electronic payment orders  -- it shows the level of digitalization of the payment behavior of the population and the degree of penetration of electronic payment channels;
+		\item Volume of electronic payment orders  -- assessment of the degree of integration of electronic payment technologies into the daily economic life of the region.
+	\end{enumerate}
+	
+	
+	In general, the resulting dataset contains 40 different variables that are related to each other. Due to their large number and the fact that they clearly correlate, a primary correlation analysis was conducted using Spearman's rank correlation. The final set of indicators and their descriptive statistics are presented in Table \ref{tab:stats}. Their correlation matrix is shown in the figure \ref{fig:corr}.
+	
+	The next step in building an index is to standardize the data (calculated separately for each year). The standardization method is applied to convert the data into a uniform, comparable format:
+	
+	\begin{equation}
+		S_i = \frac{I_i - \min(I_i)}{\max(I_i) - \min(I_i)},
+	\end{equation}
+	
+	
+	where \( S_i \) -- standardized indicator value;  \( I_i \) -- the initial value of the indicator for the ith region; \( \min(I_i)\), \( \max(I_i)\) are the minimum and maximum values of the corresponding indicator among all regions of Russia.
+	
+	
+	\begin{longtable}
+		{|>{\centering\scriptsize}p{10em}
+			|>{\centering\scriptsize}p{14em}
+			|>{\centering\scriptsize}p{3em}
+			|>{\centering\scriptsize\arraybackslash}p{2.3em}|
+		}
+		
+		\caption{Descriptive statistics of the data used to build the index of development of the national payment system of Russia}\label{tab:stats}
+		\\
+		
+		\hline
+		\textbf{Variable Name} & \textbf{Source} & \textbf{Mean} & \textbf{Standart Deviation}
+		\\\hline
+		\endfirsthead
+		
+		\multicolumn{4}{r}{Continuation of the table \ref{tab:conclusion}}\\\hline
+		\endhead
+		
+		\multicolumn{4}{r}{End of the table \ref{tab:conclusion}}\\\hline
+		\endlasthead
+		
+		\multicolumn{4}{@{} l}{\centering{Source: compiled by the author based on the data analyzed}}
+		\endfoot
+		
+		Total number of banking system institutions & Institutional provision of payment services in the territorial context, Bank of Russia & 432.85 &  639.38\\\hline
+		
+		The number of banks per million people & Institutional provision of payment services in the territorial context, Bank of Russia & 235.45 & 85.07\\\hline
+		
+		The number of accounts opened by banking institutions per resident & Number of accounts opened by institutions of the banking system, by territory, Bank of Russia & 4.33 & 2.02\\\hline
+		
+		Total amount of payment requirements with internet & Number of payments made through credit institutions (by payment instruments) in the territorial context, Bank of Russia & 40.47 & 127.35\\\hline
+		
+		Volume of bank orders in billion rubbles & Volume of payments made through credit institutions (for payment instruments) in the territorial context, Bank of Russia & 29.71 & 173.83\\\hline
+		
+		Volume of all orders in electronic form with internet & Volume of electronic payment orders, Bank of Russia & 1808.66 & 12677.03\\\hline
+		
+		
+	\end{longtable}
+	
+	
+	\begin{figure}[H]
+		\centering
+		\noindent\includegraphics[width=0.5\linewidth]{corr.png}
+		\caption{Correlation matrix\\Source: compiled by the author based on the data analyze}
+		\label{fig:corr}
+	\end{figure}
+	
+	
+	The last step is to aggregate standardized indicators into an integral index. A geometric mean is used to combine standardized values:
+	
+	\begin{equation}
+		Index = \left( \prod_{i=1}^{n} S_i \right)^{\frac{1}{n}}
+	\end{equation}
+	
+	Using a geometric mean minimizes the impact of sharp regional disparities and provides a more balanced assessment. Logarithmization was also applied to balance outliers in the data before calculating the geometric mean.
+	
+	
+	The index of development of the national payment system in Russia, obtained during the study, shows interesting results (Table \ref{tab:index_final}). The index takes values from 0 to 1. The closer the value is to 1, the higher the level of development of the payment system in the region.
+	
+	
+	\begin{table}[H]
+		\caption{The top 5 and bottom 5 regions of Russia according to the national payment system development index for October 2023}\label{tab:index_final}
+		\centering
+		\begin{tabular}%{\linewidth}
+			{|c|c|c|c|}\hline
+			\textbf{Regions-<<leaders>>} & \textbf{Index Value} & \textbf{Regions-<<losers>>}& \textbf{Index Value}\\\hline
+			
+			Moscow & 0.94 &  Republic of Ingushetia & 0.09\\\hline
+			
+			St. Petersburg & 0.69 &  Republic of Dagestan & 0.20\\\hline
+			
+			Novosibirsk Oblast & 0.63 &  Chechen Republic & 0.21\\\hline
+			
+			Sverldlovsk Oblast & 0.62 & Republic of Kalmykia & 0.26\\\hline
+			
+			Voronezh Oblast & 0.61 & Jewish Autonomous Oblast & 0.28\\\hline
+			
+		\end{tabular}
+		Source: compiled by the author based on data from the Bank of Russia
+	\end{table}
+	
+	
+	It is worth noting that Moscow and St. Petersburg occupy leading positions in this index, which is understandable, since they are the financial centers of the country with the largest population. In addition, technologically advanced and urbanized regions such as Novosibirsk and Sverdlovsk regions are on the list of leaders. The underdeveloped southern regions complete the ranking according to this index. For a full-fledged comparison of the index, competence diagrams were constructed for 3 types of regions: top, middle, and losers (Figure \ref{fig:compare}). Based on the diagrams, only one conclusion can be drawn -- in Russia there is a high differentiation between the top regions (Moscow, St. Petersburg) and outsiders (Dagestan, Chechnya).
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.3\textwidth]{losers.png}
+		\hfill % Заполнитель пространства между изображениями
+		\includegraphics[width=0.3\textwidth]{top.png}
+		\hfill
+		\includegraphics[width=0.3\textwidth]{middle.png}
 
+		\caption{Competence diagrams\\Source: compiled by the author based on the data analisys}
+		\label{fig:compare}
+	\end{figure}
+
+
+	It is also possible to compile a generalized index that will reflect the situation in Russia as a whole. However, given the significant differences between regions, the distribution of the index will have a wide range of values, which will undoubtedly affect the integral indicator. Therefore, instead of the regional average, it was decided to use the median. The graph of this indicator(National Payment System Development Index -- NPSD Index), was built from 2013 to 2023 (Figure \ref{fig:index_whole}). As can be seen from the graph, there was a decrease in the index in 2014-2015, which can be explained by sanctions against Russia. It was during this period that the National Card Payment System and the MIR payment system were created. Until 2020, the index showed significant growth due to the development of these systems and the introduction of new technologies and processes into the Russian national payment system, for example, the fast payment system in 2019. However, growth has slowed during the pandemic. Since 2022, the index has begun to decline, which is associated with the general economic crisis in Russia. During this period, the key interest rate was high, and the ruble was unstable, which aggravated the situation. The dynamics of the index was also affected by internal shocks, which also had a negative impact.
+	
+	\begin{figure}[H]
+		\centering
+		\noindent\includegraphics[width=0.5\linewidth]{index_whole.png}
+		\caption{Aggregated National Payment System Development Index for Russia\\Source: compiled by the author based on the data analyze}
+		\label{fig:index_whole}
+	\end{figure}
+	
+	
+	Summing up, the following conclusions are drawn:
+	
+	\begin{enumerate}
+		\item It is feasible to develop an index that would objectively reflect the development of the Russian National Payment System both at the regional level and nationwide, based on established methodologies for index development (UHI) -- which is related to the similarity of tasks: the need to aggregate heterogeneous indicators, taking into account regional specifics;
+		\item The results of the calculations revealed significant differences between the regions. Moscow (0.94) and St. Petersburg (0.69) were the leaders, which is explained by their status as financial centers with a high concentration of infrastructure and population. The Republic of Ingushetia (0.09) and Dagestan (0.20), on the other hand, are among the regions with the lowest levels of development of payment systems;
+		\item The calculated index demonstrates not only the current state of the payment system, but also its vulnerability to macroeconomic factors. Its application allows the Bank of Russia to identify problem regions, evaluate the effectiveness of regulatory measures and develop targeted strategies to reduce imbalances.
+	\end{enumerate}
+	
+	
+	\section{Developing an econometric model to estimate the impact of demographic variables on the share of cashless transactions}
+
+	
 	%%%%%%%%%%% References	%%%%%%%%%%%
 
 
