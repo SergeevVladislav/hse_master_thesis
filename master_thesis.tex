@@ -29,7 +29,6 @@
 
 \usepackage{hyphenat}
 
-
 %%%%%%%%%% Шрифты %%%%%%%%
 \usepackage[english]{babel} % выбор языка для документа
 \usepackage[utf8]{inputenc} % задание utf8 кодировки исходного tex файла
@@ -82,6 +81,9 @@
 
 %%%%%%%%%% Гиперссылки %%%%%%%%%%
 \usepackage{xcolor}              % разные цвета
+
+\usepackage{booktabs}
+\usepackage{threeparttable}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -411,7 +413,7 @@
 	National payment systems are a key element of the modern economy, ensuring the uninterruptible conduct of financial transactions and contributing to the development of trade, investment and economic growth. In the context of digital transformation, they are becoming not only a calculation tool, but also a factor in increasing financial accessibility and inclusivity. The regulation of payment systems carried out by central banks is aimed at ensuring their stability, security and efficiency, which is especially important in the context of growing cyber threats, changes in consumer behavior and global economic trends. National payment systems, as the infrastructural framework of the economy, reflect the level of technological development of the country, the degree of integration of financial services into the daily life of the population and the ability to adapt to the challenges of the times.
 	
 	
-	In Russia, the development of the national payment system has gained strategic importance in the context of achieving technological sovereignty and ensuring stability of the financial sector. Over the past decade, this system has made significant progress. It started with the creation of the MIR payment card and culminated in the introduction of the Faster Payments System. This system has become a key driver for the transition to a cashless economy in Russia. In 2024, non-cash transactions accounted for more than 85.8\% \footnote{https://www.cbr.ru/PSystem/} of retail transactions. However, it is important to note that the Russian market continues to exhibit heterogeneity in terms of digital adoption, with varying dynamics across regions, age groups and income levels. This highlights the need for a tailored approach to further development of the national payment system. The regulatory policy of the Central Bank of Russia, including piloting the introduction of the digital ruble and supporting financial technology innovation, aims to reduce these imbalances. Overcoming these imbalances, however, requires taking into consideration fundamental socio-demographic trends.
+	In Russia, the development of the national payment system has gained strategic importance in the context of achieving technological sovereignty and ensuring stability of the financial sector. Over the past decade, this system has made significant progress. It started with the creation of the MIR payment card and culminated in the introduction of the Faster Payments System. This system has become a key driver for the transition to a cashless economy in Russia. In 2024, cashless transactions accounted for more than 85.8\% \footnote{https://www.cbr.ru/PSystem/} of retail transactions. However, it is important to note that the Russian market continues to exhibit heterogeneity in terms of digital adoption, with varying dynamics across regions, age groups and income levels. This highlights the need for a tailored approach to further development of the national payment system. The regulatory policy of the Central Bank of Russia, including piloting the introduction of the digital ruble and supporting financial technology innovation, aims to reduce these imbalances. Overcoming these imbalances, however, requires taking into consideration fundamental socio-demographic trends.
 	
 	
 	Russia faces several significant demographic challenges, which pose both long-term difficulties and opportunities for its financial sector. One of the most significant is the aging population, which is set to continue. By 2030, according to OECD\footnote{https://mintrud.gov.ru/ministry/programms/12} estimates, the proportion of people aged 60 years and over will reach 25\%, and by 2050 it will be 30\%. This group has historically been less inclined to use digital payment methods. Only 42\% of people 55 or older are actively using online banking, according to NAFI's report from 2024\footnote{https://nafi.ru/analytics/dolya-polzovateley-mobilnogo-banka-rastet-no-rossiyane-stanovyatsya-menee-bditelnymi/}. Another significant challenge is the decline in the birth rate, which has led to a decrease in the number of young people. These age groups are crucial for credit products and financial services. Additionally, there are disparities between regions due to migration from smaller towns and rural areas. According to the Central Bank of Russia, only 48\% of residents in these areas have access to internet banking services in 2024\footnote{Основные направления повышения доступности финансовых услуг в Российской Федерации на период 2025-2027 годов}. Additionally, migration – both internally (movement to larger cities) and externally (labour migration) – is changing the composition of the workforce, creating a demand for cross-border transactions and communications in multiple languages.
@@ -431,7 +433,7 @@
 	\begin{enumerate}
 		\item systematize theoretical approaches to the analysis of the relationship between demographic changes and the evolution of payment systems, including foreign experience in adapting to population aging;
 		\item identify key demographic trends in Russia (aging, urbanization, migration, regional differentiation) and their relationship to the dynamics of payment preferences;
-		\item conduct a quantitative analysis of demographic factors' influence on national payment system metrics (non-cash payment share, digital instrument penetration, loan portfolio volume) through econometric modeling;
+		\item conduct a quantitative analysis of demographic factors' influence on national payment system metrics (cashless payment share, digital instrument penetration, loan portfolio volume) through econometric modeling;
 		\item formulate practical recommendations for regulatory bodies and payment industry players to mitigate imbalances stemming from demographic changes.
 	\end{enumerate}
 	
@@ -472,7 +474,7 @@
 	
 	\section{The operational principles of the Russian national payment system}
 	
-	The Russian national payment system is a set of institutions, technologies and mechanisms that ensure non-cash payments and processing of payment transactions on the territory of the country. Its structure includes several key components, each of which performs a significant function in ensuring the stability and efficiency of financial transactions.
+	The Russian national payment system is a set of institutions, technologies and mechanisms that ensure cashless payments and processing of payment transactions on the territory of the country. Its structure includes several key components, each of which performs a significant function in ensuring the stability and efficiency of financial transactions.
 	
 	
 	The central link of the system is the payment system of the Bank of Russia, through which interbank settlements, government payments, and operations related to the implementation of monetary policy take place. It ensures a high degree of reliability and security of settlement transactions between all financial market participants.
@@ -527,7 +529,7 @@
 	Regulatory acts such as Federal Law No. 161-FZ "On the National Payment System" [2] and standards developed by the Bank of Russia serve as the basis for the implementation of this principle. In particular, the Bank of Russia's Information Security Standards Set includes requirements for information protection, personal data processing, information security risk management, and incident response. The standards are mandatory for all participants in the payment system and serve as the basis for assessing their compliance with security requirements [8, p. 154].
 	
 	
-	The Bank of Russia applies a risk-based approach when setting requirements for payment systems that are of particular importance for financial stability or consumer confidence in non-cash payments. Payment systems are recognized as systemically important and are subject to regular assessment of their compliance with the requirements of the legislation on NPS and international standards. The results of the assessments show a high level of compliance and are published on the website of the Bank of Russia. 
+	The Bank of Russia applies a risk-based approach when setting requirements for payment systems that are of particular importance for financial stability or consumer confidence in cahsless payments. Payment systems are recognized as systemically important and are subject to regular assessment of their compliance with the requirements of the legislation on NPS and international standards. The results of the assessments show a high level of compliance and are published on the website of the Bank of Russia. 
 	
 	
 	To ensure the stability of the payment infrastructure, the Bank of Russia is actively developing and implementing technological solutions aimed at improving the reliability and fault tolerance of the system. Such solutions include the creation of backup data centers, the use of modern information security technologies, and regular stress testing of payment systems. 
@@ -539,7 +541,7 @@
 	The principle of efficiency and innovation in the Russian national payment system (NPS) is aimed at ensuring fast, convenient and economically feasible provision of payment services, the introduction of modern technologies that contribute to the development of the financial market.
 	
 	
-	During the period from 2021 to 2023, the number and volume of payments to NPS increased 1.5–2 times, the share of non-cash payments in retail turnover increased from 70.3\% at the beginning of 2021 to 83.4\% at the beginning of 2024. The indicators indicate an increase in the efficiency of the payment system, improved accessibility and quality of payment services for citizens and businesses [7, p. 90].
+	During the period from 2021 to 2023, the number and volume of payments to NPS increased 1.5–2 times, the share of cashless payments in retail turnover increased from 70.3\% at the beginning of 2021 to 83.4\% at the beginning of 2024. The indicators indicate an increase in the efficiency of the payment system, improved accessibility and quality of payment services for citizens and businesses [7, p. 90].
 	
 	
 	The introduction of innovative technologies is an aspect of NPS development. The Fast Payment System (SBP), developed by the Bank of Russia, allows transfers between accounts in different banks around the clock and seven days a week, which significantly increases the convenience and speed of transactions. Technologies such as mobile payments, biometric identification, and the use of artificial intelligence are actively developing to improve the security and efficiency of payment transactions.
@@ -664,7 +666,7 @@
 	An important aspect of behavioral economics is the concept of <<bounded rationality>>, introduced by Herbert Simon\footnote{Simon, H. A. (1955). A behavioral model of rational choice. The quarterly journal of economics, 99-118.}. She emphasizes that individuals make decisions in conditions of limited computing power, time, and information, which leads to satisfying instead of optimizing. For example, when choosing between several payment methods, a person may choose the first available option rather than analyzing all possible alternatives. This behavior is especially typical for groups with low levels of financial literacy or under stress. Richard Thaler\footnote{Thaler, R. H. (2015). Misbehaving: The making of behavioral economics. WW Norton \& Company.}, developing these ideas, introduced the concept of <<nudging>> -- a gentle influence on people's choices through changing the decision-making architecture, for example, by setting a default option for automatic replenishment of a digital wallet.
 	
 	
-	An example of using nudge for a national payment system is soft interventions aimed at encouraging consumers to switch from cash to safer and more convenient electronic payments. For example, a study conducted\footnote{Aydogan, S., \& Van Hove, L. (2015). Nudging consumers towards card payments: A field experiment. In International Cash Conference 2014 (pp. 589-630). Deutsche Bundesbank.} in a university cafeteria used posters with calls for card payments that appealed to a sense of loyalty and belonging to the university. This led to a 6\% increase in the share of non-cash payments, although the effect was temporary.
+	An example of using nudge for a national payment system is soft interventions aimed at encouraging consumers to switch from cash to safer and more convenient electronic payments. For example, a study conducted\footnote{Aydogan, S., \& Van Hove, L. (2015). Nudging consumers towards card payments: A field experiment. In International Cash Conference 2014 (pp. 589-630). Deutsche Bundesbank.} in a university cafeteria used posters with calls for card payments that appealed to a sense of loyalty and belonging to the university. This led to a 6\% increase in the share of cashless payments, although the effect was temporary.
 	
 	
 	Another example is nudges aimed at increasing the use of mobile payments (Apple Pay, Google Pay, etc.) in the United States. The researchers\footnote{Story, P., Smullen, D., Acquisti, A., Cranor, L. F., Sadeh, N., \& Schaub, F. (2020). From intent to action: Nudging users towards secure mobile payments. In Sixteenth Symposium on Usable Privacy and Security (SOUPS 2020) (pp. 379-415).} used informational messages that corrected users misconceptions about the security of mobile payments and helped them formulate plans for regular use of such services. This has helped to increase the adoption of more secure payment methods.
@@ -827,7 +829,7 @@
 	
 	\begin{itemize}
 		\item the increasing number of older adults is changing the way people save and borrow money;
-		\item high proportion of the urban population is associated with a greater propensity to use innovative financial products, including non-cash transactions;
+		\item high proportion of the urban population is associated with a greater propensity to use innovative financial products, including cashless transactions;
 		\item growing number of single-parent and same-sex families requires the adaptation of credit products, which affects the design of payment instruments.
 		
 	\end{itemize}
@@ -854,7 +856,7 @@
 	
 	
 	It is also important to identify the control variables that influence the development of national payment systems. For example, Carvalho's article analyzes the impact of demographic trends on real interest rates in countries with insufficient capital mobility. The authors have developed a multidimensional general equilibrium model that takes into account various demographic characteristics and constraints on international capital flows. The main conclusion of the study is that the aging of the population, a decrease in the birth rate and an increase in life expectancy account for about a third of the global decline in real interest rates between 1990 and 2019. Another important factor to consider is the Covid-19 pandemic. In this regard, the authors\footnote{Graziano, E. A., Musella, F., \& Petroccione, G. (2024). Cashless payment: behavior changes and gender dynamics during the COVID-19 pandemic. EuroMed Journal of Business, 20(5), 54-74.
-	} examine the impact of the pandemic on the adoption of cashless payments in Italy, focusing on demographic factors, financial literacy, and gender differences. The study is based on data collected through an online survey conducted among 836 respondents between November 2021 and February 2022. Panel regression analysis was used to analyze the data. Fear of COVID-19 was found to have a direct positive impact on the use of non-cash payment methods. However, the level of financial literacy was found to be less influential. Gender analysis revealed no significant differences in the acceptance of non-cash payments between men and women. Additionally, it was noted that media coverage of the pandemic indirectly influenced attitudes towards cashless payments through the fear of infection.
+	} examine the impact of the pandemic on the adoption of cashless payments in Italy, focusing on demographic factors, financial literacy, and gender differences. The study is based on data collected through an online survey conducted among 836 respondents between November 2021 and February 2022. Panel regression analysis was used to analyze the data. Fear of COVID-19 was found to have a direct positive impact on the use of cashless payment methods. However, the level of financial literacy was found to be less influential. Gender analysis revealed no significant differences in the acceptance of cashless payments between men and women. Additionally, it was noted that media coverage of the pandemic indirectly influenced attitudes towards cashless payments through the fear of infection.
 	
 	
 	
@@ -926,7 +928,7 @@
 	\begin{enumerate}
 		\item Institutional provision of payment services in the territorial context -- It shows the degree of development of the infrastructure of financial institutions and the availability of banking services in a particular region;
 		\item Number of accounts opened by institutions of the banking system, by territory  -- it reflects the level of financial accessibility and involvement of the region's population in the banking sector;
-		\item Number of payments made through credit institutions (by payment instruments) in the territorial context -- it allows to assess the intensity of the population's use of payment services and the prevalence of non-cash payments;
+		\item Number of payments made through credit institutions (by payment instruments) in the territorial context -- it allows to assess the intensity of the population's use of payment services and the prevalence of cashless payments;
 		\item Volume of payments made through credit institutions (for payment instruments) in the territorial context -- complements the previous indicator, characterizing not only the number of transactions, but also their financial significance;
 		\item Number of electronic payment orders  -- it shows the level of digitalization of the payment behavior of the population and the degree of penetration of electronic payment channels;
 		\item Volume of electronic payment orders  -- assessment of the degree of integration of electronic payment technologies into the daily economic life of the region.
@@ -960,10 +962,10 @@
 		\\\hline
 		\endfirsthead
 		
-		\multicolumn{4}{r}{Continuation of the table \ref{tab:conclusion}}\\\hline
+		\multicolumn{4}{r}{Continuation of the table \ref{tab:stats}}\\\hline
 		\endhead
 		
-		\multicolumn{4}{r}{End of the table \ref{tab:conclusion}}\\\hline
+		\multicolumn{4}{r}{End of the table \ref{tab:stats}}\\\hline
 		\endlasthead
 		
 		\multicolumn{4}{@{} l}{\centering{Source: compiled by the author based on the data analyzed}}
@@ -1048,7 +1050,7 @@
 	\begin{figure}[H]
 		\centering
 		\noindent\includegraphics[width=0.5\linewidth]{index_whole.png}
-		\caption{Aggregated National Payment System Development Index for Russia\\Source: compiled by the author based on the data analyze}
+		\caption{Aggregated National Payment System Development (NPSD) Index for Russia\\Source: compiled by the author based on the data analyze}
 		\label{fig:index_whole}
 	\end{figure}
 	
@@ -1063,7 +1065,282 @@
 	
 	
 	\section{Developing an econometric model to estimate the impact of demographic variables on the share of cashless transactions}
+	
+	
+	To develop an econometric model that can analyze the impact of demographic variables on cashless payment proportions, there will identify variables that influence cashless payments utilization based on economic principles, empirical studies, and regulatory guidelines. Additionally, there will conduct trend analysis to accurately specify the model and validate the simulation outcomes.
 
+
+	The data on cashless payments of Sberbank was used as a target -- <<the share of expenses for goods and services paid by cashless method. It is calculated based on the amount of expenses and does not include transactions that cannot be unambiguously attributed to trade turnover (for example, transfers from one person to another)>>.The model includes annual data from 2017 to 2023 for all regions of Russia.  This time period is due to the fact that the Sberbank began publishing statistics in 2017\footnote{https://sberindex.ru/ru/dashboards/dolya-beznala}. The statistics on the average in Russia for all regions can be seen on the Figure \ref{fig:cashless_russia}.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\noindent\includegraphics[width=0.5\linewidth]{cashless_russia.png}
+		\caption{The share of cashless payments in Russia from 2018 to 2023\\Source: compiled by the author based on the data analyze}
+		\label{fig:cashless_russia}
+	\end{figure}
+	
+	
+	To analyze the impact of demographic factors on the share of cashless payments, based on a review of theoretical and empirical work, the following demographic indicators were selected (Table \ref{tab:data_model}) (the data is taken from the <<Unified Interdepartmental Information and Statistical System>> website\footnote{https://fedstat.ru/} -- UIISS):
+	
+	\begin{enumerate}
+		\item \textit{Life expectancy at birth by Russians regions} -- <<the number of years that, on average, one person from a generation born in a given year would have to live, provided that throughout the life of this generation, the death rate at each age remains the same as in the year for which the indicator was calculated>>\footnote{https://fedstat.ru/indicator/31293}. An increase in this indicator leads to an increase in the proportion of older citizens whose financial preferences differ significantly from those of young people. According to theoretical and empirical studies, older people tend to save more money and use more conservative payment methods, which can slow down innovation. However, the effects of aging will not appear immediately: today's increase in life expectancy will affect the structure of effective demand in a few years, when the current 40-50 year olds enter retirement age. Therefore, lag variables for this factor were added to the model;
+		
+		\item \textit{Total fertility rate by Russians regions} -- <<The total fertility rate shows how much, on average, one woman would give birth throughout the entire reproductive period (i.e., from 15 to 50 years), while maintaining the birth rate of the year for which the indicator is calculated at each age. Its value does not depend on the age composition of the population and characterizes the average birth rate in a given calendar period>>\footnote{https://fedstat.ru/indicator/31517}. This indicator reflects the potential for future economic activity is the low birth rate. This is typical of many developed countries and leads to a decrease in the proportion of young people, who are the main drivers of technological innovation. The younger generation that grew up in a digital environment are <<early adopters>> of new payment services. However, the demographic decline caused by the decrease in birthrate in the 1990s has limited the influx of these users, and this time lag allows us to connect past fluctuations in birth rates to the current pace of digitalization;
+		
+		\item \textit{All-cause mortality rate, cases per 1,000 population} -- <<Age coefficients measure the mortality rate for individual age groups. They are calculated as the ratio of the absolute number of deaths in a given age group during the reporting period to its average number>>\footnote{https://fedstat.ru/indicator/43516}. The mortality rate is a marker of socio-economic well-being. High mortality rates (as in the 1990s) disrupt the continuity of generations, reducing the transfer of financial experience and slowing the spread of digital tools. Reducing mortality contributes to the preservation of human capital, but it takes time to transform consumer habits.
+		
+		\item \textit{Control variables} sush as COVID-19 indicator and customer price index (CPI). The inclusion of control variables in the model is necessary to isolate the influence of external shocks and macroeconomic dynamics on the studied relationship between demography and the development of the national payment system. The COVID-19 pandemic has become an exogenous event that dramatically changed behavioral patterns. The consumer price index reflects inflationary pressures that adjust household financial strategies: high inflation can reduce confidence in cash, stimulating demand for digital instruments as protection against depreciation.
+		
+	\end{enumerate}
+	
+	
+	\begin{longtable}
+		{|>{\centering\scriptsize}p{10em}
+			|>{\centering\scriptsize}p{14em}
+			|>{\centering\scriptsize}p{3em}
+			|>{\centering\scriptsize\arraybackslash}p{2.3em}|
+		}
+		
+		\caption{Descriptive statistics of data used to build a model of the influence of demographic factors on the share of cashless payments in retail turnover in Russia}\label{tab:data_model}
+		\\
+		
+		\hline
+		\textbf{Name} & \textbf{Description} & \textbf{Source} & \textbf{Average}
+		\\\hline
+		\endfirsthead
+		
+		\multicolumn{4}{r}{Continuation of the table \ref{tab:data_model}}\\\hline
+		\endhead
+		
+		\multicolumn{4}{r}{End of the table \ref{tab:data_model}}\\\hline
+		\endlasthead
+		
+		\multicolumn{4}{@{} l}{\centering{Source: compiled by the author based on the exploratory data analysis}}
+		\endfoot
+		
+		death\_rate\_village\_lag\_20 & 20-year death rate lag for rural areas, per mill & UIISS &  20.36\\\hline
+		
+		death\_rate\_village\_lag\_15 & 15-year death rate lag for rural areas, per mill & UIISS &  18.91\\\hline
+		
+		death\_rate\_village\_lag\_10 & 10-year death rate lag for rural areas, per mill & UIISS & 16.96\\\hline
+		
+		death\_rate\_village\_lag\_5 & 5-year death rate lag for rural areas, per mill & UIISS &  15.21\\\hline
+		
+		death\_rate\_village\_lag\_3 & 5-year death rate lag for rural areas, per mill & UIISS &  14.79\\\hline
+		
+		death\_rate\_city\_lag\_20 & 20-year death rate lag for urban areas, per mill & UIISS &  15.23\\\hline
+		
+		death\_rate\_city\_lag\_15 & 15-year death rate lag for urban areas, per mill & UIISS &  14.76\\\hline
+		
+		death\_rate\_city\_lag\_10 & 10-year death rate lag for urban areas, per mill & UIISS &  13.31\\\hline
+		
+		death\_rate\_city\_lag\_5 & 5-year death rate lag for urban areas, per mill & UIISS &  12.55\\\hline
+		
+		death\_rate\_city\_lag\_3 & 3-year death rate lag for urban areas, per mill & UIISS &  12.34\\\hline
+		
+		death\_rate\_all\_lag\_20 & 20-year death rate lag in total, per mill & UIISS &  16.91\\\hline
+		
+		death\_rate\_all\_lag\_15 & 15-year death rate lag in total, per mill & UIISS &  16.01\\\hline
+		
+		death\_rate\_all\_lag\_10 & 10-year death rate lag in total, per mill & UIISS &  14.39\\\hline
+		
+		death\_rate\_all\_lag\_5 & 5-year death rate lag in total, per mill & UIISS &  13.32\\\hline
+		
+		death\_rate\_all\_lag\_3 & 3-year death rate lag in total, per mill & UIISS &  13.04\\\hline
+		
+		fertility\_rate\_city\_lag\_20 & 20-year total fertility rate lag for urban areas & UIISS & 1.16\\\hline
+		
+		fertility\_rate\_city\_lag\_15 & 15-year total fertility rate lag for urban areas & UIISS & 1.29\\\hline
+		
+		fertility\_rate\_city\_lag\_10 & 10-year total fertility rate lag for urban areas & UIISS & 1.49\\\hline
+		
+		fertility\_rate\_city\_lag\_5 & 5-year total fertility rate lag for urban areas & UIISS & 1.63\\\hline
+		
+		fertility\_rate\_city\_lag\_3 & 3-year total fertility rate lag for urban areas & UIISS & 1.60\\\hline
+		
+		fertility\_rate\_all\_lag\_20 & 20-year total fertility rate lag in total & UIISS & 1.27\\\hline
+		
+		fertility\_rate\_all\_lag\_15 & 15-year total fertility rate lag in total & UIISS & 1.39\\\hline
+		
+		fertility\_rate\_all\_lag\_10 & 10-year total fertility rate lag in total & UIISS & 1.63\\\hline
+		
+		fertility\_rate\_all\_lag\_5 & 5-year total fertility rate lag in total & UIISS & 1.78\\\hline
+		
+		fertility\_rate\_all\_lag\_3 & 3-year total fertility rate lag in total & UIISS & 1.70\\\hline
+		
+		fertility\_rate\_all\_lag\_20 & 20-year total fertility rate lag for rural areas & UIISS & 1.57\\\hline
+		
+		fertility\_rate\_all\_lag\_15 & 15-year total fertility rate lag for rural areas & UIISS & 1.66\\\hline
+		
+		fertility\_rate\_all\_lag\_10 & 10-year total fertility rate lag for rural areas & UIISS & 2.04\\\hline
+		
+		fertility\_rate\_all\_lag\_5 & 5-year total fertility rate lag for rural areas & UIISS & 2.23\\\hline
+		
+		fertility\_rate\_all\_lag\_3 & 3-year total fertility rate lag for rural areas & UIISS & 2.04\\\hline
+		
+		life\_expectancy\_male\_sex\_village\_lag\_20 & 20-year life expectancy lag for male in rural areas & UIISS & 57.65\\\hline
+		
+		life\_expectancy\_male\_sex\_village\_lag\_15 & 15-year life expectancy lag for male in rural areas & UIISS & 57.20\\\hline
+		
+		life\_expectancy\_male\_sex\_village\_lag\_10 & 10-year life expectancy lag for male in rural areas & UIISS & 60.33\\\hline
+		
+		life\_expectancy\_male\_sex\_village\_lag\_5 & 5-year life expectancy lag for male in rural areas & UIISS & 63.48\\\hline
+		
+		life\_expectancy\_male\_sex\_village\_lag\_3 & 3-year life expectancy lag for male in rural areas & UIISS & 64.65\\\hline
+		
+		life\_expectancy\_female\_sex\_village\_lag\_20 & 20-year life expectancy lag for female in rural areas & UIISS & 70.61\\\hline
+		
+		life\_expectancy\_female\_sex\_village\_lag\_15 & 15-year life expectancy lag for female in rural areas & UIISS & 70.58\\\hline
+		
+		life\_expectancy\_female\_sex\_village\_lag\_10 & 10-year life expectancy lag for female in rural areas & UIISS & 72.63\\\hline
+		
+		life\_expectancy\_female\_sex\_village\_lag\_5 & 5-year life expectancy lag for female in rural areas & UIISS & 74.69\\\hline
+		
+		life\_expectancy\_female\_sex\_village\_lag\_3 & 3-year life expectancy lag for female in rural areas & UIISS & 75.38\\\hline
+		
+		life\_expectancy\_male\_sex\_city\_lag\_20 & 20-year life expectancy lag for male in urban areas & UIISS & 59.14\\\hline
+		
+		life\_expectancy\_male\_sex\_city\_lag\_15 & 15-year life expectancy lag for male in urban areas & UIISS & 59.35\\\hline
+		
+		life\_expectancy\_male\_sex\_city\_lag\_10 & 10-year life expectancy lag for male in urban areas & UIISS & 62.90\\\hline
+		
+		life\_expectancy\_male\_sex\_city\_lag\_5 & 5-year life expectancy lag for male in urban areas & UIISS & 65.49\\\hline
+		
+		life\_expectancy\_male\_sex\_city\_lag\_3 & 3-year life expectancy lag for male in urban areas & UIISS & 66.45\\\hline
+		
+		life\_expectancy\_female\_sex\_city\_lag\_20 & 20-year life expectancy lag for female in urban areas & UIISS & 71.62\\\hline
+		
+		life\_expectancy\_male\_sex\_city\_lag\_15 & 15-year life expectancy lag for female in urban areas & UIISS & 72.49\\\hline
+		
+		life\_expectancy\_male\_sex\_city\_lag\_10 & 10-year life expectancy lag for female in urban areas & UIISS & 74.83\\\hline
+		
+		life\_expectancy\_female\_sex\_city\_lag\_5 & 5-year life expectancy lag for female in urban areas & UIISS & 76.46\\\hline
+		
+		life\_expectancy\_female\_sex\_city\_lag\_3 & 3-year life expectancy lag for female in urban areas & UIISS & 77.04\\\hline
+		
+		cpi & Customer Price Index & RosStat & 105.95\\\hline
+		
+		covid & COVID-10 Dummy variables & RosStat & 0.5025\\\hline
+	\end{longtable}
+
+
+	Lag transformations of 3, 5, 10, 15 and 20 years were applied for each demographic variable, which are due to a significant latency period. Demographic changes are also shaping long-term trends in demand for financial services. Ignoring lags leads to underestimation of long-term effects, such as the aging of the population and its pressure on the national payment system. Lag transformations were applied to each demographic variable due to a significant delay period. Demographic changes also shape long-term trends in demand for financial services. Ignoring delays leads to an underestimation of long-term effects such as the aging population and its impact on the national payment system. From an econometric perspective, demographic variables often correlate with past values. For instance, the birth rate in year $t$ is influenced by the birth rate of the previous year $(t-1)$ due to cultural and economic factors. A lag-free model, however, violates the assumption of uncorrelated errors ($Cov (\epsilon_{t}, \epsilon_{t-1} ) \neq 0$). Values for rural and urban areas have also been added for mortality and fertility.
+	
+	
+	Based on the assumptions and selected factors, the specification of the econometric model for assessing the impact of demographic factors on the share of cashless payments in retail turnover is as follows:
+	
+	
+	\begin{equation}
+		Y_{it} = \beta_0 + \beta_1 DR_{i,t-l_{j}} + \beta_2 FR_{i,t-l_{j}} + \beta_3 LE_{i,t-l_{j}} + \beta_4 CV_{i,t_{j}} + \mu_{i} + \varepsilon_{it},
+		\label{eq:model}
+	\end{equation}
+	
+	where $Y_{it}$ -- percentage of cashless payments in the region $i$ at time $t$;
+	\\
+	$DR_{it-l_{j}}$ -- death rate factor $j$ with lag $l$ in the region $i$ at time $t$;
+	\\
+	$FR_{it-l_{j}}$ -- total fertility rate factor $j$ with lag $l$ in the region $i$ at time $t$;
+	\\
+	$LE_{it-l_{j}}$ -- life expectancy factor $j$ with lag $l$ in the region $i$ at time $t$;
+	\\
+	$CV_{i,t_{j}}$ -- control variable $j$ in the region $i$ at time $t$;
+	\\
+	$\mu_{i}$ -- individual effects;
+	\\
+	$\varepsilon_{i t}$ -- model error with $E(\varepsilon_{i t} | DR_{it-l_{j}}, ..., CV_{i,t_{j}}) = 0$;
+	\\
+	$\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$ -- estimated coefficients of the model.
+	
+	
+	This model specification is called a <<fixed effects model>> (FE), which implies that individual effects correlate with independent variables. It is important to note that the model takes into account the relationship between regressor values that relate to the same object but at different times.  Before modeling, the data was tested for multicollinearity using the Variance Inflation Factor (VIF) Test. Thus, due to the high VIF rates, some demographic factors were excluded from the model. The coefficients obtained with their significance, obtained using the <<within estimator>>, can be seen in Table \ref{tab:results}.
+	
+	
+	
+	\begin{table}[!htbp]
+		\centering
+		\small
+			\caption{Panel Regression Results: Cashless Payments Determinants}
+			\label{tab:results}
+				\begin{tabular}{@{}lcccccc@{}}
+					\toprule
+					& \textbf{Coeff.} & \textbf{Std.Err.} & \textbf{t-stat} & \textbf{P-value}  \\
+					\midrule
+					\textbf{Demographic variables} \\
+					death\_rate\_village\_lag\_3 & -0.745 & 0.467 & -1.60 & 0.112 \\
+					death\_rate\_city\_lag\_15 & -1.108*** & 0.386 & -2.87 & 0.004  \\
+					fertility\_rate\_city\_lag\_20 & 2.972 & 4.225 & 0.70 & 0.482  \\
+					fertility\_rate\_city\_lag\_15 & 7.108*** & 2.410 & 2.95 & 0.003  \\
+					fertility\_rate\_city\_lag\_10 & 16.986*** & 5.033 & 3.37 & 0.001 \\
+					fertility\_rate\_city\_lag\_3 & 12.449** & 4.916 & 2.53 & 0.012  \\
+					fertility\_rate\_village\_lag\_20 & -4.130 & 3.548 & -1.16 & 0.245 \\
+					fertility\_rate\_village\_lag\_15 & -4.907** & 2.209 & -2.22 & 0.027 \\
+					life\_expectancy\_female\_sex\_village\_lag\_3 & -0.534 & 0.501 & -1.07 & 0.287 \\
+					life\_expectancy\_male\_sex\_city\_lag\_20 & -0.255*** & 0.083 & -3.06 & 0.002 \\
+					life\_expectancy\_male\_sex\_city\_lag\_3 & 2.864*** & 0.762 & 3.76 & 0.000  \\
+					life\_expectancy\_female\_sex\_city\_lag\_10 & 1.839*** & 0.606 & 3.03 & 0.003  \\
+					\textbf{Control variables} \\
+					CPI & 0.531*** & 0.137 & 3.87 & 0.000 \\
+					COVID-19  & 2.560* & 1.509 & 1.70 & 0.091  \\
+					\midrule
+					Observations & 581 \\
+					R-squared (within) & 0.921 \\
+					F-statistic & 290.63 \\
+					Entities & 83 \\
+					Time periods & 7 \\
+					\bottomrule
+				\end{tabular}
+			
+			\begin{tablenotes}
+				\small
+				\item Notes: *** p<0.01, ** p<0.05, * p<0.1.
+				\item Source: compiled by the author based on the econometric modeling with Statsmodels\footnote{https://www.statsmodels.org/stable/index.html}
+			\end{tablenotes}
+	\end{table}
+	
+
+	Before proceeding to the interpretation of the results, it is necessary to check the robustness of the model. The Haussmann test is used to verify the robustness of the choice of the fixed effects model relative to the random effects model (RE). The null hypothesis assumes that random effects are correct ($Cov(x_{it}, \mu_{i})=0$), and the alternative hypothesis states that there is a correlation between regressors and individual effects, which makes the FE model more suitable. The test statistics are defined as:
+	
+	\begin{equation}
+		H = (\hat{\beta}_{\text{FE}} - \hat{\beta}_{\text{RE}})^\top 
+		\left[ \text{Var}(\hat{\beta}_{\text{FE}}) - \text{Var}(\hat{\beta}_{\text{RE}}) \right]^{-1} 
+		(\hat{\beta}_{\text{FE}} - \hat{\beta}_{\text{RE}}),
+	\end{equation}
+	
+	where $\hat{\beta}_{\text{FE}}$ and $\hat{\beta}_{\text{RE}}$ -- coefficient estimates for FE and RE models.	
+	
+	In this case, the Hausman test showed significance ($p-value\approx0.000$), which allows to reject the hypothesis about the correctness of the random effects model. This indicates that individual invariant characteristics ($\mu_{i}$) correlate with explanatory variables, and using the FE model minimizes the risk of bias caused by an omitted variable.
+	
+	
+	Analyzing Table \ref{tab:results}, there are some findings (\ref{fig:marginal_effects}):
+	
+	\begin{itemize}
+		\item The fixed-effects model shows a high explanatory power (R-squared = 0.9211), indicating that 92\% of the variation in the share of cashless payments in Russian regions can be explained by the demographic variables included with lags and macroeconomic factors;
+		\item The  $death\_rate\_city\_lag\_15$ coefficient of $-1.108 (p=0.00)$ means that an increase in mortality in cities 15 years ago by 1 unit reduces the current share of cashless payments by $\sim1.1\%$. This may be due to a long-term decline in the economically active population, which slows down digitalization;
+		\item The $fertility\_rate\_city\_lag\_10$ coefficient of $16.986 (p=0.00)$ indicates that an increase in the urban birth rate of 1 unit 10 years ago increases the share of cashless payments by $\sim17\%$. This is due to the fact that young people who have reached economic activity are actively using digital tools (mobile applications, QR payments);
+		\item The coefficient $fertility\_rate\_village\_lag\_15$ of $-4.9073 (p=0.02)$ shows that the high birth rate in rural areas 15 years ago reduces the share of cashless payments. This is probably due to the migration of young people to cities, which leaves the elderly population in the villages who prefer cash;
+		\item The coefficient $life\_expectancy\_male\_sex\_city\_lag\_3$ of $2.8644 (p=0.00)$ demonstrates that the increase in life expectancy of men in cities 3 years ago by 1 year increases the share of cashless payments by  $\sim2.86\%$. This may reflect longer-term economic activity and adaptation to technology;
+		\item Mortality rate in villages ($death\_rate\_village\_lag\_3$) and fertility in villages with a 10- and 20-year lag ($fertility\_rate\_village\_lag\_10/20$) have no statistically significant effect $(p > 0.1)$. This may be due to the low proportion of cashless payments in rural areas, regardless of demographics.
+		
+	\end{itemize}
+	
+	
+	\begin{figure}[H]
+		\centering
+		\noindent\includegraphics[width=0.8\linewidth]{margin_effects.png}
+		\caption{Marginal effects with its confidence intervals of factors with p\_value > 0.05 for FE model\\Source: compiled by the author based on econometric modeling}
+		\label{fig:marginal_effects}
+	\end{figure}
+	
+	
+	Summarizing the results of econometric modeling, there are several conclusions:
+	
+	\begin{enumerate}
+		\item Demographic factors with certain lags significantly affect the share of cashless payments. Urban fertility and male life expectancy are particularly important;
+		\item Cities, unlike villages, show a stronger connection between demographics and digitalization of payments;
+		\item Macroeconomic factors reinforce the trends. Inflation and the pandemic are accelerating the transition to cashless payments, which is consistent with global trends.
+	\end{enumerate}
+	
 	
 	%%%%%%%%%%% References	%%%%%%%%%%%
 

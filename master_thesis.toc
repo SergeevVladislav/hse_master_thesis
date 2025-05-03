@@ -8,5 +8,5 @@
 \contentsline {section}{\numberline {2.1}Analysis of empirical approaches to assess the impact of demographic factors on the development of national payment systems}{25}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Construction of an index for the development of the national payment system in Russia}{32}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Developing an econometric model to estimate the impact of demographic variables on the share of cashless transactions}{39}{section.2.3}%
-\contentsline {chapter}{References}{40}{section.2.3}%
+\contentsline {chapter}{References}{48}{Item.33}%
 \contentsfinish 
