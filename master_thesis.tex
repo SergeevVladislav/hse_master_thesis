@@ -109,6 +109,10 @@
 % \missingfigure{Здесь будет Последний день Помпеи}
 % \listoftodos --- печатает все поставленные \todo'шки
 
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows.meta, positioning}
+
 
 
 %%%%%%%%%%%%%% ГОСТОВСКИЕ ПРИБАМБАСЫ %%%%%%%%%%%%%%%
@@ -383,7 +387,7 @@
 		Reviewer \\
 		Candidate of Sciences (PhD) \\
 		\vspace{1em}
-		Larionov Alexander Vitalievich
+		Merekina Elena Vladimirovna
 	\end{minipage}
 	\hfill
 	\begin{minipage}[t]{0.45\textwidth}
@@ -416,14 +420,14 @@
 	In Russia, the development of the national payment system has gained strategic importance in the context of achieving technological sovereignty and ensuring stability of the financial sector. Over the past decade, this system has made significant progress. It started with the creation of the MIR payment card and culminated in the introduction of the Faster Payments System. This system has become a key driver for the transition to a cashless economy in Russia. In 2024, cashless transactions accounted for more than 85.8\% \footnote{https://www.cbr.ru/PSystem/} of retail transactions. However, it is important to note that the Russian market continues to exhibit heterogeneity in terms of digital adoption, with varying dynamics across regions, age groups and income levels. This highlights the need for a tailored approach to further development of the national payment system. The regulatory policy of the Central Bank of Russia, including piloting the introduction of the digital ruble and supporting financial technology innovation, aims to reduce these imbalances. Overcoming these imbalances, however, requires taking into consideration fundamental socio-demographic trends.
 	
 	
-	Russia faces several significant demographic challenges, which pose both long-term difficulties and opportunities for its financial sector. One of the most significant is the aging population, which is set to continue. By 2030, according to OECD\footnote{https://mintrud.gov.ru/ministry/programms/12} estimates, the proportion of people aged 60 years and over will reach 25\%, and by 2050 it will be 30\%. This group has historically been less inclined to use digital payment methods. Only 42\% of people 55 or older are actively using online banking, according to NAFI's report from 2024\footnote{https://nafi.ru/analytics/dolya-polzovateley-mobilnogo-banka-rastet-no-rossiyane-stanovyatsya-menee-bditelnymi/}. Another significant challenge is the decline in the birth rate, which has led to a decrease in the number of young people. These age groups are crucial for credit products and financial services. Additionally, there are disparities between regions due to migration from smaller towns and rural areas. According to the Central Bank of Russia, only 48\% of residents in these areas have access to internet banking services in 2024\footnote{Основные направления повышения доступности финансовых услуг в Российской Федерации на период 2025-2027 годов}. Additionally, migration – both internally (movement to larger cities) and externally (labour migration) – is changing the composition of the workforce, creating a demand for cross-border transactions and communications in multiple languages.
+	Russia faces several significant demographic challenges, which pose both long-term difficulties and opportunities for its financial sector. One of the most significant is the aging population, which is set to continue. By 2030, according to OECD\footnote{https://mintrud.gov.ru/ministry/programms/12} estimates, the proportion of people aged 60 years and over will reach 25\%, and by 2050 it will be 30\%. This group has historically been less inclined to use digital payment methods. Only 42\% of people 55 or older are actively using online banking, according to NAFI's report from 2024\footnote{https://nafi.ru/analytics/dolya-polzovateley-mobilnogo-banka-rastet-no-rossiyane-stanovyatsya-menee-bditelnymi/}. Another significant challenge is the decline in the birth rate, which has led to a decrease in the number of young people. These age groups are crucial for credit products and financial services. Additionally, there are disparities between regions due to migration from smaller towns and rural areas. According to the Central Bank of Russia, only 48\% of residents in these areas have access to internet banking services in 2024\footnote{Банк России: Основные направления повышения доступности финансовых услуг в Российской Федерации на период 2025-2027 годов}. Additionally, migration – both internally (movement to larger cities) and externally (labour migration) – is changing the composition of the workforce, creating a demand for cross-border transactions and communications in multiple languages.
 	
 	
 	These trends create conflicting pressures on national payment systems. On the one hand, urbanization and increased digital literacy among young people are driving innovation. This is evidenced by an increase in the share of payments made through QR codes among people aged 18-35 from 12\% in 2021 to 27\% by 2033\footnote{https://www.cbr.ru/press/event/?id=23262}. However, on the other hand, ageing populations and regional inequalities are hindering the consolidation of payment infrastructure. This can be seen in regions such as the Far East and North Caucasus, where cash payments continue to account for 45\% of transactions (versus 20\% in Moscow\footnote{https://cbr.ru/press/regevent/?id=28556}) due to a larger proportion of older people and a slower adoption of digital payment methods.
 
 	
 	
-	The aim of the research is to evaluate the influence of demographic variables on the evolution of the Russian national payment system and to formulate proposals for its adjustment to shifting socio-demographic circumstances.
+	The aim of the research is to evaluate the influence of demographic variables on the evolution of the National Payment System of Russia and to formulate proposals for its adjustment to shifting socio-demographic circumstances.
 	
 	
 	\vspace{2em}
@@ -431,17 +435,17 @@
 	
 	The following tasks were set in the course of the study:
 	\begin{enumerate}
-		\item systematize theoretical approaches to the analysis of the relationship between demographic changes and the evolution of payment systems, including foreign experience in adapting to population aging;
-		\item identify key demographic trends in Russia (aging, urbanization, migration, regional differentiation) and their relationship to the dynamics of payment preferences;
-		\item conduct a quantitative analysis of demographic factors' influence on national payment system metrics (cashless payment share, digital instrument penetration, loan portfolio volume) through econometric modeling;
-		\item formulate practical recommendations for regulatory bodies and payment industry players to mitigate imbalances stemming from demographic changes.
+		\item systematize theoretical approaches to the analysis of the relationship between demographic changes and the evolution of payment systems;
+		\item identify key demographic trends in Russia (aging, urbanization, regional differentiation) and their relationship to the dynamics of payment preferences;
+		\item conduct a quantitative analysis of demographic factors influence on national payment system metrics (cashless payment share in total retail turnover) through econometric modeling;
+		\item formulate practical recommendations for regulatory bodies to mitigate imbalances stemming from demographic changes.
 	\end{enumerate}
 	
 	
 	The object of the study is the national payment system of Russia.
 	
 	
-	The subject of the study is the influence of demographic factors on the development of the Russian national payment system.
+	The subject of the study is the influence of demographic factors on the development of the National Payment System of Russia.
 	
 	The following research questions have been formulated:
 	
@@ -461,7 +465,7 @@
 	
 	The first section of this study explores the operational mechanisms of Russia's national payment system and the theoretical frameworks that explain the impact of demographic changes on the payment systems.
 	
-	The second section examines empirical studies and international best practices to understand the intricate relationship between demographic variables and the development of national payment infrastructures, as well as how demographic factors influence the regulation of these systems. In the next part, an econometric model is being developed that analyzes the relationship between demographic trends and the development of national payment systems, which will be characterized by a new generalized index developed during the study.
+	The second section examines empirical studies to understand the intricate relationship between demographic variables and the development of national payment infrastructures. In the next part, an econometric model is being developed that analyzes the relationship between demographic trends and the development of national payment systems, which will be characterized by a new generalized index developed during the study.
 	
 	
 	Drawing on the findings from the empirical analysis, this final section interprets the results of the model and offers methodological recommendations to enhance the resilience and efficiency of national payment systems in light of demographic changes. A comprehensive strategy will be developed for the improvement of the national payment infrastructure, tailored to meet the specific socio-demographic needs.
@@ -470,90 +474,115 @@
 	The structure of the final thesis includes an introduction, 3 chapters, and a conclusion. The total number of pages is \textrm{\ztotpages} pages. The total number of literature sources is \total{citnum}.
 	
 	
-	\chapter{Theoretical foundations and operational principles of the Russian National Payment System in the context of demographic changes}
+	\chapter{Theoretical foundations and operational principles of the National Payment System of Russia in the context of demographic changes}
 	
-	\section{The operational principles of the Russian national payment system}
+	\section{The operational principles of the National Payment System of Russia}
 	
-	The Russian national payment system is a set of institutions, technologies and mechanisms that ensure cashless payments and processing of payment transactions on the territory of the country. Its structure includes several key components, each of which performs a significant function in ensuring the stability and efficiency of financial transactions.
-	
-	
-	The central link of the system is the payment system of the Bank of Russia, through which interbank settlements, government payments, and operations related to the implementation of monetary policy take place. It ensures a high degree of reliability and security of settlement transactions between all financial market participants.
+	The National Payment System (NPS) of Russia is a complex network of institutions, technologies and processes that facilitate cashless transactions and ensure smooth processing of payments within the country. It consists of several essential components that work together to maintain stability and efficiency of financial operations. The NPS plays a crucial role in economic growth by enhancing access to financial services for individuals and businesses, which not only improves financial well-being but also contributes to higher standards of living through better financial management and transaction capabilities. Furthermore, the NPS helps safeguard the value of the ruble and promotes integration into global financial markets, strengthening Russia's position in the global economy.
 	
 	
-	The role is played by the National Payment Card System, operated by JSC NSPK. It is she who ensures the operation of the Mir payment card, which has become a national alternative to international payment systems and has increased the independence of the internal payment infrastructure.
-	One of the most modern elements of the system is the Fast Payment System created by the Bank of Russia for instant transfers between individuals and legal entities. The system allows you to make transfers by phone number and use QR codes to pay for goods and services, which makes payment transactions accessible and convenient for a wide range of users. Developed by the Bank of Russia, the SBP allows citizens and organizations to make instant transfers between accounts in different banks around the clock and seven days a week. Since its launch in 2019, more than 21.8 billion transactions totaling 104.3 trillion rubles have been conducted through the SBP.
+	The legislative framework of the NPS is provided by Federal Law No. 161-FZ, which defines the legal, economic and organizational foundations for the creation and management of payment systems. This law regulates the activities of payment service providers, sets requirements for their qualifications and rules of interaction.
 	
 	
-	The structure of the national payment system includes payment infrastructure operators, such as money transfer operators, electronic money operators, and organizations providing payment services. Their activities are regulated and controlled by the Bank of Russia in order to ensure the stability and transparency of all processes related to money transfers [6, p. 98].
+	According to 161-FZ, the National Payment System (NPS) includes the following key components:
 	
-	
-	The Russian national payment system is a well-coordinated mechanism that ensures the reliability, accessibility and security of payment services, which is especially important in the context of the rapid development of the digital economy and the need to strengthen the country's financial sovereignty.
-	
-	
-	The principle of data security and protection is the basis for the functioning of the Russian national payment system. It includes a set of legal, organizational, and technical measures aimed at preventing unauthorized access, leaks, modifications, and other threats that could compromise the integrity and confidentiality of payment information.
+	\begin{enumerate}
+		\item \textit{Payment systems} are a set of rules and procedures that govern the process of making payments between parties. They can be interbank (such as the Bank of Russia's system) or retail (like money transfer services). Well-known payment systems in Russia include MIR, Faster Payment System (FPS), and international systems like Visa and MasterCard;
+		\item \textit{Payment system participants} are organizations involved in the settlement process, including banks, non-bank financial institutions, and others;
+		\item \textit{Infrastructure} refers to the technical tools and technologies that support the NPS, including software for transaction processing and security systems for data protection;
+		\item \textit{Regulation} - includes legislative and regulatory acts that define the rules for the operation of NPS. The most significant of these is 161-FZ, which establishes requirements for participants and operators of payment systems, and also regulates issues related to security and consumer protection.
+	\end{enumerate}
 
 
-	In accordance with the Regulation of the Bank of Russia No. 552-P [1], payment system operators are required to ensure the protection of information by implementing legal, organizational and technical measures aimed at: ensuring the protection of information from unauthorized access, destruction, modification, blocking, copying, provision and distribution;
-	, confidentiality of information;
-	realization of the right of access to information in accordance with the legislation of the Russian Federation.
+	The Bank of Russia plays a dual role: as a participant in the system through its cash settlement centers and as a mega-regulator that controls all elements of the NPS. In addition, the Bank of Russia has its own payment system designed for interbank settlements, government payments and operations related to the implementation of monetary policy. This ensures the reliability and security of settlements between all financial market participants.
+
+	
+	In accordance with Federal Law No. 161-FZ, the Bank of Russia oversees the activities of payment systems, ensuring their compliance with established requirements and standards. <<A payment system is a set of organizations that interact according to the rules of the payment system in order to transfer funds, including a payment system operator, payment infrastructure service operators, and payment system participants, of which at least three organizations are money transfer operators>>\footnote{Articlle 3 of Federal Law No. 161-FZ}. According to Article 20 of  Federal Law No. 161-FZ payment systems work according to certain rules:
+	
+	\begin{itemize}
+		\item Order of interaction between the operator, participants and infrastructure organizations, including Information exchange algorithm, dispute resolution procedures, regulations for emergency situations;
+		\item Monitoring compliance with the rules with mechanisms of regular audit, sanctions for violations (fines, suspension of participation), monitoring of operational activities;
+		\item Criteria for access to the system: financial standards for participants, requirements for technological compatibility, prohibition of discriminatory condition;
+		\item Payment system operator is obliged to provide the rules free of charge for review by potential participants, coordinate changes to the rules with the Bank of Russia, and ensure the uninterrupted operation of the infrastructure.
+	\end{itemize}
+	
+	
+	Article 21 of Federal Law No. 161-FZ defines the legal basis for organizations participation in Russian payment systems, creating a multi-level system of interaction. The main principle is to divide participants into direct and indirect ones, which allows achieving a balance between the availability of payment services and control over systemic risks. According to paragraph 1 of Article 21, direct participants may be:
+	\begin{itemize}
+		\item Money transfer operators (including electronic ones);
+		\item Organizers of trading platforms (according to 325-FZ);
+		\item Insurance companies (for CTP settlements);
+		\item Federal Treasury and Russian Post;
+		\item For international organizations and foreign banks, participation is allowed only in cross-border operations provided integration with the SPFS.
+	\end{itemize}
+	
+	
+	The interaction between the participants of the payment system can be clearly shown by the example of the process of transferring a payment through the payment system (Figure \ref{fig:operation}). The payment system transaction process involves 10 main steps\footnote{Масино, М. Н., and А. В. Ларионов. "Пул ликвидности как способ управления риском ликвидности в платежных системах." Финансы и кредит 24, no. 1 (769) (2018): 209-226.}. A client applies to a bank with an application, which forms a corresponding order. The bank then creates a payment order and sends it to the transaction center. The center receives the payment order and forwards it to the clearing center. The latter calculates the position of each participant and returns the information to the center. The operation center then transmits information about each participant's position to the settlement center. This center processes the order, sending information back to the operation center. The operation center receives information about order execution and transmits it to both the sender's and recipient's banks. Banks then notify customers about funds being debited or credited. Funds are debited and credited simultaneously.
+	
+	
+	In some cases, the payment system operator functions as a one-stop shop for payment infrastructure services. In other instances, it divides responsibilities among various providers. Regardless of the arrangement, all payment infrastructure providers play a vital role in facilitating transactions within the system by transferring funds and communicating with participants. The mechanisms for these transfers and communications are determined by the payment operator, who oversees the entire system.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{operation.png}
+		\caption{The process of transferring a payment through a payment system\\Source: Compilated by author based on legislative framework}
+		\label{fig:operation}
+	\end{figure}
+	
+	
+	The principle of accessibility and universality is a aspect of the NPS of Russia, which ensures broad and equal access to payment services for citizens and organizations throughout the country. Within this framework, several elements are in place to ensure the availability of these services. One such element is the Faster Payment System (FPS), which was developed by the Bank of Russia and allows citizens and businesses to make transfers between accounts at different banks 24/7. Since its launch in 2019, the SBP has significantly expanded the availability of payments services, allowing users to make instant transfers using their mobile numbers or QR codes.
+	
+	
+	Ensuring the smooth functioning of the NPS is another of the Bank of Russia's priority areas of activity, which is reflected in current regulatory documents and strategic plans of the regulator. Given the high dependence of the economy on digital payments and external challenges, the stability of the NPS is of critical importance. In accordance with 161-FZ, as well as Bank of Russia Regulation No. 738-P dated October 27, 2020, regulates the procedure for ensuring the smooth functioning of the Bank of Russia's payment system, including the FPS. In 2024-2027, the Bank of Russia is implementing a set of measures aimed at improving the availability and reliability of payment services, which is reflected in the <<Main Directions of Development of the NPS for 2025-2027>>.
+	
+	
+	The Bank of Russia actively interacts with participants in the payment market, organizing consultations, discussions and public hearings on the regulation and development of the payment system, which allows taking into account the opinions of various parties and making decisions aimed at improving the functioning of the NPS. Regular assessment of the compliance of payment systems with international standards is carried out, which confirms the desire to maintain a high level of transparency and quality of services. The principle of transparency in the Russian national payment system is implemented through openness of information, accessibility of data for all market participants and active interaction with stakeholders, which helps to increase the trust and efficiency of the payment infrastructure. To ensure the stability of the payment infrastructure, the Bank of Russia is actively developing and implementing technological solutions to improve the reliability and resilience of the system. These solutions include creating backup data centers, implementing modern information security measures, and regularly stress-testing payment systems. The principle of reliability and stability lies at the heart of the efficient operation of the NPS of Russia. To achieve this, a comprehensive approach is required, including the creation and enforcement of regulations, the establishment of standards, and the continuous improvement of technological infrastructure. Through these efforts, the stability and security of payment services are ensured, which in turn enhances user confidence and contributes to the development of the countrys financial system.
+
+	
+	The Bank of Russia applies a risk-based approach when setting requirements for payment systems that are of particular importance for financial stability or consumer confidence in cahsless payments. Payment systems are recognized as systemically It is important that banks comply with the requirements of the NPS and international standards, and they are subject to regular assessments of their compliance. The results of these assessments show a high level of compliance, which is published on the website of the Bank of Russia. 
+	
+	
+	
+	
+	
+	
+	The principle of efficiency and innovation in the NPS of Russia is aimed at ensuring fast, convenient and economically feasible provision of payment services, the introduction of modern technologies that contribute to the development of the financial market.
+	
+	
+	During the period from 2021 to 2023, the number and volume of payments to NPS increased 1.5–2 times, the share of cashless payments in retail turnover increased from 70.3\% at the beginning of 2021 to 83.4\% at the ending of 2024. The indicators indicate an increase in the efficiency of the payment system, improved accessibility and quality of payment services for citizens and businesses.
+	
+	
+	The introduction of innovative technologies is an aspect of NPS development. FPS, developed by the Bank of Russia, allows transfers between accounts in different banks around the clock and seven days a week, which significantly increases the convenience and speed of transactions. Technologies such as mobile payments, biometric identification, and the use of artificial intelligence are actively developing to improve the security and efficiency of payment transactions.
+	
+	
+	The <<Main directions for the development of the national payment system for 2025-2027>>, approved by the Bank of Russia, provides for continued work on improving the payment infrastructure, developing regulation, stimulating product competition in the payment services market and introducing innovative solutions. The document identifies key areas that require special attention:
+	\begin{enumerate}
+		\item Scaling of the digital ruble;
+		\item Biometric acquiring and a universal QR code;
+		\item Support and development of the MIR system;
+		\item Cross-border settlements;
+		\item Open banking.
+	\end{enumerate}
+
+	The strategy aims to improve access to payment services for all residents, especially in remote and rural areas. As part of this strategy, it is planned to stimulate the spread of technologies such as SoftPOS and QR acquiring, which opens up new horizons for the self-employed and microenterprises.
+	In addition, the strategy pays special attention to consumer protection, reducing fees, combating fraud in the field of payments and ensuring tariff transparency. It is also planned to strengthen the competitive environment, prevent monopolization and promote the development of alternative options for international payment platforms.
+	
+	In the context of the development of the national payment system, the results of a recent sociological study\footnote{Банк России: ОТНОШЕНИЕ НАСЕЛЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ К РАЗЛИЧНЫМ СРЕДСТВАМ ПЛАТЕЖА. Результаты социологического исследования за 2023 год} conducted by the Bank of Russia are also worth noting. The study found that the choice between cash and non-cash payments is largely influenced by demographic factors such as age, place of residence, income level, and digital literacy. These factors contribute to a diverse range of payment preferences among citizens. As a result, the national payment system faces the challenge of adapting to meet the varying needs of its users.
+	
+	
+	While non-cash payments have become increasingly popular, cash continues to play an important role for 24\% of Russian citizens, particularly among the elderly and those living in smaller towns where access to banking services may be more limited. For example, in rural areas, 49\% of purchases at small stores are made with cash, and the average transaction value has increased to 1588 rubles. This trend reflects not only established habits of older generations, but also structural issues: 56\% of respondents face issues with non-functioning ATM machines, and 44\% complain about a lack of banknotes in the required denominations. Cash remains a symbol of reliability for many people, especially in remote areas. 36\% of citizens hold their savings in physical rubles out of fear of cyber risks or technical issues.
 
 
-	Compliance with the established requirements is monitored by the Bank of Russia within the framework of supervision in the national payment system in accordance with the procedure established by it, agreed with the FSB of Russia and the FSTEC of Russia.
+	However, young people and city residents actively use cashless payments in their daily lives. Of those with bank cards, 75\% prefer using plastic cards, and 48\% use mobile banking for transfers. Non-cash payments are more common in large cities when paying for online purchases (91\%), and utilities (80\%), due to the availability of digital services and confidence in their security.
+	Technologically advanced groups, such as IT specialists and students, are more likely to use virtual cards and fast payment systems (42\%). However, even among these groups, there are those who have experienced problems. For example, 25\% of respondents have reported unauthorized debiting of funds and 15\% have fallen victim to cyberbullying. These incidents highlight the need for stronger protection of financial transactions.
 	
 	
-	To ensure the security of payment data in Russia, a Set of Bank of Russia Information Security Standards (STO BR IBBS) has been developed and is being applied. It includes requirements for information protection, personal data processing, information security risk management, and incident response. 
+	Differences in financial literacy and access to education programs play a role in these trends. In cities like Moscow and St. Petersburg, where cashless payments are more common, the use of virtual cards is higher. Meanwhile, in rural areas like Siberia and the Far East, where banking infrastructure is less developed and internet connection quality is poor, cash remains a more popular payment method.
 	
 	
-	In 2024, new information protection conditions came into force, which strengthen the requirements for payment system participants. In particular, banks are required to ensure that their counterparties receive information about violations of information security requirements when exchanging electronic messages. 
-	
-	
-	The principle of accessibility and universality is one of the key aspects of the functioning of the Russian national payment system, ensuring broad and equal access of citizens and organizations to payment services throughout the country.
-	
-	
-	Within the framework of the Russian national payment system, there are several elements aimed at ensuring the availability of payment services. The Fast Payment System (SBP), developed by the Bank of Russia, allows citizens and organizations to make transfers between accounts in different banks around the clock and seven days a week. Since its launch in 2019, SBP has significantly expanded the availability of payment services, providing users with the opportunity to make instant transfers by phone number or QR code [9, p. 383].
-	
-	
-	The National Payment Card System (NSPK) processes domestic payment transactions, including Mir card transactions, which helps strengthen the country's financial independence and reduce dependence on foreign payment systems. NSPK is actively developing its infrastructure, including the introduction of new technologies such as contactless payments and universal QR codes, which increases the convenience and accessibility of payment services for users. The principle of accessibility and universality in the Russian national payment system is implemented through the creation and development of infrastructure that provides equal and convenient access to payment services for all users, regardless of their location or social status.
-	The principle of transparency in the Russian National payment system (NPS) is to ensure the openness, accessibility and reliability of information about the functioning of the payment infrastructure, rules for the provision of payment services and respect for user rights. It is aimed at increasing the confidence of market participants, reducing risks and improving the efficiency of the system as a whole.
-	
-	
-	In accordance with Federal Law No. 161-FZ "On the National Payment System" [2], the Bank of Russia oversees the activities of payment systems, ensuring their compliance with established requirements and standards. The regulator publishes information on the state of the payment infrastructure, transaction statistics, and reports on inspections and assessments of compliance with international standards. The information is available on the official website of the Bank of Russia and other government resources, which contributes to the openness and accessibility of data for all interested parties.
-	
-	
-	The Bank of Russia actively interacts with participants in the payment market, organizing consultations, discussions and public hearings on the regulation and development of the payment system, which allows taking into account the opinions of various parties and making decisions aimed at improving the functioning of the NPS. Regular assessment of the compliance of payment systems with international standards is carried out, which confirms the desire to maintain a high level of transparency and quality of services. The principle of transparency in the Russian national payment system is implemented through openness of information, accessibility of data for all market participants and active interaction with stakeholders, which helps to increase the trust and efficiency of the payment infrastructure.
-	
-	
-	The principle of reliability and stability is the cornerstone of the functioning of the Russian National Payment system (NPS). It is aimed at ensuring the smooth, secure and efficient provision of payment services, minimizing operational risks and protecting the interests of users.
-	
-	
-	Regulatory acts such as Federal Law No. 161-FZ "On the National Payment System" [2] and standards developed by the Bank of Russia serve as the basis for the implementation of this principle. In particular, the Bank of Russia's Information Security Standards Set includes requirements for information protection, personal data processing, information security risk management, and incident response. The standards are mandatory for all participants in the payment system and serve as the basis for assessing their compliance with security requirements [8, p. 154].
-	
-	
-	The Bank of Russia applies a risk-based approach when setting requirements for payment systems that are of particular importance for financial stability or consumer confidence in cahsless payments. Payment systems are recognized as systemically important and are subject to regular assessment of their compliance with the requirements of the legislation on NPS and international standards. The results of the assessments show a high level of compliance and are published on the website of the Bank of Russia. 
-	
-	
-	To ensure the stability of the payment infrastructure, the Bank of Russia is actively developing and implementing technological solutions aimed at improving the reliability and fault tolerance of the system. Such solutions include the creation of backup data centers, the use of modern information security technologies, and regular stress testing of payment systems. 
-	
-	
-	The principle of reliability and stability is the foundation for the effective functioning of the Russian national payment system. Its implementation requires an integrated approach, including the development and implementation of regulations, standards, and continuous improvement of the technological infrastructure. These efforts ensure the stability and security of payment services, which helps to strengthen user confidence and develop the country's financial system.
-	
-	
-	The principle of efficiency and innovation in the Russian national payment system (NPS) is aimed at ensuring fast, convenient and economically feasible provision of payment services, the introduction of modern technologies that contribute to the development of the financial market.
-	
-	
-	During the period from 2021 to 2023, the number and volume of payments to NPS increased 1.5–2 times, the share of cashless payments in retail turnover increased from 70.3\% at the beginning of 2021 to 83.4\% at the beginning of 2024. The indicators indicate an increase in the efficiency of the payment system, improved accessibility and quality of payment services for citizens and businesses [7, p. 90].
-	
-	
-	The introduction of innovative technologies is an aspect of NPS development. The Fast Payment System (SBP), developed by the Bank of Russia, allows transfers between accounts in different banks around the clock and seven days a week, which significantly increases the convenience and speed of transactions. Technologies such as mobile payments, biometric identification, and the use of artificial intelligence are actively developing to improve the security and efficiency of payment transactions.
-	
-	
-	The "Main directions for the development of the national payment system for 2025-2027", approved by the Bank of Russia, provides for continued work on improving the payment infrastructure, developing regulation, stimulating product competition in the payment services market and introducing innovative solutions. Special attention is paid to digitalization of payment processes, increasing their accessibility and security, and integration with international payment systems. 
-	
-	
-	The principle of efficiency and innovation is the basis for the further development of the Russian national payment system. Its implementation contributes to improving the quality of payment services, improving financial accessibility and security, and stimulates the introduction of modern technologies, which in turn helps strengthen the economy and increase user confidence in the payment system [5, p. 29].
-	
-	
-	In conclusion, the principles of the Russian national payment system play a key role in ensuring its sustainability and development. Data security, accessibility, transparency, reliability, and innovation are the main factors contributing to the effective functioning of the system and building user trust. Modern standards and regulations, such as Federal Law No. 161-FZ and the Bank of Russia's Set of Standards, provide the legal basis for compliance with these principles. Innovative solutions, such as the fast payment system, the active introduction of information security technologies and mobile payments, make payment services more convenient and accessible to citizens and organizations. As a result, the Russian national payment system continues to evolve, increasing its efficiency and competitiveness both domestically and internationally.
+	In order for the NPS to develop harmoniously, it is essential to take into account not only technological advancements, but also the demographic composition of the population. This means that for the effective development of the NPS, it is crucial to consider the diverse demographics of Russia.
+	An integrated approach that combines technological solutions, educational initiatives, and investments in infrastructure can help create an inclusive financial environment for all. This approach will benefit both young people who are seeking digital innovation, as well as the elderly who value the convenience of cash payments.
+
 	
 	\section{Theoretical aspects of the relationship between demography and national payment systems}
 	
@@ -586,7 +615,7 @@
 	Each stage is associated with specific preferences when it comes to financial instruments. Young people often opt for digital payments and mobile applications, whereas older individuals may favour traditional payment methods such as cash or bank transfers. In different periods of life, people can change their financial management strategies, which affects the amount of funds placed in digital banks.
 
 
-	The life cycle hypothesis also helps to explain regional imbalances in urbanization\footnote{Modigliani, F. (1970). The life cycle hypothesis of saving and intercountry differences in the saving ratio (pp. 197-225). WA Eltis, M. FG. Scott and JN Wolfe, eds., Induction, trade, and growth: Essays in honour of Sir Roy Harrod (Clarendon Press, Oxford).}. Young people's migration to large cities results in the concentration of innovative users in megacities, leaving rural areas and smaller towns as the <<demographic reservoir>> for the older generation. This leads to a negative cycle: low demand for digital services prevents their implementation, while the lack of necessary infrastructure contributes to regional inequality.
+	The life cycle hypothesis also helps to explain regional imbalances in urbanization\footnote{Modigliani, F. (1970). The life cycle hypothesis of saving and intercountry differences in the saving ratio (pp. 197-225). WA Eltis, M. FG. Scott and JN Wolfe, eds., Induction, trade, and growth: Essays in honour of Sir Roy Harrod (Clarendon Press, Oxford).}. Young people migration to large cities results in the concentration of innovative users in megacities, leaving rural areas and smaller towns as the <<demographic reservoir>> for the older generation. This leads to a negative cycle: low demand for digital services prevents their implementation, while the lack of necessary infrastructure contributes to regional inequality.
 
 
 	However, like any theory, the Modigliani theory has its limitations, which must be taken into account.
@@ -613,11 +642,11 @@
 
 
 	Another theory that describes the adoption of new technologies is Rogers Diffusion of Innovations\footnote{Rogers, E. M., Singhal, A., \& Quinlan, M. M. (2014). Diffusion of innovations. In An integrated approach to communication theory and research (pp. 432-448). Routledge.}. A key aspect of this theory is how innovations spread within society. The theory emphasizes that adoption of a new technology doesn't happen instantaneously, but rather goes through several stages: from awareness of the technology to its eventual acceptance and use.
-	
-	
+
+
 	The theory identified five characteristics that determine the speed of technology proliferation\footnote{Oldenburg, Brian, and Karen Glanz. "Diffusion of innovations." Health behavior and health education: Theory, research, and practice 4 (2008): 313-333}:
-	
-	
+
+
 	\begin{enumerate}
 		\item relative advantage -- the perceived benefits of technology;
 		\item compatibility -- ease of mastering the technology;
@@ -625,25 +654,25 @@
 		\item trialability;
 		\item observability.
 	\end{enumerate}
-	
-	
-	
+
+
+
 	According to the model, the population is divided into categories based on their willingness to innovate: innovators, early adopters, early majority, late majority, and laggards. In the context of national payment systems, this is manifested in the fact that young people and residents of megacities are more often referred to as <<innovators>>, while the elderly and rural residents are considered the <<late majority>> or <<laggards>>. In turn, for the successful implementation of new technologies, it is necessary to take into account not only the functional characteristics of the new technology, but also how it is perceived by various groups of the population. For example, if a new mobile payment system is perceived as complex or unreliable, it may slow down its spread among certain demographic groups.
-	
-	
+
+
 	Another important aspect to consider is the influence of the social environment on technology adoption. Social influence plays a significant role in how individuals make decisions about adopting new technologies, as discussed in the technology adoption model. People often turn to the opinions and behaviors of their peers and family members when deciding whether to adopt new financial tools. This emphasizes the need for actively promoting and educating users about new technologies through various social channels and platforms. For instance, if young individuals start actively using a new payment system and share positive experiences with others, it can significantly accelerate the adoption process among older generations. By promoting these positive experiences, we can encourage others to try out the new technology and make informed decisions based on their own experiences.
-	
-	
+
+
 	Thus, theories explaining how people adopt new technologies and how they spread are valuable tools for understanding how demographic factors influence the implementation of national payment systems. Knowing these relationships helps developers and regulators more effectively adapt their strategies to the changing needs of society. In an era of rapid technological progress, it is important not only to offer new solutions, but also to ensure that they are accessible and understandable to all segments of the population.
-	
-	
+
+
 	\centerline{\textit{\underline{Human Capital Theory}}}
-	
-	The theory of human capital, as developed by Nobel Laureate Gary Becker, is crucial for understanding the relationship between demographic change and national payment systems evolution. This theory posits that knowledge, abilities, and public health constitute the basis of economic progress, as investments in education and training have a direct impact on productivity and a society's capacity to adapt to technological advancements.
-	
-	
+
+	The theory of human capital, as developed by Nobel Laureate Gary Becker, is crucial for understanding the relationship between demographic change and national payment systems evolution. This theory posits that knowledge, abilities, and public health constitute the basis of economic progress, as investments in education and training have a direct impact on productivity and a society capacity to adapt to technological advancements.
+
+
 	According to Becker\footnote{Becker, G. S. (1962). Investment in human capital: A theoretical analysis. Journal of political economy, 70(5, Part 2), 9-49.}, investments in human capital can be considered similar to investments in physical capital. He identifies several key aspects: firstly, individuals make decisions about how much to invest in their education and health based on the expected return on these investments; secondly, the level of education and qualifications directly affects the earnings and economic activity of individuals. Becker also emphasizes that differences in the level of human capital between population groups can lead to inequality in income and opportunities.
-	
+
 	
 	Demographic factors play an important role in understanding the theory of human capital as they affect investments in this area. The structure of a population, including age groups, levels of education and gender as well as migration patterns all influence how human capital is developed and used. For example, an aging population requires more resources for health care and education. On the other hand, young people are more likely to adopt new technologies and innovation. Galor and Weil\footnote{Galor, O., \& Weil, D. N. (2000). Population, technology, and growth: From Malthusian stagnation to the demographic transition and beyond. American economic review, 90(4), 806-828.} show that the level of education depends on demographic factors such as age structure and income. The article discusses how changes in birth rates and income affect the demand for human capital. Also, Galor and Weile's model explain how migration and urbanisation lead to concentration of human resources in certain areas.
 	
@@ -663,7 +692,7 @@
 	Behavioral economics, which emerged at the intersection of psychology and economics, challenges traditional neoclassical models that assume complete rationality in economic agents. Its key idea is that human decision-making often deviates from optimal choices due to cognitive biases, emotions, social norms, and lack of information. The seminal works of Daniel Kahneman and Amos Tversky\footnote{Tversky, A., \& Kahneman, D. (1992). Advances in prospect theory: Cumulative representation of uncertainty. Journal of Risk and uncertainty, 5, 297-323.}, such as Prospect Theory, have laid the foundation for understanding how people evaluate risks and rewards in an uncertain environment. According to this theory, individuals tend to be <<loss averse>> -- an emotional response to losses is greater than the equivalent gain. In addition, people often use heuristics - simplified mental shortcuts such as availability (estimating probability based on ease of recall) or anchoring (reliance on initial information). These cognitive biases systematically influence financial behavior, including the choice of payment instruments, savings management, and risk management.
 	
 	
-	An important aspect of behavioral economics is the concept of <<bounded rationality>>, introduced by Herbert Simon\footnote{Simon, H. A. (1955). A behavioral model of rational choice. The quarterly journal of economics, 99-118.}. She emphasizes that individuals make decisions in conditions of limited computing power, time, and information, which leads to satisfying instead of optimizing. For example, when choosing between several payment methods, a person may choose the first available option rather than analyzing all possible alternatives. This behavior is especially typical for groups with low levels of financial literacy or under stress. Richard Thaler\footnote{Thaler, R. H. (2015). Misbehaving: The making of behavioral economics. WW Norton \& Company.}, developing these ideas, introduced the concept of <<nudging>> -- a gentle influence on people's choices through changing the decision-making architecture, for example, by setting a default option for automatic replenishment of a digital wallet.
+	An important aspect of behavioral economics is the concept of <<bounded rationality>>, introduced by Herbert Simon\footnote{Simon, H. A. (1955). A behavioral model of rational choice. The quarterly journal of economics, 99-118.}. She emphasizes that individuals make decisions in conditions of limited computing power, time, and information, which leads to satisfying instead of optimizing. For example, when choosing between several payment methods, a person may choose the first available option rather than analyzing all possible alternatives. This behavior is especially typical for groups with low levels of financial literacy or under stress. Richard Thaler\footnote{Thaler, R. H. (2015). Misbehaving: The making of behavioral economics. WW Norton \& Company.}, developing these ideas, introduced the concept of <<nudging>> -- a gentle influence on peoples choices through changing the decision-making architecture, for example, by setting a default option for automatic replenishment of a digital wallet.
 	
 	
 	An example of using nudge for a national payment system is soft interventions aimed at encouraging consumers to switch from cash to safer and more convenient electronic payments. For example, a study conducted\footnote{Aydogan, S., \& Van Hove, L. (2015). Nudging consumers towards card payments: A field experiment. In International Cash Conference 2014 (pp. 589-630). Deutsche Bundesbank.} in a university cafeteria used posters with calls for card payments that appealed to a sense of loyalty and belonging to the university. This led to a 6\% increase in the share of cashless payments, although the effect was temporary.
@@ -675,7 +704,7 @@
 	Also in the tax sphere, nudges have been successfully applied\footnote{Calvo-Gonzalez, O., Cruz, A., \& Hernandez, M. (2018). The Ongoing Impact of ‘Nudging’People to Pay Their Taxes. World Bank Blogs, 2.} to improve the timeliness of tax payments, using messages about fines and social approval, which is indirectly related to behavior in payment systems and can be adapted to national payment systems.
 	
 	
-	Demographic changes also have a significant impact on people's economic behavior. Different age groups, educational levels, and cultural conditions create unique patterns of behavior that can be explained in terms of behavioral economics.
+	Demographic changes also have a significant impact on peoples economic behavior. Different age groups, educational levels, and cultural conditions create unique patterns of behavior that can be explained in terms of behavioral economics.
 	Thus, Greence\footnote{Greene, C., Perry, J., \& Stavins, J. (2024). Consumer Payment Behavior by Income and Demographics.} concludes that demographic factors such as age, education, income, race, and gender play a key role in shaping payment behavior and the development of the national payment system. Young and highly educated people are actively using digital solutions such as mobile apps and cryptocurrencies, while the older generation and low-income segments of the population prefer traditional payment methods such as cash and debit cards. Gender and ethnic differences, such as the higher propensity of women and members of minorities to use BNPL (Buy Now, Pay Later), emphasize the need to take into account a variety of needs when developing inclusive payment instruments.
 	
 	
@@ -770,7 +799,65 @@
 	
 	\section{Application of the  Modigliani Life Cycle Hypothesis to analyze the impact of demographic factors on the development of the national payment system}
 	
-	\chapter{An empirical study of the impact of demographic factors on the development of the Russian national payment system}
+	The life cycle hypothesis, proposed by economist Franco Modigliani in 1957, offers a fundamental theory for understanding consumer behavior over time. This hypothesis suggests that people tend to maintain a consistent level of consumption regardless of income fluctuations throughout their lives. It assumes that individuals carefully plan their finances by allocating resources between periods with high and low incomes in order to ensure a stable living standard. In 1985, Modigliani was awarded the Nobel Prize in Economics for his work on this theory.
+	
+	
+	The core idea behind the life cycle hypothesis is that people plan their consumption and savings to achieve a steady living standard over time. Specifically, the theory proposes: 
+	
+	\begin{itemize}
+		\item Individuals consider not only their short-term consumption and savings but also plan for the long-term. They distribute resources among different income periods in order to maintain a consistent living standard;
+		
+		\item Short-term changes in income have a relatively minor impact on long-term spending patterns, as most peoples income tends to be relatively stable over time;
+		
+		\item Individuals build up assets and spread their consumption more evenly throughout time, rather than solely relying on current income;
+		
+		\item People often borrow during times when their income is low, such as while they are studying or at the start of their career, and save when their income is higher, like during the peak of their success.
+	\end{itemize}
+	
+	The Figure \ref{fig:lch} clearly illustrates the three main stages of the life cycle hypothesis\footnote{Ketkaew, Chavis, Martine Van Wouwe, Preecha Vichitthamaros, and Duanpen Teerawanviwat. "The effect of expected income on wealth accumulation and retirement contribution of Thai wageworkers." SAGE Open 9, no. 4 (2019): 2158244019898247.}:
+	
+	\begin{enumerate}
+		\item \textit{Youth phase (15-35 years old)}: During this period, income is usually low and a person may be actively borrowing, meaning they have negative savings. Consumptions are mainly supported by loans and future expected income;
+		\item \textit{Mature phase (35-65 years old)}: This is the time when income reaches its maximum and a person actively accumulates savings. It is during this period when most of the assets used in retirement are formed;
+		\item \textit{Retirement phase (65+ years old)}: With the onset of retirement, income decreases sharply and consumption is supported by gradually spending previously accumulated funds.
+	\end{enumerate}
+	
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{life_cycle_graph.png}
+		\caption{Life Cycle Hypothesis Illustration\\Source: <<The Effect of Expected Income on Wealth Accumulation and Retirement Contribution of Thai Wageworkers>> by Ketkaew}
+		\label{fig:lch}
+	\end{figure}
+	
+	
+	The life cycle hypothesis is often considered using a model of savings and consumption. In this model, it is assumed that a persons total consumption during his lifetime is equal to the sum of his income.
+	
+	
+	The formula describing this principle can be represented as follows: the sum of consumption for all periods of life is equal to the sum of income for all these periods. In more detail, the formula looks like this:
+	
+	\begin{equation}
+		C  = \frac{W + R*Y}{T},
+		\label{eq:lch}
+	\end{equation}
+ where $C$ is consumption, $T$ is life expectancy, W is initial wealth, $R$ is the number of working years, and $Y$ is income during these years.
+	
+	
+	Demographic factors can be taken into account in the model by changing the parameters. For example, an increase in life expectancy ($T$) leads to the need to accumulate more savings during work in order to maintain consumption levels over a longer period of retirement age. This, in turn, can affect the structure of savings and, as a result, the development of financial instruments, which, in turn, has an impact on payment systems.
+	
+	
+	A decrease in the number of younger generations (a reduction in fertility rate) leads to a decrease in the proportion of people in the working-age group, which directly affects the life cycle equation \ref{eq:lch}. A decrease in this group, with constant values for $W$, $Y$, and a growing value of $T$  leads to decreased consumption. To counteract this effect, households can either increase their savings during working years or reduce spending during retirement. Both scenarios increase demand for pension products and stimulate the development of automated payment platforms for managing long-term financial cycles. In addition, an aging population may have some difficulties using new technologies. This highlights the need to develop intuitive interfaces and accessible solutions for all age groups. Given that older people may not be very familiar with digital technologies, it is important to create conditions so that they can easily use payment systems.
+	
+	
+	In the context of the analysis of demographic factors influencing the development of national payment systems, a number of observations can be made:
+	\begin{enumerate}
+		\item \textbf{Life expectancy}: As this indicator increases, the need to accumulate savings increases to ensure financial stability in retirement, which, in turn, affects the structure of savings and the development of financial instruments;
+		\item \textbf{Decreasing fertility rate}:  A decrease in the number of younger generations leads to a reduction in labor resources, which reduces consumption while maintaining initial indicators of wealth and income. This may lead to an increase in demand for pension products, thereby stimulating the development of automated payment platforms;
+		\item \textbf{Population aging} is a global trend that requires close attention and adaptation to new realities. The elderly, as the most vulnerable group, face difficulties in mastering modern technologies. This highlights the need to create intuitive and accessible interfaces that will facilitate the integration of older people into the digital space.
+	\end{enumerate}
+	
+	\chapter{An empirical study of the impact of demographic factors on the development of the National Payment System of Russia}
 	
 	
 	\section{Analysis of empirical approaches to assess the impact of demographic factors on the development of national payment systems}
@@ -792,7 +879,7 @@
 	where $s_{ijt} = 1$ -- if the consumer $i$ accepted the instrument $j$ in the year $t$, and 0 otherwise; $x_{it}$ is a vector of independent variables (demographics, income, region, instrument characteristics).
 	
 	
-	Then, the degree of its use is estimated using the usual least squares regression with random effects, which allowed the authors to take into account the fact that a person's propensity to use a particular instrument may vary in depending on his mastery of this tool:
+	Then, the degree of its use is estimated using the usual least squares regression with random effects, which allowed the authors to take into account the fact that a persons propensity to use a particular instrument may vary in depending on his mastery of this tool:
 	
 	\begin{equation}
 		y_{ijt} = c + x_{it} \beta + \gamma_t \hat{\lambda}_{ijt} + \alpha_i + u_{it},
@@ -812,7 +899,7 @@
 	} examines the factors that influence the choice between traditional and innovative payment systems in Europe, with a particular focus on demographic characteristics. The study combines econometric analysis at the macro level (across 28 EU countries) with a survey of individual preferences in Malta. This allows us to identify both general trends and specific characteristics of a particular region. Demographic variables, such as age, education, gender, and employment, are central to this work, as they highlight their role in adopting new technologies. Age stratification has proven to be a significant factor. The econometric model revealed an ambiguous relationship, with the proportion of people aged 15-64 being negatively correlated with the use of traditional methods, consistent with the hypothesis that the economically active population has greater technological literacy. However, there was also a positive correlation between the proportion of 20-39 year olds and the use of these traditional systems, which was unexpected. The authors suggest that this group, though technologically oriented, may still maintain habits due to convenience, such as using debit cards, and this requires further investigation. The results of a survey in Malta with 90 respondents confirmed the significance of age. Older respondents over the age of 60 showed a strong preference for cash and a complete lack of interest in mobile banking, while younger respondents aged 16-29 were more likely to use online banking and mobile payments.
 	
 	
-	Another fascinating study\footnote{Тишин, А. (2020). Влияние демографии на развитие финансового сектора Российской Федерации. Аналитическая записка Департамента исследований и прогнозирования, Банк России.} is the analysis of the impact of demographic factors on the development of the financial sector in Russia. This study is based on Rosstat's demographic forecasts, which cover three scenarios: low, medium and high. In addition, the work uses data from household surveys conducted by the Russian Ministry of Finance in 2013 and 2015. The research methodology includes logistic regression to assess the probability of owning financial assets and liabilities, as well as predictive calculations based on the age structure of the population. It is important to note that in the modeling, assumptions were made that the younger generation, as a rule, seeks to minimize the use of cash and adopts the habit of using cards. The results indicate that, for instance, the proportion of the population requiring loans will decrease by 3-3.5 percentage points by 2036, while the use of credit cards will increase by 4-4.5 percent. Meanwhile, the amount of deposits and mortgages will slightly decrease. A significant aspect of this study was an analysis of age groups contributions: reductions among those aged 25-44 had a more significant negative impact on credit activity, while older groups maintained more conservative preferences such as saving money instead of spending it.
+	Another fascinating study\footnote{Тишин, А. (2020). Влияние демографии на развитие финансового сектора Российской Федерации. Аналитическая записка Департамента исследований и прогнозирования, Банк России.} is the analysis of the impact of demographic factors on the development of the financial sector in Russia. This study is based on Rosstats demographic forecasts, which cover three scenarios: low, medium and high. In addition, the work uses data from household surveys conducted by the Russian Ministry of Finance in 2013 and 2015. The research methodology includes logistic regression to assess the probability of owning financial assets and liabilities, as well as predictive calculations based on the age structure of the population. It is important to note that in the modeling, assumptions were made that the younger generation, as a rule, seeks to minimize the use of cash and adopts the habit of using cards. The results indicate that, for instance, the proportion of the population requiring loans will decrease by 3-3.5 percentage points by 2036, while the use of credit cards will increase by 4-4.5 percent. Meanwhile, the amount of deposits and mortgages will slightly decrease. A significant aspect of this study was an analysis of age groups contributions: reductions among those aged 25-44 had a more significant negative impact on credit activity, while older groups maintained more conservative preferences such as saving money instead of spending it.
 	
 	
 	In the context of studying the influence of demographic factors on the development of the national payment system, the Arkhipova paper\footnote{Arkhipova, N. (2022). Impact of Demographic Trends on Retail Banking. Procedia Computer Science, 214, 831-836.
@@ -835,7 +922,7 @@
 	\end{itemize}
 	
 	
-	As part of the research on the impact of demographic factors on the evolution of the national payment system, a paper by Chawla and Joshi\footnote{Chawla, D., \& Joshi, H. (2018). The moderating effect of demographic variables on mobile banking adoption: An empirical investigation. Global Business Review, 19(3\_suppl), S90-S113.} is of significant interest. This study examines the moderating impact of demographic variables on the adoption of mobile banking. The authors integrated the Technology Acceptance Model and Innovation Diffusion Theory to develop a model that incorporates variables such as trust, convenience, efficiency, compatibility with lifestyle, and ease of use. Their focus was on identifying the significance of demographic traits in determining the magnitude of these factors impact on users attitudes toward mobile banking services. The study was conducted on data from 367 participants in India, predominantly male (74.4\%), with a high educational background (88.3\%). Multiple linear regression and Fisher's transformation were employed for analysis. The authors concluded that female participants were more likely to be influenced by ease of use, suggesting that demographic factors significantly influenced attitudes towards mobile banking services. Participants over the age of 30 demonstrated a stronger link between trust and attitudes, which can be attributed to their cautious approach towards digital risks. Furthermore, married participants tended to prioritize convenience, likely owing to their responsibility for managing family finances.
+	As part of the research on the impact of demographic factors on the evolution of the national payment system, a paper by Chawla and Joshi\footnote{Chawla, D., \& Joshi, H. (2018). The moderating effect of demographic variables on mobile banking adoption: An empirical investigation. Global Business Review, 19(3\_suppl), S90-S113.} is of significant interest. This study examines the moderating impact of demographic variables on the adoption of mobile banking. The authors integrated the Technology Acceptance Model and Innovation Diffusion Theory to develop a model that incorporates variables such as trust, convenience, efficiency, compatibility with lifestyle, and ease of use. Their focus was on identifying the significance of demographic traits in determining the magnitude of these factors impact on users attitudes toward mobile banking services. The study was conducted on data from 367 participants in India, predominantly male (74.4\%), with a high educational background (88.3\%). Multiple linear regression and Fishers transformation were employed for analysis. The authors concluded that female participants were more likely to be influenced by ease of use, suggesting that demographic factors significantly influenced attitudes towards mobile banking services. Participants over the age of 30 demonstrated a stronger link between trust and attitudes, which can be attributed to their cautious approach towards digital risks. Furthermore, married participants tended to prioritize convenience, likely owing to their responsibility for managing family finances.
 	
 	
 	Using data from a survey conducted in China in 2017, the Vatsa study\footnote{Vatsa, P., Ma, W., \& Zheng, H. (2024). Mobile payment adoption in China: Do demographic and socioeconomic factors matter?. Managerial and Decision Economics, 45(3), 1428-1434.} examined the relationship between various factors and the adoption of mobile payments. The results showed that factors such as education, perceived health status, economic status, political affiliation, employment status, income, social activity, car ownership, Internet access, and geographical location positively correlate with the use of mobile payment systems. However, older people and men were less likely to use these systems compared to their younger counterparts and women. Interestingly, the study found no correlation between subjective well-being and the use of mobile payments.
@@ -921,14 +1008,14 @@
 	Sympathize with the UHI methodologies used to build the indexes in this study, they are versatile and flexible. This methodology provides for the standardization of individual indicators with subsequent aggregation by means of a geometric mean, which minimizes the impact of extreme values and makes the index resistant to data variability. This approach makes it possible to effectively assess and compare the development of complex multifactorial phenomena, which include the national payment system.
 	
 	
-	The UHI methodology was selected to evaluate the development of Russia's national payment system due to several factors. First, a payment system similar to urban infrastructure and healthcare has a wide range of components with different units of measurement. Second, this methodology takes into account spatial and regional differences in Russia's diverse socio-economic and demographic landscape. Third, standardization and averaging minimize potential errors caused by extreme regional variations.
+	The UHI methodology was selected to evaluate the development of Russia's national payment system due to several factors. First, a payment system similar to urban infrastructure and healthcare has a wide range of components with different units of measurement. Second, this methodology takes into account spatial and regional differences in Russia diverse socio-economic and demographic landscape. Third, standardization and averaging minimize potential errors caused by extreme regional variations.
 	
 	To calculate the integral index, the following sets of Bank of Russia indicators were selected for the period from 2013 to 2023 for all regions\footnote{Except of Crymia, Sevastopol, DPR, LPR, Zaporizhia Oblast and Kherson Oblast of the fact that there is lack of data for these regions} of Russia\footnote{https://www.cbr.ru/statistics/nps/psrf/}:
 	
 	\begin{enumerate}
 		\item Institutional provision of payment services in the territorial context -- It shows the degree of development of the infrastructure of financial institutions and the availability of banking services in a particular region;
-		\item Number of accounts opened by institutions of the banking system, by territory  -- it reflects the level of financial accessibility and involvement of the region's population in the banking sector;
-		\item Number of payments made through credit institutions (by payment instruments) in the territorial context -- it allows to assess the intensity of the population's use of payment services and the prevalence of cashless payments;
+		\item Number of accounts opened by institutions of the banking system, by territory  -- it reflects the level of financial accessibility and involvement of the region population in the banking sector;
+		\item Number of payments made through credit institutions (by payment instruments) in the territorial context -- it allows to assess the intensity of the populatio use of payment services and the prevalence of cashless payments;
 		\item Volume of payments made through credit institutions (for payment instruments) in the territorial context -- complements the previous indicator, characterizing not only the number of transactions, but also their financial significance;
 		\item Number of electronic payment orders  -- it shows the level of digitalization of the payment behavior of the population and the degree of penetration of electronic payment channels;
 		\item Volume of electronic payment orders  -- assessment of the degree of integration of electronic payment technologies into the daily economic life of the region.
@@ -989,7 +1076,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		\noindent\includegraphics[width=0.5\linewidth]{corr.png}
+		\noindent\includegraphics[width=0.65\linewidth]{corr.png}
 		\caption{Correlation matrix\\Source: compiled by the author based on the data analyze}
 		\label{fig:corr}
 	\end{figure}
@@ -1045,11 +1132,11 @@
 	\end{figure}
 
 
-	It is also possible to compile a generalized index that will reflect the situation in Russia as a whole. However, given the significant differences between regions, the distribution of the index will have a wide range of values, which will undoubtedly affect the integral indicator. Therefore, instead of the regional average, it was decided to use the median. The graph of this indicator(National Payment System Development Index -- NPSD Index), was built from 2013 to 2023 (Figure \ref{fig:index_whole}). As can be seen from the graph, there was a decrease in the index in 2014-2015, which can be explained by sanctions against Russia. It was during this period that the National Card Payment System and the MIR payment system were created. Until 2020, the index showed significant growth due to the development of these systems and the introduction of new technologies and processes into the Russian national payment system, for example, the fast payment system in 2019. However, growth has slowed during the pandemic. Since 2022, the index has begun to decline, which is associated with the general economic crisis in Russia. During this period, the key interest rate was high, and the ruble was unstable, which aggravated the situation. The dynamics of the index was also affected by internal shocks, which also had a negative impact.
+	It is also possible to compile a generalized index that will reflect the situation in Russia as a whole. However, given the significant differences between regions, the distribution of the index will have a wide range of values, which will undoubtedly affect the integral indicator. Therefore, instead of the regional average, it was decided to use the median. The graph of this indicator(National Payment System Development Index -- NPSD Index), was built from 2013 to 2023 (Figure \ref{fig:index_whole}). As can be seen from the graph, there was a decrease in the index in 2014-2015, which can be explained by sanctions against Russia. It was during this period that the National Card Payment System and the MIR payment system were created. Until 2020, the index showed significant growth due to the development of these systems and the introduction of new technologies and processes into the National Payment System of Russia, for example, the fast payment system in 2019. However, growth has slowed during the pandemic. Since 2022, the index has begun to decline, which is associated with the general economic crisis in Russia. During this period, the key interest rate was high, and the ruble was unstable, which aggravated the situation. The dynamics of the index was also affected by internal shocks, which also had a negative impact.
 	
 	\begin{figure}[H]
 		\centering
-		\noindent\includegraphics[width=0.5\linewidth]{index_whole.png}
+		\noindent\includegraphics[width=0.7\linewidth]{index_whole.png}
 		\caption{Aggregated National Payment System Development (NPSD) Index for Russia\\Source: compiled by the author based on the data analyze}
 		\label{fig:index_whole}
 	\end{figure}
@@ -1058,37 +1145,39 @@
 	Summing up, the following conclusions are drawn:
 	
 	\begin{enumerate}
-		\item It is feasible to develop an index that would objectively reflect the development of the Russian National Payment System both at the regional level and nationwide, based on established methodologies for index development (UHI) -- which is related to the similarity of tasks: the need to aggregate heterogeneous indicators, taking into account regional specifics;
+		\item It is feasible to develop an index that would objectively reflect the development of the National Payment System of Russia both at the regional level and nationwide, based on established methodologies for index development (UHI) -- which is related to the similarity of tasks: the need to aggregate heterogeneous indicators, taking into account regional specifics;
 		\item The results of the calculations revealed significant differences between the regions. Moscow (0.94) and St. Petersburg (0.69) were the leaders, which is explained by their status as financial centers with a high concentration of infrastructure and population. The Republic of Ingushetia (0.09) and Dagestan (0.20), on the other hand, are among the regions with the lowest levels of development of payment systems;
 		\item The calculated index demonstrates not only the current state of the payment system, but also its vulnerability to macroeconomic factors. Its application allows the Bank of Russia to identify problem regions, evaluate the effectiveness of regulatory measures and develop targeted strategies to reduce imbalances.
 	\end{enumerate}
 	
 	
-	\section{Developing an econometric model to estimate the impact of demographic variables on the share of cashless transactions}
+	\section{Developing an econometric model to estimate the impact of demographic variables on the share of cashless transactions in total retail turnover in Russia}
 	
 	
-	To develop an econometric model that can analyze the impact of demographic variables on cashless payment proportions, there will identify variables that influence cashless payments utilization based on economic principles, empirical studies, and regulatory guidelines. Additionally, there will conduct trend analysis to accurately specify the model and validate the simulation outcomes.
+	To develop an econometric model that can analyze the impact of demographic variables on cashless payment share in total retail turnover, there will identify variables that influence cashless payments utilization based on economic principles, empirical studies, and regulatory guidelines. Additionally, there will conduct trend analysis to accurately specify the model and validate the simulation outcomes.
 
 
-	The data on cashless payments of Sberbank was used as a target -- <<the share of expenses for goods and services paid by cashless method. It is calculated based on the amount of expenses and does not include transactions that cannot be unambiguously attributed to trade turnover (for example, transfers from one person to another)>>.The model includes annual data from 2017 to 2023 for all regions of Russia.  This time period is due to the fact that the Sberbank began publishing statistics in 2017\footnote{https://sberindex.ru/ru/dashboards/dolya-beznala}. The statistics on the average in Russia for all regions can be seen on the Figure \ref{fig:cashless_russia}.
+	The data on cashless payments of Sberbank was used as a target -- <<the share of expenses for goods and services paid by cashless method. It is calculated based on the amount of expenses and does not include transactions that cannot be unambiguously attributed to total retail turnover (for example, transfers from one person to another)>>.The model includes annual data from 2017 to 2023 for all regions of Russia.  This time period is due to the fact that the Sberbank began publishing statistics in 2017\footnote{https://sberindex.ru/ru/dashboards/dolya-beznala}. The statistics on the average in Russia for all regions can be seen on the Figure \ref{fig:cashless_russia}.
 	
 	
 	\begin{figure}[H]
 		\centering
-		\noindent\includegraphics[width=0.5\linewidth]{cashless_russia.png}
+		\noindent\includegraphics[width=0.61\linewidth]{cashless_russia.png}
 		\caption{The share of cashless payments in Russia from 2018 to 2023\\Source: compiled by the author based on the data analyze}
 		\label{fig:cashless_russia}
 	\end{figure}
 	
 	
-	To analyze the impact of demographic factors on the share of cashless payments, based on a review of theoretical and empirical work, the following demographic indicators were selected (Table \ref{tab:data_model}) (the data is taken from the <<Unified Interdepartmental Information and Statistical System>> website\footnote{https://fedstat.ru/} -- UIISS):
+	To analyze the impact of demographic factors on the share of cashless payments, based on a review of theoretical and empirical work, the following demographic indicators were selected (Table \ref{tab:data_model}) (the data is taken from the <<Unified Interdepartmental Information and Statistical System>> website\footnote{https://fedstat.ru/} -- UIISS -- and New Economic School Russian database on fertility and mortality -- NES RusFMD\footnote{https://www.nes.ru/demogr-fermort-data?lang=en}):
 	
 	\begin{enumerate}
-		\item \textit{Life expectancy at birth by Russians regions} -- <<the number of years that, on average, one person from a generation born in a given year would have to live, provided that throughout the life of this generation, the death rate at each age remains the same as in the year for which the indicator was calculated>>\footnote{https://fedstat.ru/indicator/31293}. An increase in this indicator leads to an increase in the proportion of older citizens whose financial preferences differ significantly from those of young people. According to theoretical and empirical studies, older people tend to save more money and use more conservative payment methods, which can slow down innovation. However, the effects of aging will not appear immediately: today's increase in life expectancy will affect the structure of effective demand in a few years, when the current 40-50 year olds enter retirement age. Therefore, lag variables for this factor were added to the model;
+		\item \textit{Life expectancy at birth by Russians regions} -- <<the number of years that, on average, one person from a generation born in a given year would have to live, provided that throughout the life of this generation, the death rate at each age remains the same as in the year for which the indicator was calculated>>\footnote{https://fedstat.ru/indicator/31293}. An increase in this indicator leads to an increase in the proportion of older citizens whose financial preferences differ significantly from those of young people. According to theoretical and empirical studies, older people tend to save more money and use more conservative payment methods, which can slow down innovation. However, the effects of aging will not appear immediately: today increase in life expectancy will affect the structure of effective demand in a few years, when the current 40-50 year olds enter retirement age. Therefore, lag variables for this factor were added to the model;
 		
 		\item \textit{Total fertility rate by Russians regions} -- <<The total fertility rate shows how much, on average, one woman would give birth throughout the entire reproductive period (i.e., from 15 to 50 years), while maintaining the birth rate of the year for which the indicator is calculated at each age. Its value does not depend on the age composition of the population and characterizes the average birth rate in a given calendar period>>\footnote{https://fedstat.ru/indicator/31517}. This indicator reflects the potential for future economic activity is the low birth rate. This is typical of many developed countries and leads to a decrease in the proportion of young people, who are the main drivers of technological innovation. The younger generation that grew up in a digital environment are <<early adopters>> of new payment services. However, the demographic decline caused by the decrease in birthrate in the 1990s has limited the influx of these users, and this time lag allows us to connect past fluctuations in birth rates to the current pace of digitalization;
 		
-		\item \textit{All-cause mortality rate, cases per 1,000 population} -- <<Age coefficients measure the mortality rate for individual age groups. They are calculated as the ratio of the absolute number of deaths in a given age group during the reporting period to its average number>>\footnote{https://fedstat.ru/indicator/43516}. The mortality rate is a marker of socio-economic well-being. High mortality rates (as in the 1990s) disrupt the continuity of generations, reducing the transfer of financial experience and slowing the spread of digital tools. Reducing mortality contributes to the preservation of human capital, but it takes time to transform consumer habits.
+		\item \textit{All-cause mortality rate, cases per 1,000 population} -- <<Age coefficients measure the mortality rate for individual age groups. They are calculated as the ratio of the absolute number of deaths in a given age group during the reporting period to its average number>>\footnote{https://fedstat.ru/indicator/43516}. The mortality rate is a marker of socio-economic well-being. High mortality rates (as in the 1990s) disrupt the continuity of generations, reducing the transfer of financial experience and slowing the spread of digital tools. Reducing mortality contributes to the preservation of human capital, but it takes time to transform consumer habits;
+		
+		\item \textit{Age structure factors} -- <<The ratio of the mid-year population to the total population estimates across regions of Russia by  five year groups>>\footnote{https://www.nes.ru/files/research/demogr/mort-database/description/ENG/01-DemographicDatabaseDescription-ENG-20-01-14.pdf}.It is expected that different generations will form their financial habits based on the achievements of scientific and technological progress.
 		
 		\item \textit{Control variables} sush as COVID-19 indicator and customer price index (CPI). The inclusion of control variables in the model is necessary to isolate the influence of external shocks and macroeconomic dynamics on the studied relationship between demography and the development of the national payment system. The COVID-19 pandemic has become an exogenous event that dramatically changed behavioral patterns. The consumer price index reflects inflationary pressures that adjust household financial strategies: high inflation can reduce confidence in cash, stimulating demand for digital instruments as protection against depreciation.
 		
@@ -1219,6 +1308,22 @@
 		
 		life\_expectancy\_female\_sex\_city\_lag\_3 & 3-year life expectancy lag for female in urban areas & UIISS & 77.04\\\hline
 		
+		PopD5a15 & The average annual proportion of the population aged 15 to 19 years & NES RusFMD & 5.13\\\hline
+		PopD5a20 & The average annual proportion of the population aged 20 to 24 years & NES RusFMD & 4.86\\\hline
+		PopD5a25  & The average annual proportion of the population aged 25 to 29 years & NES RusFMD & 6.28\\\hline
+		PopD5a30  & The average annual proportion of the population aged 30 to 34 years & NES RusFMD & 8.36\\\hline
+		PopD5a35  & The average annual proportion of the population aged 35 to 39 years & NES RusFMD & 8.18\\\hline
+		PopD5a40  & The average annual proportion of the population aged 40 to 44 years & NES RusFMD & 7.43\\\hline
+		PopD5a45  & The average annual proportion of the population aged 45 to 49 years & NES RusFMD & 6.72\\\hline
+		PopD5a50  & The average annual proportion of the population aged 50 to 54 years & NES RusFMD & 6.27\\\hline
+		PopD5a55  & The average annual proportion of the population aged 55 to 59 years & NES RusFMD & 7.05\\\hline
+		PopD5a60  & The average annual proportion of the population aged 60 to 64 years & NES RusFMD & 6.93\\\hline
+		PopD5a65  & The average annual proportion of the population aged 65 to 69 years & NES RusFMD & 5.60\\\hline
+		PopD5a70  & The average annual proportion of the population aged 70 to 74 years & NES RusFMD &  3.39\\\hline
+		PopD5a75  & The average annual proportion of the population aged 75 to 79 years & NES RusFMD & 2.12\\\hline
+		PopD5a80  & The average annual proportion of the population aged 80 to 84 years & NES RusFMD & 1.91\\\hline
+		PopD5a85  & The average annual proportion of the population aged 85 and over & NES RusFMD & 1.16\\\hline
+		
 		cpi & Customer Price Index & RosStat & 105.95\\\hline
 		
 		covid & COVID-10 Dummy variables & RosStat & 0.5025\\\hline
@@ -1232,7 +1337,7 @@
 	
 	
 	\begin{equation}
-		Y_{it} = \beta_0 + \beta_1 DR_{i,t-l_{j}} + \beta_2 FR_{i,t-l_{j}} + \beta_3 LE_{i,t-l_{j}} + \beta_4 CV_{i,t_{j}} + \mu_{i} + \varepsilon_{it},
+		Y_{it} = \beta_0 + \beta_1 DR_{i,t-l_{j}} + \beta_2 FR_{i,t-l_{j}} + \beta_3 LE_{i,t-l_{j}} + \beta_4 AS_{i,t_{j}} + \beta_5 CV_{i,t_{j}} + \mu_{i} + \varepsilon_{it},
 		\label{eq:model}
 	\end{equation}
 	
@@ -1244,62 +1349,82 @@
 	\\
 	$LE_{it-l_{j}}$ -- life expectancy factor $j$ with lag $l$ in the region $i$ at time $t$;
 	\\
+	$AS_{it-l_{j}}$ -- age structure factor $j$ in the region $i$ at time $t$;
+	\\
 	$CV_{i,t_{j}}$ -- control variable $j$ in the region $i$ at time $t$;
 	\\
 	$\mu_{i}$ -- individual effects;
 	\\
 	$\varepsilon_{i t}$ -- model error with $E(\varepsilon_{i t} | DR_{it-l_{j}}, ..., CV_{i,t_{j}}) = 0$;
 	\\
-	$\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$ -- estimated coefficients of the model.
+	$\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$, $\beta_5$ -- estimated coefficients of the model.
 	
 	
-	This model specification is called a <<fixed effects model>> (FE), which implies that individual effects correlate with independent variables. It is important to note that the model takes into account the relationship between regressor values that relate to the same object but at different times.  Before modeling, the data was tested for multicollinearity using the Variance Inflation Factor (VIF) Test. Thus, due to the high VIF rates, some demographic factors were excluded from the model. The coefficients obtained with their significance, obtained using the <<within estimator>>, can be seen in Table \ref{tab:results}.
-	
+	This model specification is called a <<fixed effects model>> (FE), which implies that individual effects correlate with independent variables. It is important to note that the model takes into account the relationship between regressor values that relate to the same object but at different times.  Before modeling, the data was tested for multicollinearity using the Variance Inflation Factor (VIF) Test. Thus, due to the high VIF rates, some demographic factors were excluded from the model. The coefficients obtained with their significance, obtained using the <<within estimator>>, can be seen in Table \ref{tab:results} (The model construction code can be seen in Appendix 1).
 	
 	
 	\begin{table}[!htbp]
 		\centering
 		\small
-			\caption{Panel Regression Results: Cashless Payments Determinants}
-			\label{tab:results}
-				\begin{tabular}{@{}lcccccc@{}}
-					\toprule
-					& \textbf{Coeff.} & \textbf{Std.Err.} & \textbf{t-stat} & \textbf{P-value}  \\
-					\midrule
-					\textbf{Demographic variables} \\
-					death\_rate\_village\_lag\_3 & -0.745 & 0.467 & -1.60 & 0.112 \\
-					death\_rate\_city\_lag\_15 & -1.108*** & 0.386 & -2.87 & 0.004  \\
-					fertility\_rate\_city\_lag\_20 & 2.972 & 4.225 & 0.70 & 0.482  \\
-					fertility\_rate\_city\_lag\_15 & 7.108*** & 2.410 & 2.95 & 0.003  \\
-					fertility\_rate\_city\_lag\_10 & 16.986*** & 5.033 & 3.37 & 0.001 \\
-					fertility\_rate\_city\_lag\_3 & 12.449** & 4.916 & 2.53 & 0.012  \\
-					fertility\_rate\_village\_lag\_20 & -4.130 & 3.548 & -1.16 & 0.245 \\
-					fertility\_rate\_village\_lag\_15 & -4.907** & 2.209 & -2.22 & 0.027 \\
-					life\_expectancy\_female\_sex\_village\_lag\_3 & -0.534 & 0.501 & -1.07 & 0.287 \\
-					life\_expectancy\_male\_sex\_city\_lag\_20 & -0.255*** & 0.083 & -3.06 & 0.002 \\
-					life\_expectancy\_male\_sex\_city\_lag\_3 & 2.864*** & 0.762 & 3.76 & 0.000  \\
-					life\_expectancy\_female\_sex\_city\_lag\_10 & 1.839*** & 0.606 & 3.03 & 0.003  \\
-					\textbf{Control variables} \\
-					CPI & 0.531*** & 0.137 & 3.87 & 0.000 \\
-					COVID-19  & 2.560* & 1.509 & 1.70 & 0.091  \\
-					\midrule
-					Observations & 581 \\
-					R-squared (within) & 0.921 \\
-					F-statistic & 290.63 \\
-					Entities & 83 \\
-					Time periods & 7 \\
-					\bottomrule
-				\end{tabular}
-			
-			\begin{tablenotes}
-				\small
-				\item Notes: *** p<0.01, ** p<0.05, * p<0.1.
-				\item Source: compiled by the author based on the econometric modeling with Statsmodels\footnote{https://www.statsmodels.org/stable/index.html}
-			\end{tablenotes}
+		\caption{Panel Regression Results: Cashless Payments Determinants}
+		\label{tab:results}
+		
+		\begin{tabular}{@{}lclc@{}}
+			\toprule
+			\textbf{Dep. Variable:}          & value        & \textbf{R-squared:}          & 0.9684      \\
+			\textbf{Estimator:}              & PanelOLS     & \textbf{R-squared (Between):} & -6.8384     \\
+			\textbf{No. Observations:}       & 549          & \textbf{R-squared (Within):}  & 0.9684      \\
+			\textbf{Date:}                   & Sat, May 17 2025 & \textbf{R-squared (Overall):} & -6.0082     \\
+			\textbf{Time:}                   & 16:29:57     & \textbf{Log-likelihood}      & -1024.2     \\
+			\textbf{Cov. Estimator:}         & Clustered    & \textbf{F-statistic:}        & 784.03      \\
+			\textbf{Entities:}               & 71           & \textbf{P-value}             & 0.0000      \\
+			\textbf{Avg Obs:}                & 7.7324       & \textbf{Distribution:}       & F(18,460)   \\
+			\textbf{Min Obs:}                & 1       & \textbf{F-statistic (robust):} & 2.537e+04  \\
+			\textbf{Max Obs:}                & 96       & \textbf{P-value}             & 0.0000      \\
+			\textbf{Time periods:}           & 6            & \textbf{Distribution:}       & F(18,460)   \\
+			\bottomrule
+		\end{tabular}
+		
+		\vspace{1em}
+		
+		\begin{tabular}{@{}lcccc@{}}
+			\toprule
+			& \textbf{Parameter} & \textbf{Std.Err.} & \textbf{t-stat} & \textbf{P-value} \\
+			\midrule
+			\textbf{Demographic variables} \\
+			PopD5a30 & -0.5959 & 1.3591 & -0.4384 & 0.6613 \\
+			PopD5a35 & 8.3961*** & 1.8122 & 4.6331 & 0.0000\\
+			PopD5a45 & 2.9995* & 1.5407 & 1.9469 & 0.0522 \\
+			PopD5a50 & -0.6355 & 0.9094 & -0.6988 & 0.4850 \\
+			PopD5a55 & -1.5335 & 1.4530 & -1.0554 & 0.2918 \\
+			PopD5a75 & -5.8966*** & 1.2400 & -4.7552 & 0.0000 \\
+			death\_rate\_village\_lag\_3 & -0.0307 & 0.0232 & -1.3256 & 0.1856\\
+			death\_rate\_city\_lag\_15 & 0.0087 & 0.0125 & 0.7020 & 0.483 \\
+			fertility\_rate\_city\_lag\_3 & 4.5592** & 2.1926 & 2.0794 & 0.0381  \\
+			fertility\_rate\_village\_lag\_20 & -0.0104 & 0.1188 & -0.0876 & 0.9303  \\
+			fertility\_rate\_village\_lag\_10 & -0.0418 & 0.1025 & -0.4079 & 0.6835  \\
+			fertility\_rate\_village\_lag\_3 & -3.3424*** & 1.2643 & -2.6438 & 0.0085 \\
+			life\_expectancy\_female\_sex\_village\_lag\_5 & 0.7863*** & 0.2367 & 3.3217 & 0.0010 \\
+			life\_expectancy\_male\_sex\_city\_lag\_10 & 0.0033 & 0.0098 & 0.3331 & 0.7392 \\
+			life\_expectancy\_male\_sex\_village\_lag\_20 & -0.0078 & 0.0125 & -0.6218 & 0.5344 \\
+			\textbf{Control variables} \\
+			life\_expectancy\_female\_sex\_city\_lag\_5 & 0.8192* & 0.4607 & 1.7781 & 0.0760 \\
+			cpi & 0.1353 & 0.0922 & 1.4679 & 0.1428 \\
+			grp & 3.895e-07*** & 1.358e-07 & 2.8670 & 0.0043  \\
+			\bottomrule
+		\end{tabular}
+		
+		\begin{tablenotes}
+			\small
+			\item Notes: *** p<0.01, ** p<0.05, * p<0.1.
+			\item F-test for Poolability: 71.668 (P-value: 0.0000, Distribution: F(70,460))
+			\item Included effects: Entity
+			\item Source: compiled by the author based on the econometric modeling with Statsmodels\footnote{https://www.statsmodels.org/stable/index.html}
+		\end{tablenotes}
 	\end{table}
 	
 
-	Before proceeding to the interpretation of the results, it is necessary to check the robustness of the model. The Haussmann test is used to verify the robustness of the choice of the fixed effects model relative to the random effects model (RE). The null hypothesis assumes that random effects are correct ($Cov(x_{it}, \mu_{i})=0$), and the alternative hypothesis states that there is a correlation between regressors and individual effects, which makes the FE model more suitable. The test statistics are defined as:
+	Before proceeding to the interpretation of the results, it is necessary to check the robustness of the model. The Hausman test is used to verify the robustness of the choice of the fixed effects model relative to the random effects model (RE). The null hypothesis assumes that random effects are correct ($Cov(x_{it}, \mu_{i})=0$), and the alternative hypothesis states that there is a correlation between regressors and individual effects, which makes the FE model more suitable. The test statistics are defined as:
 	
 	\begin{equation}
 		H = (\hat{\beta}_{\text{FE}} - \hat{\beta}_{\text{RE}})^\top 
@@ -1312,22 +1437,24 @@
 	In this case, the Hausman test showed significance ($p-value\approx0.000$), which allows to reject the hypothesis about the correctness of the random effects model. This indicates that individual invariant characteristics ($\mu_{i}$) correlate with explanatory variables, and using the FE model minimizes the risk of bias caused by an omitted variable.
 	
 	
-	Analyzing Table \ref{tab:results}, there are some findings (\ref{fig:marginal_effects}):
+	Analyzing Table \ref{tab:results}, there are some findings (Figure \ref{fig:marginal_effects}):
 	
 	\begin{itemize}
-		\item The fixed-effects model shows a high explanatory power (R-squared = 0.9211), indicating that 92\% of the variation in the share of cashless payments in Russian regions can be explained by the demographic variables included with lags and macroeconomic factors;
-		\item The  $death\_rate\_city\_lag\_15$ coefficient of $-1.108 (p=0.00)$ means that an increase in mortality in cities 15 years ago by 1 unit reduces the current share of cashless payments by $\sim1.1\%$. This may be due to a long-term decline in the economically active population, which slows down digitalization;
-		\item The $fertility\_rate\_city\_lag\_10$ coefficient of $16.986 (p=0.00)$ indicates that an increase in the urban birth rate of 1 unit 10 years ago increases the share of cashless payments by $\sim17\%$. This is due to the fact that young people who have reached economic activity are actively using digital tools (mobile applications, QR payments);
-		\item The coefficient $fertility\_rate\_village\_lag\_15$ of $-4.9073 (p=0.02)$ shows that the high birth rate in rural areas 15 years ago reduces the share of cashless payments. This is probably due to the migration of young people to cities, which leaves the elderly population in the villages who prefer cash;
-		\item The coefficient $life\_expectancy\_male\_sex\_city\_lag\_3$ of $2.8644 (p=0.00)$ demonstrates that the increase in life expectancy of men in cities 3 years ago by 1 year increases the share of cashless payments by  $\sim2.86\%$. This may reflect longer-term economic activity and adaptation to technology;
-		\item Mortality rate in villages ($death\_rate\_village\_lag\_3$) and fertility in villages with a 10- and 20-year lag ($fertility\_rate\_village\_lag\_10/20$) have no statistically significant effect $(p > 0.1)$. This may be due to the low proportion of cashless payments in rural areas, regardless of demographics.
+		\item The fixed-effects model shows a high explanatory power (R-squared = 0.9684), indicating that 96\% of the variation in the share of cashless payments in Russian regions can be explained by the demographic variables included with lags and macroeconomic factors;
+		\item The $PopD5a35$ coefficient of $8.3961$ meants that an increase in the population aged 35 to 39 by 1 percentage point increases the share of non-cash payments by $8.3$ percentage points. This may be due to the active use of digital technologies by this age group;
+		\item The $PopD5a75$ coefficient of $-5.8966$ means that an increase in the population aged 75 to 79 by 1 percentage point decreases the share of non-cash payments by $5.8$ percentage points. Older people are more likely to remain committed to cash payments;
+		\item Coefficient \textit{fertility\_rate\_city\_lag\_3} ($4.5592$) indicates that an increase in the urban birth rate 3 years ago by 1 unit increases the current share of non-cash payments by ~4.6\%. This reflects the contribution of young people entering economic activity and using digital payments;
+		\item Coefficient \textit{fertility\_rate\_village\_lag\_3} ($-3.342$) indicates that the high birth rate in rural areas 3 years ago reduces the share of non-cash payments. This is probably due to the migration of young people to cities, which leaves the older generation in the villages who prefer cash;
+		\item The coefficient \textit{life\_expectancy\_female\_sex\_village\_lag\_5} (0.7863) demonstrates that the increase in life expectancy of women in rural areas 5 years ago by 1 year increases the share of non-cash payments by 0.79\%. This may be due to their long-term economic activity and adaptation to technology;
+		\item Control variable \textit{grp} ($3.895e-07$) significant: The growth of the gross regional product by 1 unit increases the share of non-cash payments. This highlights the role of economic development in digitalization;
+		\item Variables \textit{death\_rate\_city\_lag\_15} ($p=0.483$), \textit{fertility\_rate\_village\_lag\_10/20} ($p > 0.1$) и \textit{life\_expectancy\_male\_sex\_city\_lag\_10} ($p=0.739$) statistically insignificant. This indicates that there is no long-term impact of urban mortality and rural fertility with large lags on the share of non-cash payments.
 		
 	\end{itemize}
 	
 	
 	\begin{figure}[H]
 		\centering
-		\noindent\includegraphics[width=0.8\linewidth]{margin_effects.png}
+		\noindent\includegraphics[width=0.9\linewidth]{margin_effects.png}
 		\caption{Marginal effects with its confidence intervals of factors with p\_value > 0.05 for FE model\\Source: compiled by the author based on econometric modeling}
 		\label{fig:marginal_effects}
 	\end{figure}
@@ -1340,6 +1467,163 @@
 		\item Cities, unlike villages, show a stronger connection between demographics and digitalization of payments;
 		\item Macroeconomic factors reinforce the trends. Inflation and the pandemic are accelerating the transition to cashless payments, which is consistent with global trends.
 	\end{enumerate}
+	
+	
+	\newpage
+	
+	\chapter{Improving the development strategy of the national payment system of Russia}
+	
+	\section{Developing a framework to monitor the development of the National Payment System of Russia}
+	
+	
+	In the strategic planning document <<Main Directions of Development of the National Payment System>>, the Bank of Russia can use an index developed in Chapter 2.2 to monitor the development of the National Payment System at the regional level. This index can be applied in Chapter 5 (<<INDICATORS AND OBSERVED INDICATORS OF THE MAIN DIRECTIONS OF NPS DEVELOPMENT>>), as one of the indicators for assessing the implementation of NPS MDD. The model developed in Chapter 2.3 can also be used to predict long-term and medium-term trends in strategic planning. 
+	
+	
+	To calculate the development index of the National Payment System at the regional level, we used a traditional approach based on the Urban Health Index. This method involves several steps:
+	
+	\begin{enumerate}
+		\item Data collection and preparation: for this purpose, it is necessary to use information published by the Bank of Russia, which includes data by region. These data are publicly available quarterly on the official website of the Bank of Russia;
+		\item Factors selection: to create an index, it is necessary to determine a limited number of indicators that would reflect the level of development of the national payment system in the regions. The following indicators are proposed to be considered as factors that reflect the development of the National Payment System of Russia:
+		\begin{itemize}
+			\item Institutional provision of payment services in the regional context;
+			\item The number of accounts opened by institutions of the banking system, also in the regional context;
+			\item The average daily, maximum, and minimum number and volume of money transfers from credit institutions made through the Bank of Russia payment system, also regionally;
+			\item The number of payments made through credit institutions (for various payment instruments), by region;
+			\item The volume of payments made through credit institutions (using the same payment instruments), also regionally;
+			\item The number of remote access accounts opened with credit institutions, by region;
+			\item The volume of payments, orders for which were drawn up and transmitted electronically by customers of credit institutions and by the credit institution itself, also in the regional context., The number of payments made by customers of credit institutions using payment orders, by various receipt methods and in the regional context;
+		\end{itemize}
+		
+		\item Before calculating the index, it is recommended to perform a correlation analysis using the Spearman's rank correlation in order to identify factors that are not correlated;
+		
+		\item Calculation of the index based on standardization and geometric mean. As mentioned in the second chapter, the differences between the regions are too great. To smooth them out, there was apply some statistical transformations before calculating the index. For example, before standardization, each variable can be logarithmic, which will help reduce variance;
+		
+		\item Application of the rating scale to obtain the category of development of the National Payment System of Russia.
+	\end{enumerate}
+	
+	A percentile-based approach will be used to calculate the rating scale by Koenker and Hallock\footnote{Koenker, Roger, and Kevin F. Hallock. “Quantile Regression.” The Journal of Economic Perspectives 15, no. 4 (2001): 143–56. http://www.jstor.org/stable/2696522.}. Unlike parametric methods, deciles are more robust to outliers and skewed distributions, making them a suitable choice for Russia regionally diverse scale (0-1). This is in line with the empirical findings, which identified age and urbanization as key factors influencing payment behavior heterogeneity. The rating calculation algorithm is shown below:
+	
+	
+	\begin{enumerate}
+		\item \textit{Ranking}: Rank regions by index in ascending order:
+		
+		
+		$R_{i} = rank (x_{i}), i=1, 2, ..., 89$, where $x_{i}$ -- index for region $i$;
+		
+		
+		\item \textit{Percentile Calculation}: Compute percentile ranks using the Hazen formula\footnote{Hyndman, Rob J., and Yanan Fan. “Sample Quantiles in Statistical Packages.” The American Statistician 50, no. 4 (1996): 361–65. https://doi.org/10.2307/2684934.
+		} to mitigate bias in small samples:
+		
+		
+		$P_{i} = \frac{R_{i} - 0.5}{89} * 100$
+		
+		
+		This adjusts for discrete ranking effects, ensuring smoother transitions between deciles;
+		
+		
+		\item \textit{Decile Assignment}: Assign regions to deciles based on percentile thresholds:
+		
+		
+		$\text { Decile }_k=\left\lfloor\frac{P_i}{10}\right\rfloor+1, \quad k=1,2, \ldots, 10$	
+		
+		\item \textit{Handling Ties}: Apply average ranking for tied index values:
+		
+		$R_{tied} = \frac{\sum_{j=1}^{m}R_{j}}{m}$, where $m$ -- the number of tied regions.
+	\end{enumerate}
+	
+	
+	Using the algorithm described above, we have compiled ratings for all regions of Russia (Table \ref{tab:rating}). The breakdown into ratings by index was made taking into account the principle of granularity, that is, each rating should not contain too many regions. A method based on the use of traffic lights was also used, which is an effective way to visually present information. It makes it possible to quickly identify areas where there are risks, where the situation is stable and where progress is being made.
+	
+	
+	\begin{table}
+		\caption{Rating scale}\label{tab:rating}
+		\centering
+		\begin{tabular}%{\linewidth}
+			{|c|c|}\hline
+			\textbf{Index} & \textbf{Rating} \\\hline
+			0 - 0.331 & 1\\\hline
+			0.334 - 0.386 & 2\\\hline
+			0.388 - 0.419 & 3\\\hline
+			0.424 - 0.439 & 4\\\hline
+			0.445 - 0.468 & 5\\\hline
+			0.469 - 0.482 & 6\\\hline
+			0.483 - 0.495 & 7\\\hline
+			0.504 - 0.533 & 8\\\hline
+			0.534 - 0.578 & 9\\\hline
+			0.580 - 1 & 10\\\hline
+		\end{tabular}\\
+		Source: compiled by the author based on the rating approach
+	\end{table}
+	
+	To implement the traffic light approach, a percentile scale based on the decile calculation was used. The regions were ranked by the value of the Nation Paymet System Index and divided into 10 equal groups (deciles), where the 1st decile corresponds to the lowest values and the 10th to the highest. The deciles were further grouped into three categories:
+	
+	\begin{enumerate}
+		\item Green Zone (8-10 deciles): leading regions where the level of digitalization of payments meets or exceeds national standards;
+		\item Yellow zone (4-7 deciles): regions with average indicators that demonstrate potential for growth, but require targeted support measures;
+		\item Red zone (1-3 deciles ): regions with a critically low level of NPC development, where the share of non-cash transactions does not exceed 35\%, and the infrastructure is limited.
+	\end{enumerate}
+	
+	
+	The choice of thresholds is justified by the analysis of the index distribution, which revealed a significant gap between the top regions and outsiders. For example, Moscow is 11.5 times ahead of the Republic of Ingushetia, which confirms the need for a differentiated approach.
+	
+	\begin{table}
+		\caption{Traffic Light Rule}\label{tab:tl_rule}
+		\centering
+		\begin{tabular}%{\linewidth}
+			{|c|c|c|}\hline
+			\textbf{Zone} & \textbf{Index} & \textbf{Decile} \\\hline
+			
+			Green & 0.504 - 1 & 8 - 10\\\hline
+			
+			Yellow & 0.424 - 0.495 & 4 - 7\\\hline
+			
+			Red & 0 - 0.419 & 1 - 3\\\hline
+			
+		\end{tabular}\\
+		Source: compiled by the author based on the rating approach
+	\end{table}
+	
+	
+	Based on calculations (Table \ref{tab:tl_rule}), the following groups are identified:
+	
+	\begin{itemize}
+		\item \textit{Green zone (8-10 deciles)}:
+		This zone covers 23 regions, including Moscow, St. Petersburg, Voronezh, Novosibirsk and Sverdlovsk regions, as well as the Republic of Tatarstan and others. These regions are different:
+		\begin{itemize}
+			\item High density of bank branches -- an average of 4.3 accounts per resident, which is significantly more than 1.2 in the red zone;
+			\item Active technology adoption — the share of electronic payments reaches 85\%;
+			\item The concentration of the young population (the average age is 36 years), which is consistent with the conclusions of Chapter 2.3 on the impact of demography on digitalization.
+		\end{itemize}
+		
+		\item \textit{Yellow zone (4-7 deciles)}:
+		This zone includes 31 regions, including Sakhalin, Astrakhan and Kaluga regions:
+		\begin{itemize}
+			\item People in these regions have an average of 2.1 accounts per person;
+			\item The majority of residents pay in cash — from 45\% to 55\%;
+			\item Young people are moving to big cities, and this creates problems for the local payment system.
+		\end{itemize}
+		
+			\item \textit{Red zone (1-3 deciles)}:
+			It includes 24 regions, such as the Republic of Ingushetia, Dagestan, Chechnya, Kalmykia, and the Jewish Autonomous Region. Their features:
+			\begin{itemize}
+				\item Minimal infrastructure (less than 0.5 bank branches per 10,000 inhabitants);
+				\item Dominance of cash payments (up to 70\% of transactions);
+				\item\ A high proportion of the rural population (60-80\%) and senior citizens (25\% over 60 years old).
+			\end{itemize}
+	\end{itemize}
+	
+	The traffic light classification system can help identify areas that require additional support. Areas in the red category indicate a need for increased focus on establishing bank branches in rural areas and organizing financial literacy programs for older adults. Furthermore, it is essential to evaluate the effectiveness of ongoing reforms, such as the introduction of digital rubles in certain regions like Moscow and Tatarstan. These initiatives should be closely monitored to assess their impact on the National Payment System Development index.
+	
+	
+	The use of the traffic light method has confirmed the high level of differentiation in the development of the National Payment System in Russia, as identified in chapters 1 and 2. These results emphasize the need for targeted policies that consider the demographic, infrastructure, and economic characteristics of each region.  Based on the proposed methodology, a draft of methodological recommendations for monitoring the activities of insurance organizations was developed (Appendix A).
+	
+	\section{Implementing the model of demographic factors impact on the share of cashless transactions in strategic planning for the National Payment System of Russia}
+	
+	
+	\newpage
+	%%%%%%% Conclusion %%%%%%%
+	\chapter*{Conclusion}
+	\addcontentsline{toc}{chapter}{Conclusion}
 	
 	
 	%%%%%%%%%%% References	%%%%%%%%%%%
@@ -1434,6 +1718,30 @@
 		
 		
 	\end{thebibliography}
+	
+	
+	\appendix
+	
+	% Стиль заголовков для приложений
+	\titleformat{\chapter}
+	{\normalfont\bfseries\large}{\chaptertitlename~\thechapter}{0.25em}{\normalfont}
+	
+	% Стиль для содержания приложений
+	\titlecontents{chapter}
+	[0em] %
+	{\normalsize}
+	{\makebox[7em][l]{Appendix \thecontentslabel}}
+	{Appendix}
+	{\titlerule*[10pt]{.}\contentspage}
+	
+	
+	\chapter{Development of National Payment System  Index  Creation Python Code}
+	
+	
+	\chapter{Fixed Effects Model training Python Code}
+	
+	
+	
 	
 \end{document}
 	
