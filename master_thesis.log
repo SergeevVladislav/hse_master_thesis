@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.30)  17 MAY 2025 17:28
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.30)  17 MAY 2025 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2147,17 +2147,17 @@ Overfull \hbox (2.44934pt too wide) in alignment at lines 1075--1090
 [40]
 File: corr.png Graphic file (type bmp)
 <corr.png>
- [41] [42]
+ [41]
 File: losers.png Graphic file (type bmp)
 <losers.png>
 File: top.png Graphic file (type bmp)
 <top.png>
 File: middle.png Graphic file (type bmp)
 <middle.png>
- [43]
+ [42]
 File: index_whole.png Graphic file (type bmp)
 <index_whole.png>
- [44]
+ [43] [44]
 File: cashless_russia.png Graphic file (type bmp)
 <cashless_russia.png>
  [45] [46]
@@ -2166,7 +2166,7 @@ Overfull \hbox (0.51685pt too wide) in paragraph at lines 1196--1196
 atabase/description/ENG/01-DemographicDatabaseDescription-
  []
 
-[47]
+
 Overfull \hbox (2.44934pt too wide) in alignment at lines 1208--1216
  [] [] [] [] 
  []
@@ -2191,7 +2191,7 @@ Overfull \hbox (2.44934pt too wide) in alignment at lines 1225--1346
  [] [] [] [] 
  []
 
-[48] [49] [50] [51]
+[47] [48] [49] [50] [51]
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
 (Font)              scaled to size 12.00128pt on input line 1388.
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
@@ -2207,66 +2207,69 @@ LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
  [52] [53] [54]
 File: margin_effects.png Graphic file (type bmp)
 <margin_effects.png>
- [55] [56]
+ [55]
 Chapter 3.
-[57
+[56
 
-] [58] [59]
+] [57] [58]
 Overfull \hbox (2.05621pt too wide) in paragraph at lines 1610--1611
 []\TU/TimesNewRoman(0)/m/n/14.4 Active technology adoption — the share of elect
 ronic payments reaches
  []
 
-[60] [61] [62] [63
+[59]
+File: map.png Graphic file (type bmp)
+<map.png>
+ [60] [61] [62] [63
 
-]
-Underfull \hbox (badness 4621) in paragraph at lines 1656--1657
+] [64]
+Underfull \hbox (badness 4621) in paragraph at lines 1706--1707
 []\TU/TimesNewRoman(0)/m/n/14.4 Центральный Банк Российской Федерации. Основные
  направления
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1658--1659
+Underfull \hbox (badness 10000) in paragraph at lines 1708--1709
 []\TU/TimesNewRoman(0)/m/n/14.4 Центральный Банк Российской Федерации. Основные
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1658--1659
+Underfull \hbox (badness 10000) in paragraph at lines 1708--1709
 \TU/TimesNewRoman(0)/m/n/14.4 направления повышения доступности финансовых услу
 г
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1658--1659
+Underfull \hbox (badness 10000) in paragraph at lines 1708--1709
 \TU/TimesNewRoman(0)/m/n/14.4 в Российской Федерации на период 2025-2027 годов.
  //
  []
 
-[64
+[65
 
-] [65] [66]
-Underfull \hbox (badness 2150) in paragraph at lines 1722--1723
+] [66] [67]
+Underfull \hbox (badness 2150) in paragraph at lines 1772--1773
 []\TU/TimesNewRoman(0)/m/n/14.4 Тишин, А. (2020). Влияние демографии на развити
 е финансового
  []
 
-[67]
+[68]
 Appendix A.
-[68
-
-]
-Appendix B.
 
 (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/lstla
 ng1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 1761.
+nput line 1808.
  [69
 
-] [70] [71] [72] [73] [74] [75] (./master_thesis.aux)
+] [70] [71] [72]
+Appendix B.
+[73
+
+] [74] [75] [76] [77] [78] [79] (./master_thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2279,7 +2282,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `master_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E8DD1C867E8643E987854E1ACA1CF470;8145.
+(rerunfilecheck)             Checksum: 72A622B0A07682398B92EE397ED2D1FA;8284.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                master_thesis
@@ -2290,12 +2293,12 @@ Package logreq Info: Writing requests to 'master_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53432 strings out of 474773
- 1199901 string characters out of 5749267
- 2643343 words of memory out of 5000000
- 74756 multiletter control sequences out of 15000+600000
+ 53488 strings out of 474773
+ 1200576 string characters out of 5749267
+ 2643693 words of memory out of 5000000
+ 74812 multiletter control sequences out of 15000+600000
  567313 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,12n,117p,2071b,3850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on master_thesis.pdf (75 pages).
+Output written on master_thesis.pdf (79 pages).
