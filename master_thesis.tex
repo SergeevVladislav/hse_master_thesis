@@ -43,6 +43,22 @@
 % Конкретный символ из конкретного шрифта
 % \setmathfont[range=\int]{Neo Euler}
 
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+	basicstyle=\ttfamily\small,
+	keywordstyle=\color{blue},
+	commentstyle=\color{gray},
+	stringstyle=\color{green!50!black},
+	showstringspaces=false,
+	breaklines=true,
+	frame=single,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	tabsize=4
+}
+
+
 
 %%%%%%%%%% Работа с картинками %%%%%%%%%
 \usepackage{graphicx}                  % Для вставки рисунков
@@ -1360,7 +1376,7 @@
 	$\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$, $\beta_5$ -- estimated coefficients of the model.
 	
 	
-	This model specification is called a <<fixed effects model>> (FE), which implies that individual effects correlate with independent variables. It is important to note that the model takes into account the relationship between regressor values that relate to the same object but at different times.  Before modeling, the data was tested for multicollinearity using the Variance Inflation Factor (VIF) Test. Thus, due to the high VIF rates, some demographic factors were excluded from the model. The coefficients obtained with their significance, obtained using the <<within estimator>>, can be seen in Table \ref{tab:results} (The model construction code can be seen in Appendix 1).
+	This model specification is called a <<fixed effects model>> (FE), which implies that individual effects correlate with independent variables. It is important to note that the model takes into account the relationship between regressor values that relate to the same object but at different times.  Before modeling, the data was tested for multicollinearity using the Variance Inflation Factor (VIF) Test. Thus, due to the high VIF rates, some demographic factors were excluded from the model. The coefficients obtained with their significance, obtained using the <<within estimator>>, can be seen in Table \ref{tab:results} (The model construction code can be seen in Appendix \ref{appendix:fe_model}).
 	
 	
 	\begin{table}[!htbp]
@@ -1615,7 +1631,7 @@
 	The traffic light classification system can help identify areas that require additional support. Areas in the red category indicate a need for increased focus on establishing bank branches in rural areas and organizing financial literacy programs for older adults. Furthermore, it is essential to evaluate the effectiveness of ongoing reforms, such as the introduction of digital rubles in certain regions like Moscow and Tatarstan. These initiatives should be closely monitored to assess their impact on the National Payment System Development index.
 	
 	
-	The use of the traffic light method has confirmed the high level of differentiation in the development of the National Payment System in Russia, as identified in chapters 1 and 2. These results emphasize the need for targeted policies that consider the demographic, infrastructure, and economic characteristics of each region.  Based on the proposed methodology, a draft of methodological recommendations for monitoring the activities of insurance organizations was developed (Appendix A).
+	The use of the traffic light method has confirmed the high level of differentiation in the development of the National Payment System in Russia, as identified in chapters 1 and 2. These results emphasize the need for targeted policies that consider the demographic, infrastructure, and economic characteristics of each region.  Based on the proposed methodology, a draft of methodological recommendations for monitoring the activities of insurance organizations was developed (Appendix \ref{appendix:fe_model}).
 	
 	\section{Implementing the model of demographic factors impact on the share of cashless transactions in strategic planning for the National Payment System of Russia}
 	
@@ -1739,6 +1755,220 @@
 	
 	
 	\chapter{Fixed Effects Model training Python Code}
+	
+	\label{appendix:fe_model}
+	
+	\begin{lstlisting}[language=Python, caption={Fixed Effects Model}]
+		#!/usr/bin/env python
+		# coding: utf-8
+		
+		import warnings
+		import pandas as pd
+		import statsmodels.api as sm
+		from statsmodels.stats.outliers_influence import variance_inflation_factor
+		
+		
+		warnings.filterwarnings("ignore")
+		pd.set_option("display.max_columns", None)
+		
+	
+		target = pd.read_csv("../../sber_dolya_beznala.csv", sep=';')
+		target["date"] = pd.to_datetime(target["date"])
+		target["year"] = target["date"].dt.year
+		target = target.sort_values(by='date')
+		target = target[target["date"].dt.month == 1]
+		target = target.drop(labels=["date"], axis=1)
+		target = target.drop_duplicates(subset=["region", "year"])
+		
+		life_expectancy = pd.read_csv("../data/life_expectancy/life_expectancy_features.csv")
+		life_expectancy = life_expectancy.rename(columns={"date": "year"})
+		final_df = pd.merge(life_expectancy, target, on=["region", "year"], how="inner")
+		
+		
+		cpi = pd.read_excel("../data/ipc_s_1992-2024.xlsx")
+		cpi = cpi.rename(columns={"Unnamed: 0": "region"})
+		
+		cpi = cpi.melt(
+			id_vars='region',  
+			var_name='year', 
+			value_name='cpi' 
+		)
+		
+		cpi['year'] = cpi['year'].astype(int)
+		cpi = cpi.sort_values(['region', 'year'])
+
+		final_df = pd.merge(cpi, final_df, on=["region", "year"], how="inner")
+		grp = pd.read_excel("../data/VRP_s_1998.xlsx", sheet_name="2")
+		
+		grp = grp.melt(
+			id_vars='region', 
+			var_name='year',
+			value_name='grp' 
+		)
+		grp.head()
+		grp['year'] = grp['year'].astype(int)
+		
+		grp = grp.sort_values(['region', 'year'])
+		final_df = pd.merge(grp, final_df, on=["region", "year"], how="inner")
+
+		
+		
+		fertility = pd.read_csv("../data/fertility_rate/fertility_rate_features.csv")
+		fertility = fertility.rename(columns={"date": "year"})
+		final_df = pd.merge(fertility, final_df, on=["region", "year"], how="inner")
+		
+		
+		death_rate = pd.read_csv("../data/death_rate/death_rate_features.csv")
+		death_rate = death_rate.rename(columns={"date": "year"})
+		final_df = pd.merge(death_rate, final_df, on=["region", "year"], how="inner")
+		
+		nes_data = pd.read_csv("../data/hse_data/share_nes.csv")
+		nes_data = nes_data.rename(columns={"Year": "year", "Reg": "region"})
+		final_df = pd.merge(nes_data, final_df, on=["region", "year"], how="inner")
+		
+		
+		df = final_df.set_index(['region', 'year']).copy().fillna(-1)
+		cols_to_drop = ["fertility_rate_city", "fertility_rate_all", "fertility_rate_village", "life_expectancy_both_sex_village",
+		"life_expectancy_both_sex_all", "life_expectancy_female_sex_village",
+		'life_expectancy_both_sex_city',
+		'life_expectancy_male_sex_city', 'life_expectancy_male_sex_village',
+		'life_expectancy_female_sex_city', 'life_expectancy_female_sex_all', "death_rate_all", "death_rate_village", "death_rate_city",
+		'life_expectancy_male_sex_all', "PopD5a0", "PopD5a1", "PopD5a5", "PopD5a10", "PopD5a80", "PopD5a85", "covid"]
+		
+		age_structure_merged = ["old", "middle", "young"]
+		age_structure = [col for col in df.columns if "PopD5a" in col and col not in ["PopD5a0", "PopD5a1", "PopD5a5", "PopD5a10"]]
+		control = ["cpi", "grp"]
+		le = [col for col in df.columns if "life_expectancy" in col]
+		dr = [col for col in df.columns if "death_rate_" in col]
+		fr = [col for col in df.columns if "fertility_rate_" in col]
+	
+		def calculate_vif(data, target_column=None):
+			if target_column:
+				features = data.drop(labels=target_column, axis=1)
+			else:
+				features = data.copy()
+			features_with_const = sm.add_constant(features)
+			vif = pd.DataFrame()
+			vif["Variable"] = features_with_const.columns
+			vif["VIF"] = [variance_inflation_factor(features_with_const.values, i) 
+			for i in range(features_with_const.shape[1])]
+				vif = vif[vif["Variable"] != "const"]
+			return vif
+		
+		
+		def remove_high_vif(data, threshold=5, target_column=None):
+				if target_column:
+					features = data.drop(labels=[target_column], axis=1)
+				else:
+					features = data.copy()
+		
+				while True:
+					vif_df = calculate_vif(features, target_column)
+					max_vif = vif_df["VIF"].max()
+					if max_vif <= threshold:
+						break
+					max_vif_row = vif_df[vif_df["VIF"] == max_vif]
+					feature_to_remove = max_vif_row["Variable"].values[0]
+					features = features.drop(columns=[feature_to_remove])
+		
+				return features
+		
+		cleaned_data = remove_high_vif(df.drop(labels=["value"] + cols_to_drop + control, axis=1, errors="ignore"), threshold=5, target_column=None)
+		
+	
+		from linearmodels.panel import PanelOLS, RandomEffects
+		from linearmodels.panel.results import compare
+		import statsmodels.api as sm
+		import statsmodels.formula.api as smf
+		from statsmodels.stats.diagnostic import het_breuschpagan
+		
+		
+		cleaned_by_vif_cols = cleaned_data.columns.tolist()
+		fe_model = PanelOLS(
+		df['value'],
+		# df[control + age_structure + le + dr],
+		df[cleaned_by_vif_cols + control],
+		# df.drop(labels=["value"], axis=1, errors="ignore"),
+		# df[fe_model.pvalues[fe_model.pvalues < 0.05].index.tolist()],
+		entity_effects=True,
+		time_effects=False,
+		drop_absorbed=True
+		).fit(cov_type='clustered', cluster_entity=True)
+		print(fe_model)
+		
+		
+		
+		fe_model.pvalues[fe_model.pvalues < 0.05].index.tolist()
+		
+		fe_model.summary.as_latex()
+		
+		import numpy as np
+		from scipy.stats import chi2
+		
+		b_fe = fe_model.params.values
+		b_re = re_model.params.values
+		
+		diff = b_fe - b_re
+		
+		cov_diff = fe_model.cov.values - re_model.cov.values
+		inv_cov_diff = np.linalg.inv(cov_diff)
+		hausman_stat = diff.T @ inv_cov_diff @ diff
+		
+		chi2.sf(hausman_stat, len(b_fe))
+		
+		residuals = fe_model.resids
+		exog = sm.add_constant(df[cleaned_by_vif_cols])
+		bp_test = het_breuschpagan(residuals, exog)
+		print(f"\nBreusch-Pagan Test: LM={bp_test[0]:.2f}, p={bp_test[1]:.3f}")
+		
+		
+		effects = fe_model.estimated_effects.reset_index().drop(labels=["year"], axis=1).drop_duplicates(subset=["region"])
+		
+		
+		
+		effects.to_latex()
+		
+		
+		
+		params = fe_model.params
+		conf_int = fe_model.conf_int()
+		conf_int.columns = ['lower', 'upper']
+		
+		
+		
+	
+		fe_params = params[fe_model.pvalues[fe_model.pvalues < 0.05].index.tolist()]
+		fe_conf_int = conf_int.loc[fe_model.pvalues[fe_model.pvalues < 0.05].index.tolist()]
+		
+		
+		
+		import matplotlib.pyplot as plt
+		import seaborn as sns
+		
+		sns.set_style('whitegrid')
+	
+		variables = fe_params.index
+		estimates = fe_params.values
+		lower = fe_conf_int['lower'].values
+		upper = fe_conf_int['upper'].values
+		
+	
+		fig, ax = plt.subplots(figsize=(10, 6))
+		y_ticks = range(len(variables))
+		
+		ax.errorbar(estimates, y_ticks, xerr=[estimates - lower, upper - estimates],
+		fmt='o', ecolor='gray', capsize=5, color='navy')
+		ax.set_yticks(y_ticks)
+		ax.set_yticklabels(variables)
+		ax.set_xlabel("Margin effects")
+		ax.axvline(0, color='black', linestyle='--', linewidth=1)
+		
+		plt.tight_layout()
+		plt.show()
+		
+		
+		
+	\end{lstlisting}
 	
 	
 	
