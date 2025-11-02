@@ -306,7 +306,7 @@
 %%% Если в списке предложения, то должна по госту стоять точка после цифры => команда Enumerate! Если идет перечень маленьких фактов, не обособляемых предложений то после цифры идет скобка ")" => команда enumerate! Если перечень при этом ещё и двууровневый, то twoenumerate.
 
 
-
+\usetikzlibrary{intersections,calc}
 
 %%%%%%%%%% Список литературы %%%%%%%%%%
 
@@ -443,15 +443,12 @@
 
 	
 	
-	The aim of the research is to evaluate the influence of demographic variables on the evolution of the National Payment System of Russia and to formulate proposals for its adjustment to shifting socio-demographic circumstances.
-	
-	
-	\vspace{2em}
+	The aim of the research is to evaluate the influence of demographic variables on the development of National Payment System of Russia.
 	
 	
 	The following tasks were set in the course of the study:
 	\begin{enumerate}
-		\item systematize theoretical approaches to the analysis of the relationship between demographic changes and the evolution of payment systems;
+		\item systematize theoretical approaches to the analysis of the relationship between demographic changes and the development of payment systems;
 		\item identify key demographic trends in Russia (aging, urbanization, regional differentiation) and their relationship to the dynamics of payment preferences;
 		\item conduct a quantitative analysis of demographic factors influence on national payment system metrics (cashless payment share in total retail turnover) through econometric modeling;
 		\item formulate practical recommendations for regulatory bodies to mitigate imbalances stemming from demographic changes.
@@ -492,7 +489,7 @@
 	
 	\chapter{Theoretical foundations and operational principles of the National Payment System of Russia in the context of demographic changes}
 	
-	\section{The operational principles of the National Payment System of Russia}
+	\section{The principles of functioning of the National Payment System of Russia}
 	
 	The National Payment System (NPS) of Russia is a complex network of institutions, technologies and processes that facilitate cashless transactions and ensure smooth processing of payments within the country. It consists of several essential components that work together to maintain stability and efficiency of financial operations. The NPS plays a crucial role in economic growth by enhancing access to financial services for individuals and businesses, which not only improves financial well-being but also contributes to higher standards of living through better financial management and transaction capabilities. Furthermore, the NPS helps safeguard the value of the ruble and promotes integration into global financial markets, strengthening Russia's position in the global economy.
 	
@@ -684,7 +681,7 @@
 
 	\centerline{\textit{\underline{Human Capital Theory}}}
 
-	The theory of human capital, as developed by Nobel Laureate Gary Becker, is crucial for understanding the relationship between demographic change and national payment systems evolution. This theory posits that knowledge, abilities, and public health constitute the basis of economic progress, as investments in education and training have a direct impact on productivity and a society capacity to adapt to technological advancements.
+	The theory of human capital, as developed by Nobel Laureate Gary Becker, is crucial for understanding the relationship between demographic change and the development of national payment systems. This theory posits that knowledge, abilities, and public health constitute the basis of economic progress, as investments in education and training have a direct impact on productivity and a society capacity to adapt to technological advancements.
 
 
 	According to Becker\footnote{Becker, G. S. (1962). Investment in human capital: A theoretical analysis. Journal of political economy, 70(5, Part 2), 9-49.}, investments in human capital can be considered similar to investments in physical capital. He identifies several key aspects: firstly, individuals make decisions about how much to invest in their education and health based on the expected return on these investments; secondly, the level of education and qualifications directly affects the earnings and economic activity of individuals. Becker also emphasizes that differences in the level of human capital between population groups can lead to inequality in income and opportunities.
@@ -743,7 +740,7 @@
 	The relationship between demography and transaction costs is also evident in the regulatory sphere. Policy makers need to balance between stimulating innovation (reducing costs for businesses) and protecting vulnerable groups (increasing costs through compliance). For example, the introduction of strict Know Your Customer\footnote{Mullins, R. R., Ahearne, M., Lam, S. K., Hall, Z. R., \& Boichuk, J. P. (2014). Know your customer: How salesperson perceptions of customer relationship quality form and influence account profitability. Journal of Marketing, 78(6), 38-58.} requirements increases banks costs for customer verification, but reduces fraud risks, which is especially important in the context of the growth of digital transactions among the elderly. 
 	
 	
-	Thus, the theory of transaction costs provides a powerful analytical tool for understanding the evolution of national payment systems in the context of demographic changes. Demographic factors, influencing behavioral patterns, technological adoption, and regulatory priorities, shape cost dynamics at the micro and macro levels. Minimizing these costs requires a flexible approach that combines technological innovation, educational initiatives, and the adaptation of institutions to a changing age landscape. 
+	Thus, the theory of transaction costs provides a powerful analytical tool for understanding the development of national payment systems in the context of demographic changes. Demographic factors, influencing behavioral patterns, technological adoption, and regulatory priorities, shape cost dynamics at the micro and macro levels. Minimizing these costs requires a flexible approach that combines technological innovation, educational initiatives, and the adaptation of institutions to a changing age landscape. 
 	
 	
 	\centerline{\textit{\underline{Comparison of theoretical approaches}}}
@@ -811,7 +808,7 @@
 	\end{longtable}
 	
 	
-	Based on the evaluation results (Table \ref{tab:conclusion_theory}), it appears that the life cycle hypothesis is the most suitable approach, as it comprehensively reflects the impact of demographic factors on the evolution of national payment systems, considering both dynamic and geographical variations. Therefore, our future work will be based on the theory proposed by Franco Modigliani, whose studies have demonstrated their applicability and relevance in this context.
+	Based on the evaluation results (Table \ref{tab:conclusion_theory}), it appears that the life cycle hypothesis is the most suitable approach, as it comprehensively reflects the impact of demographic factors on the development of national payment systems, considering both dynamic and geographical variations. Therefore, our future work will be based on the theory proposed by Franco Modigliani, whose studies have demonstrated their applicability and relevance in this context.
 	
 	\section{Application of the  Modigliani Life Cycle Hypothesis to analyze the impact of demographic factors on the development of the national payment system}
 	
@@ -846,6 +843,7 @@
 		\caption{Life Cycle Hypothesis Illustration\\Source: <<The Effect of Expected Income on Wealth Accumulation and Retirement Contribution of Thai Wageworkers>> by Ketkaew}
 		\label{fig:lch}
 	\end{figure}
+
 	
 	
 	The life cycle hypothesis is often considered using a model of savings and consumption. In this model, it is assumed that a persons total consumption during his lifetime is equal to the sum of his income.
@@ -882,7 +880,7 @@
 	This section will review empirical research on the impact of demographic factors on the development of national payment systems. Variables will then be identified for subsequent econometric research.
 	
 	
-	One of the traditional approaches to examining the influence of demographic variables on the evolution of national payment systems involves the utilization of survey data. Stavins\footnote{Stavins, J. (2016). The effect of demographics on payment behavior: panel data with sample selection (No. 16-5). Working Papers.} article explores the role of demographic and socioeconomic variables in shaping consumer payment habits in the United States, utilizing data from the <<Consumer Payment Choice Survey>> (CPCS) for the years 2009–2013. The writer analyzes how factors such as age, educational attainment, income, racial background, gender, and other attributes influence the adoption and use of various payment methods, including cash, credit cards, debit cards, online banking, and checks.
+	One of the traditional approaches to examining the influence of demographic variables on the development of national payment systems involves the utilization of survey data. Stavins\footnote{Stavins, J. (2016). The effect of demographics on payment behavior: panel data with sample selection (No. 16-5). Working Papers.} article explores the role of demographic and socioeconomic variables in shaping consumer payment habits in the United States, utilizing data from the <<Consumer Payment Choice Survey>> (CPCS) for the years 2009–2013. The writer analyzes how factors such as age, educational attainment, income, racial background, gender, and other attributes influence the adoption and use of various payment methods, including cash, credit cards, debit cards, online banking, and checks.
 	The primary objective of the research is to identify trends that persist even when accounting for the attributes of each payment method (convenience, safety, and cost) and other factors. The study employs a panel model incorporating a selection adjustment proposed by Wooldridge\footnote{Wooldridge, J. M. 1995. “Selection Corrections for Panel Data Models Under Conditional Mean
 		Independence Assumptions.” Journal of Econometrics 68 (1): 115–132.}.
 	At the initial stage, a probabilistic regression model is used to estimate the probability of acceptance of a particular payment instrument $j$, where the probability of using the payment instrument is predicted for each year $t$:
@@ -938,7 +936,7 @@
 	\end{itemize}
 	
 	
-	As part of the research on the impact of demographic factors on the evolution of the national payment system, a paper by Chawla and Joshi\footnote{Chawla, D., \& Joshi, H. (2018). The moderating effect of demographic variables on mobile banking adoption: An empirical investigation. Global Business Review, 19(3\_suppl), S90-S113.} is of significant interest. This study examines the moderating impact of demographic variables on the adoption of mobile banking. The authors integrated the Technology Acceptance Model and Innovation Diffusion Theory to develop a model that incorporates variables such as trust, convenience, efficiency, compatibility with lifestyle, and ease of use. Their focus was on identifying the significance of demographic traits in determining the magnitude of these factors impact on users attitudes toward mobile banking services. The study was conducted on data from 367 participants in India, predominantly male (74.4\%), with a high educational background (88.3\%). Multiple linear regression and Fishers transformation were employed for analysis. The authors concluded that female participants were more likely to be influenced by ease of use, suggesting that demographic factors significantly influenced attitudes towards mobile banking services. Participants over the age of 30 demonstrated a stronger link between trust and attitudes, which can be attributed to their cautious approach towards digital risks. Furthermore, married participants tended to prioritize convenience, likely owing to their responsibility for managing family finances.
+	As part of the research on impact of demographic factors on the development of national payment system, a paper by Chawla and Joshi\footnote{Chawla, D., \& Joshi, H. (2018). The moderating effect of demographic variables on mobile banking adoption: An empirical investigation. Global Business Review, 19(3\_suppl), S90-S113.} is of significant interest. This study examines the moderating impact of demographic variables on the adoption of mobile banking. The authors integrated the Technology Acceptance Model and Innovation Diffusion Theory to develop a model that incorporates variables such as trust, convenience, efficiency, compatibility with lifestyle, and ease of use. Their focus was on identifying the significance of demographic traits in determining the magnitude of these factors impact on users attitudes toward mobile banking services. The study was conducted on data from 367 participants in India, predominantly male (74.4\%), with a high educational background (88.3\%). Multiple linear regression and Fishers transformation were employed for analysis. The authors concluded that female participants were more likely to be influenced by ease of use, suggesting that demographic factors significantly influenced attitudes towards mobile banking services. Participants over the age of 30 demonstrated a stronger link between trust and attitudes, which can be attributed to their cautious approach towards digital risks. Furthermore, married participants tended to prioritize convenience, likely owing to their responsibility for managing family finances.
 	
 	
 	Using data from a survey conducted in China in 2017, the Vatsa study\footnote{Vatsa, P., Ma, W., \& Zheng, H. (2024). Mobile payment adoption in China: Do demographic and socioeconomic factors matter?. Managerial and Decision Economics, 45(3), 1428-1434.} examined the relationship between various factors and the adoption of mobile payments. The results showed that factors such as education, perceived health status, economic status, political affiliation, employment status, income, social activity, car ownership, Internet access, and geographical location positively correlate with the use of mobile payment systems. However, older people and men were less likely to use these systems compared to their younger counterparts and women. Interestingly, the study found no correlation between subjective well-being and the use of mobile payments.
@@ -1683,6 +1681,9 @@
 	
 	
 	
+	
+	
+	
 	\newpage
 	%%%%%%% Conclusion %%%%%%%
 	\chapter*{Conclusion}
@@ -1723,88 +1724,91 @@
 	\addcontentsline{toc}{chapter}{References}
 	\titleformat*{\section}{\bfseries\normalsize\fontsize{14}{2.5mm}\centering}
 	\begin{thebibliography}{3}
-
-		\bibitem{cental_bank_russia_natiional_statistics} Bank of Russia. National Payment System statistics (2025). Date of the application 01.04.2025\\
-		https://www.cbr.ru/PSystem/
-
-		\bibitem{cental_bank_russia_natiional_payment_dir} Центральный Банк Российской Федерации. Основные направления развития национальной платежной системы на период 2025-2027 годов. // https://www.cbr.ru/Content/Document/File/170680/onrnps\_2025-27.pdf
-
-		\bibitem{cental_bank_russia_natiional_fin_serv} Центральный Банк Российской Федерации. Основные направления повышения доступности финансовых услуг в Российской Федерации на период 2025-2027 годов. // https://www.cbr.ru/Content/Document/File/170684/onpdfu\_2025-2027.pdf
-
-		\bibitem{labour_min} Распоряжение Правительства РФ об утверждении Стратегии действий в интересах граждан старшего поколения в Российской Федерации до 2030 года //
-		https://mintrud.gov.ru/ministry/programms/12
-
-		\bibitem{modigliani_brumberg} Modigliani, F., \& Brumberg, R. (1954). Utility analysis and the consumption function: An interpretation of cross-section data. Franco Modigliani, 1(1), 388-436.
-
-		\bibitem{modigliani} Ando, A., \& Modigliani, F. (1963). The “Life Cycle” Hypothesis of Saving: Aggregate Implications and Tests. The American Economic Review, 53(1), 55–84. http://www.jstor.org/stable/1817129
-
-		\bibitem{modigliani_1966} Modigliani, F. (1966). The life cycle hypothesis of saving, the demand for wealth and the supply of capital. Social research, 160-217.
 		
-		\bibitem{modigliani_1970} Modigliani, F. (1970). The life cycle hypothesis of saving and intercountry differences in the saving ratio (pp. 197-225). WA Eltis, M. FG. Scott and JN Wolfe, eds., Induction, trade, and growth: Essays in honour of Sir Roy Harrod (Clarendon Press, Oxford).
-
-		\bibitem{Kotlikoff} Kotlikoff, L. J. (1989). What determines savings?. MIT Press Books, 1.	
 		
-		\bibitem{taleb} Taleb, N.N. (2007) The Black Swan: The Impact of the Highly Improbable. Random House, New York
+		\bibitem{cental_bank_russia_natiional_fin_serv} Bank of the Russia. The main directions of increasing the availability of financial services in the Russian Federation for the period 2025-2027. // https://www.cbr.ru/Content/Document/File/170684/onpdfu  \_2025-2027.pdf
 		
-		\bibitem{tversky} Tversky, A., \& Kahneman, D. (1992). Advances in prospect theory: Cumulative representation of uncertainty. Journal of Risk and uncertainty, 5, 297-323.
+		\bibitem{cental_bank_russia_natiional_payment_dir} Bank of the Russia. The main directions of development of the national payment system for the period 2025-2027. // https://www.cbr.ru/Content/Document/File/170680/onrnps  \_2025-27.pdf
 		
-		\bibitem{rogers} Rogers, E. M., Singhal, A., \& Quinlan, M. M. (2014). Diffusion of innovations. In An integrated approach to communication theory and research (pp. 432-448). Routledge.
+		\bibitem{labour_min} Decree of the Government of the Russian Federation on the approval of the Strategy of Actions in the Interests of Older Citizens in the Russian Federation until 2030 // https://mintrud.gov.ru/ministry/programms/12   
 		
-		\bibitem{Venkatesh} Venkatesh, V., Morris, M. G., Davis, G. B., \& Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS quarterly, 425-478.
-		
-		\bibitem{Oldenburg} Oldenburg, Brian, and Karen Glanz. "Diffusion of innovations." Health behavior and health education: Theory, research, and practice 4 (2008): 313-333.
-		
-		\bibitem{becker} Becker, G. S. (1962). Investment in human capital: A theoretical analysis. Journal of political economy, 70(5, Part 2), 9-49.
-		
-		\bibitem{galor} Galor, O., \& Weil, D. N. (2000). Population, technology, and growth: From Malthusian stagnation to the demographic transition and beyond. American economic review, 90(4), 806-828.
-		
-		\bibitem{ey} EY Report: How Gen Z’s preference for digital is changing the payments landscape (2024) // https://www.ey.com/en\_us/insights/payments/how-gen-z-is-changing-the-payments-landscape
-		
-		\bibitem{simon} Simon, H. A. (1955). A behavioral model of rational choice. The quarterly journal of economics, 99-118.
-		
-		\bibitem{taler} Thaler, R. H. (2015). Misbehaving: The making of behavioral economics. WW Norton \& Company.
-		
-		\bibitem{nudge1} Aydogan, S., \& Van Hove, L. (2015). Nudging consumers towards card payments: A field experiment. In International Cash Conference 2014 (pp. 589-630). Deutsche Bundesbank
-		
-		\bibitem{nudge2} Story, P., Smullen, D., Acquisti, A., Cranor, L. F., Sadeh, N., \& Schaub, F. (2020). From intent to action: Nudging users towards secure mobile payments. In Sixteenth Symposium on Usable Privacy and Security (SOUPS 2020) (pp. 379-415.
-		
-		\bibitem{nudge_tax} Calvo-Gonzalez, O., Cruz, A., \& Hernandez, M. (2018). The Ongoing Impact of ‘Nudging’People to Pay Their Taxes. World Bank Blogs, 2
-		
-		\bibitem{Greene} Greene, C., Perry, J., \& Stavins, J. (2024). Consumer Payment Behavior by Income and Demographics.
-		
-		\bibitem{coase} Coase, R. H. (1937). ”The Nature of the Firm”. Economica. 4 (16): 386–405
-		
-		\bibitem{Williamson} Williamson, O. E. (1979). Transaction-cost economics: the governance of contractual relations. The journal of Law and Economics, 22(2), 233-261.
-		
-		\bibitem{bloom} Bloom, D. E., \& Williamson, J. G. (1998). Demographic transitions and economic miracles in emerging Asia. The World Bank Economic Review, 12(3), 419-455.
-		
-		\bibitem {kyc} Mullins, R. R., Ahearne, M., Lam, S. K., Hall, Z. R., \& Boichuk, J. P. (2014). Know your customer: How salesperson perceptions of customer relationship quality form and influence account profitability. Journal of Marketing, 78(6), 38-58.
-		
-		\bibitem{Vaportzis} Vaportzis, E., Giatsi Clausen, M., \& Gow, A. J. (2017). Older adults perceptions of technology and barriers to interacting with tablet computers: a focus group study. Frontiers in psychology, 8, 1687.
-		
-		\bibitem{Finkelstein} Finkelstein, M., \& Fishman, R. (2019). Demographics and Innovation: Evidence from Patent Data
-		
-		\bibitem{stavins} Stavins, J. (2016). The effect of demographics on payment behavior: panel data with sample selection (No. 16-5). Working Papers.
-		
-		\bibitem{wooldridge} Wooldridge, J. M. 1995. “Selection Corrections for Panel Data Models Under Conditional Mean
-		Independence Assumptions.” Journal of Econometrics 68 (1): 115–132.
-		
-		\bibitem{stavins2} Greene, C., Perry, J., \& Stavins, J. (2024). Consumer Payment Behavior by Income and Demographics.
-		
-		\bibitem{malta} Camilleri, S. J., \& Agius, C. (2021). Choosing between innovative and traditional payment systems: an empirical analysis of European trends. Journal of Innovation Management, 9(4), 29-57.
+		\bibitem{decree2} Decree of the Government of the Russian Federation dated December 28, 2024 No. 4146-r\\
+		http://publication.pravo.gov.ru/document/0001202501060001
 		
 		\bibitem{tishin} Тишин, А. (2020). Влияние демографии на развитие финансового сектора Российской Федерации. Аналитическая записка Департамента исследований и прогнозирования, Банк России.
 		
-		\bibitem{chawla} Chawla, D., \& Joshi, H. (2018). The moderating effect of demographic variables on mobile banking adoption: An empirical investigation. Global Business Review, 19(3\_suppl), S90-S113.
-		
-		\bibitem{vatsa} Vatsa, P., Ma, W., \& Zheng, H. (2024). Mobile payment adoption in China: Do demographic and socioeconomic factors matter?. Managerial and Decision Economics, 45(3), 1428-1434.
-		
-		
-		\bibitem{graziano} Graziano, E. A., Musella, F., \& Petroccione, G. (2024). Cashless payment: behavior changes and gender dynamics during the COVID-19 pandemic. EuroMed Journal of Business, 20(5), 54-74.
-		
+		\bibitem{Ando} Ando, A., \& Modigliani, F. (1963). The “Life Cycle” Hypothesis of Saving: Aggregate Implications and Tests. The American Economic Review, 53(1), 55–84. http://www.jstor.org/stable/1817129
 		
 		\bibitem{arkhipova} Arkhipova, N. (2022). Impact of Demographic Trends on Retail Banking. Procedia Computer Science, 214, 831-836.
 		
+		\bibitem{Aygdogan} Aydogan, S., \& Van Hove, L. (2015). Nudging consumers towards card payments: A field experiment. In International Cash Conference 2014 (pp. 589-630). Deutsche Bundesbank
+		
+		\bibitem{becker} Becker, G. S. (1962). Investment in human capital: A theoretical analysis. Journal of political economy, 70(5, Part 2), 9-49.
+		
+		\bibitem{bloom} Bloom, D. E., \& Williamson, J. G. (1998). Demographic transitions and economic miracles in emerging Asia. The World Bank Economic Review, 12(3), 419-455.
+		
+		\bibitem{Camilleri} Camilleri, S. J., \& Agius, C. (2021). Choosing between innovative and traditional payment systems: an empirical analysis of European trends. Journal of Innovation Management, 9(4), 29-57.
+		
+		\bibitem{Calvo-Gonzalez} Calvo-Gonzalez, O., Cruz, A., \& Hernandez, M. (2018). The Ongoing Impact of ‘Nudging’ People to Pay Their Taxes. World Bank Blogs, 2
+		
+		\bibitem{chawla} Chawla, D., \& Joshi, H. (2018). The moderating effect of demographic variables on mobile banking adoption: An empirical investigation. Global Business Review, 19(3\_suppl), S90-S113.
+		
+		\bibitem{coase} Coase, R. H. (1937). ”The Nature of the Firm”. Economica. 4 (16): 386–405
+		
+		\bibitem{Finkelstein} Finkelstein, M., \& Fishman, R. (2019). Demographics and Innovation: Evidence from Patent Data
+		
+		\bibitem{galor} Galor, O., \& Weil, D. N. (2000). Population, technology, and growth: From Malthusian stagnation to the demographic transition and beyond. American economic review, 90(4), 806-828.
+		
+		\bibitem{Greene} Greene, C., Perry, J., \& Stavins, J. (2024). Consumer Payment Behavior by Income and Demographics.
+
+		
+		\bibitem{Graziano} Graziano, E. A., Musella, F., \& Petroccione, G. (2024). Cashless payment: behavior changes and gender dynamics during the COVID-19 pandemic. EuroMed Journal of Business, 20(5), 54-74.
+		
+		\bibitem{hyndman} Hyndman, Rob J., and Yanan Fan. “Sample Quantiles in Statistical Packages.” The American Statistician 50, no. 4 (1996): 361–65. https://doi.org/10.2307/2684934.
+		
+		\bibitem{kyc} Mullins, R. R., Ahearne, M., Lam, S. K., Hall, Z. R., \& Boichuk, J. P. (2014). Know your customer: How salesperson perceptions of customer relationship quality form and influence account profitability. Journal of Marketing, 78(6), 38-58.
+		
+		\bibitem{ketkaew} Ketkaew, Chavis, Martine Van Wouwe, Preecha Vichitthamaros, and Duanpen Teerawanviwat. "The effect of expected income on wealth accumulation and retirement contribution of Thai wageworkers." SAGE Open 9, no. 4 (2019): 2158244019898247.
+		
+		\bibitem{Kotlikoff} Kotlikoff, L. J. (1989). What determines savings?. MIT Press Books, 1.
+		
+		\bibitem{Malta} Malta, P., Ma, W., \& Zheng, H. (2024). Mobile payment adoption in China: Do demographic and socioeconomic factors matter?. Managerial and Decision Economics, 45(3), 1428-1434.
+		
+		\bibitem{Modigliani_brumberg} Modigliani, F., \& Brumberg, R. (1954). Utility analysis and the consumption function: An interpretation of cross-section data. Franco Modigliani, 1(1), 388-436.
+		
+		\bibitem{modigliani_1966} Modigliani, F. (1966). The life cycle hypothesis of saving, the demand for wealth and the supply of capital. Social research, 160-217.
+		
+		\bibitem{modigliani_1970} Modigliani, F. (1970). The life cycle hypothesis of saving and intercountry differences in the saving ratio (pp. 197-225). WA Eltis, M. FG. Scott and JN Wolfe, eds., Induction, trade, and growth: Essays in honour of Sir Roy Harrod (Clarendon Press, Oxford).
+		
+		\bibitem{nudge2} Story, P., Smullen, D., Acquisti, A., Cranor, L. F., Sadeh, N., \& Schaub, F. (2020). From intent to action: Nudging users towards secure mobile payments. In Sixteenth Symposium on Usable Privacy and Security (SOUPS 2020) (pp. 379-415.
+		
+		\bibitem{Oldenburg} Oldenburg, Brian, and Karen Glanz. "Diffusion of innovations." Health behavior and health education: Theory, research, and practice 4 (2008): 313-333.
+		
+		\bibitem{rogers} Rogers, E. M., Singhal, A., \& Quinlan, M. M. (2014). Diffusion of innovations. In An integrated approach to communication theory and research (pp. 432-448). Routledge.
+		
+		\bibitem{simon} Simon, H. A. (1955). A behavioral model of rational choice. The quarterly journal of economics, 99-118.
+		
+		\bibitem{taleb} Taleb, N.N. (2007) The Black Swan: The Impact of the Highly Improbable. Random House, New York
+		
+		\bibitem{taler} Thaler, R. H. (2015). Misbehaving: The making of behavioral Economics. WW Norton \& Company.
+		
+		\bibitem{tversky} Tversky, A., \& Kahneman, D. (1992). Advances in prospect theory: Cumulative representation of uncertainty. Journal of Risk and uncertainty, 5, 297-323.
+		
+		\bibitem{Vaportzis} Vaportzis, E., Giatsi Clausen, M., \& Gow, A. J. (2017). Older adults perceptions of technology and barriers to interacting with tablet computers: a focus group study. Frontiers in psychology, 8, 1687.
+		
+		\bibitem{Venkatesh} Venkatesh, V., Morris, M. G., Davis, G. B., \& Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS quarterly, 425-478.
+		
+		\bibitem{Williamson} Williamson, O. E. (1979). Transaction-cost economics: the governance of contractual relations. The journal of Law and Economics, 22(2), 233-261.
+		
+		\bibitem{wooldridge} Wooldridge, J. M. 1995. “Selection Corrections for Panel Data Models Under Conditional Mean Independence Assumptions.” Journal of Econometrics 68 (1): 115–132.
+		
+		\bibitem{stavins} Stavins, J. (2016). The effect of demographics on payment behavior: panel data with sample selection (No. 16-5). Working Papers.
+		
+		\bibitem{ey} EY Report: How Gen Z’s preference for digital is changing the payments landscape (2024) // https://www.ey.com/en  \_us/insights/payments/how-gen-z-is-changing-the-payments-landscape
+		
+		\bibitem{cental_bank_russia_natiional_statistics} Bank of Russia. National Payment System statistics (2025). Date of the application 01.04.2025\\
+		https://www.cbr.ru/PSystem/ 
+			
 		
 		
 	\end{thebibliography}

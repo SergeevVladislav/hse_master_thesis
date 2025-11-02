@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.30)  17 MAY 2025 20:03
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Homebrew) (preloaded format=xelatex 2024.10.30)  20 MAY 2025 07:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1571,6 +1571,16 @@ ounters
 \c@twoenumerateii=\count389
 \enitdp@twoenumerate=\count390
 
+(/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/frontend
+layer/tikz/libraries/tikzlibraryintersections.code.tex
+(/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/librarie
+s/pgflibraryintersections.code.tex
+\pgf@intersect@solutions=\count391
+))
+(/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pgf/frontend
+layer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
 (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/bibla
 tex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
@@ -1578,55 +1588,55 @@ Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/logreq/logreq.
 sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count391
+\lrq@indent=\count392
 
 (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/logreq/logreq.
 def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count392
-\c@listtotal=\count393
-\c@listcount=\count394
-\c@liststart=\count395
-\c@liststop=\count396
-\c@citecount=\count397
-\c@citetotal=\count398
-\c@multicitecount=\count399
-\c@multicitetotal=\count400
-\c@instcount=\count401
-\c@maxnames=\count402
-\c@minnames=\count403
-\c@maxitems=\count404
-\c@minitems=\count405
-\c@citecounter=\count406
-\c@maxcitecounter=\count407
-\c@savedcitecounter=\count408
-\c@uniquelist=\count409
-\c@uniquename=\count410
-\c@refsection=\count411
-\c@refsegment=\count412
-\c@maxextratitle=\count413
-\c@maxextratitleyear=\count414
-\c@maxextraname=\count415
-\c@maxextradate=\count416
-\c@maxextraalpha=\count417
-\c@abbrvpenalty=\count418
-\c@highnamepenalty=\count419
-\c@lownamepenalty=\count420
-\c@maxparens=\count421
-\c@parenlevel=\count422
-\blx@tempcnta=\count423
-\blx@tempcntb=\count424
-\blx@tempcntc=\count425
-\c@blx@maxsection=\count426
-\blx@maxsegment@0=\count427
-\blx@notetype=\count428
-\blx@parenlevel@text=\count429
-\blx@parenlevel@foot=\count430
-\blx@sectionciteorder@0=\count431
-\blx@sectionciteorderinternal@0=\count432
-\blx@entrysetcounter=\count433
-\blx@biblioinstance=\count434
+\c@tabx@nest=\count393
+\c@listtotal=\count394
+\c@listcount=\count395
+\c@liststart=\count396
+\c@liststop=\count397
+\c@citecount=\count398
+\c@citetotal=\count399
+\c@multicitecount=\count400
+\c@multicitetotal=\count401
+\c@instcount=\count402
+\c@maxnames=\count403
+\c@minnames=\count404
+\c@maxitems=\count405
+\c@minitems=\count406
+\c@citecounter=\count407
+\c@maxcitecounter=\count408
+\c@savedcitecounter=\count409
+\c@uniquelist=\count410
+\c@uniquename=\count411
+\c@refsection=\count412
+\c@refsegment=\count413
+\c@maxextratitle=\count414
+\c@maxextratitleyear=\count415
+\c@maxextraname=\count416
+\c@maxextradate=\count417
+\c@maxextraalpha=\count418
+\c@abbrvpenalty=\count419
+\c@highnamepenalty=\count420
+\c@lownamepenalty=\count421
+\c@maxparens=\count422
+\c@parenlevel=\count423
+\blx@tempcnta=\count424
+\blx@tempcntb=\count425
+\blx@tempcntc=\count426
+\c@blx@maxsection=\count427
+\blx@maxsegment@0=\count428
+\blx@notetype=\count429
+\blx@parenlevel@text=\count430
+\blx@parenlevel@foot=\count431
+\blx@sectionciteorder@0=\count432
+\blx@sectionciteorderinternal@0=\count433
+\blx@entrysetcounter=\count434
+\blx@biblioinstance=\count435
 \labelnumberwidth=\skip83
 \labelalphawidth=\skip84
 \biblabelsep=\skip85
@@ -1638,9 +1648,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read5
 \blx@bcfout=\write4
 \blx@langwohyphens=\language91
-\c@mincomprange=\count435
-\c@maxcomprange=\count436
-\c@mincompwidth=\count437
+\c@mincomprange=\count436
+\c@maxcomprange=\count437
+\c@mincompwidth=\count438
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1663,96 +1673,96 @@ File: biblatex-gost.dbx 2023/04/25 v1.24 biblatex-gost data model
 ))
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count438
-\c@savedafterword=\count439
-\c@annotator=\count440
-\c@savedannotator=\count441
-\c@author=\count442
-\c@savedauthor=\count443
-\c@bookauthor=\count444
-\c@savedbookauthor=\count445
-\c@commentator=\count446
-\c@savedcommentator=\count447
-\c@editor=\count448
-\c@savededitor=\count449
-\c@editora=\count450
-\c@savededitora=\count451
-\c@editorb=\count452
-\c@savededitorb=\count453
-\c@editorc=\count454
-\c@savededitorc=\count455
-\c@foreword=\count456
-\c@savedforeword=\count457
-\c@holder=\count458
-\c@savedholder=\count459
-\c@introduction=\count460
-\c@savedintroduction=\count461
-\c@namea=\count462
-\c@savednamea=\count463
-\c@nameb=\count464
-\c@savednameb=\count465
-\c@namec=\count466
-\c@savednamec=\count467
-\c@translator=\count468
-\c@savedtranslator=\count469
-\c@shortauthor=\count470
-\c@savedshortauthor=\count471
-\c@shorteditor=\count472
-\c@savedshorteditor=\count473
-\c@booktranslator=\count474
-\c@savedbooktranslator=\count475
-\c@bookcommentator=\count476
-\c@savedbookcommentator=\count477
-\c@bookannotator=\count478
-\c@savedbookannotator=\count479
-\c@bookintroduction=\count480
-\c@savedbookintroduction=\count481
-\c@bookforeword=\count482
-\c@savedbookforeword=\count483
-\c@bookafterword=\count484
-\c@savedbookafterword=\count485
-\c@labelname=\count486
-\c@savedlabelname=\count487
-\c@institution=\count488
-\c@savedinstitution=\count489
-\c@lista=\count490
-\c@savedlista=\count491
-\c@listb=\count492
-\c@savedlistb=\count493
-\c@listc=\count494
-\c@savedlistc=\count495
-\c@listd=\count496
-\c@savedlistd=\count497
-\c@liste=\count498
-\c@savedliste=\count499
-\c@listf=\count500
-\c@savedlistf=\count501
-\c@location=\count502
-\c@savedlocation=\count503
-\c@organization=\count504
-\c@savedorganization=\count505
-\c@origlocation=\count506
-\c@savedoriglocation=\count507
-\c@origpublisher=\count508
-\c@savedorigpublisher=\count509
-\c@publisher=\count510
-\c@savedpublisher=\count511
-\c@language=\count512
-\c@savedlanguage=\count513
-\c@origlanguage=\count514
-\c@savedoriglanguage=\count515
-\c@bookoriglanguage=\count516
-\c@savedbookoriglanguage=\count517
-\c@specdata=\count518
-\c@savedspecdata=\count519
-\c@credits=\count520
-\c@savedcredits=\count521
-\c@bookcredits=\count522
-\c@savedbookcredits=\count523
-\c@editioncredits=\count524
-\c@savededitioncredits=\count525
-\c@pageref=\count526
-\c@savedpageref=\count527
+\c@afterword=\count439
+\c@savedafterword=\count440
+\c@annotator=\count441
+\c@savedannotator=\count442
+\c@author=\count443
+\c@savedauthor=\count444
+\c@bookauthor=\count445
+\c@savedbookauthor=\count446
+\c@commentator=\count447
+\c@savedcommentator=\count448
+\c@editor=\count449
+\c@savededitor=\count450
+\c@editora=\count451
+\c@savededitora=\count452
+\c@editorb=\count453
+\c@savededitorb=\count454
+\c@editorc=\count455
+\c@savededitorc=\count456
+\c@foreword=\count457
+\c@savedforeword=\count458
+\c@holder=\count459
+\c@savedholder=\count460
+\c@introduction=\count461
+\c@savedintroduction=\count462
+\c@namea=\count463
+\c@savednamea=\count464
+\c@nameb=\count465
+\c@savednameb=\count466
+\c@namec=\count467
+\c@savednamec=\count468
+\c@translator=\count469
+\c@savedtranslator=\count470
+\c@shortauthor=\count471
+\c@savedshortauthor=\count472
+\c@shorteditor=\count473
+\c@savedshorteditor=\count474
+\c@booktranslator=\count475
+\c@savedbooktranslator=\count476
+\c@bookcommentator=\count477
+\c@savedbookcommentator=\count478
+\c@bookannotator=\count479
+\c@savedbookannotator=\count480
+\c@bookintroduction=\count481
+\c@savedbookintroduction=\count482
+\c@bookforeword=\count483
+\c@savedbookforeword=\count484
+\c@bookafterword=\count485
+\c@savedbookafterword=\count486
+\c@labelname=\count487
+\c@savedlabelname=\count488
+\c@institution=\count489
+\c@savedinstitution=\count490
+\c@lista=\count491
+\c@savedlista=\count492
+\c@listb=\count493
+\c@savedlistb=\count494
+\c@listc=\count495
+\c@savedlistc=\count496
+\c@listd=\count497
+\c@savedlistd=\count498
+\c@liste=\count499
+\c@savedliste=\count500
+\c@listf=\count501
+\c@savedlistf=\count502
+\c@location=\count503
+\c@savedlocation=\count504
+\c@organization=\count505
+\c@savedorganization=\count506
+\c@origlocation=\count507
+\c@savedoriglocation=\count508
+\c@origpublisher=\count509
+\c@savedorigpublisher=\count510
+\c@publisher=\count511
+\c@savedpublisher=\count512
+\c@language=\count513
+\c@savedlanguage=\count514
+\c@origlanguage=\count515
+\c@savedoriglanguage=\count516
+\c@bookoriglanguage=\count517
+\c@savedbookoriglanguage=\count518
+\c@specdata=\count519
+\c@savedspecdata=\count520
+\c@credits=\count521
+\c@savedcredits=\count522
+\c@bookcredits=\count523
+\c@savedbookcredits=\count524
+\c@editioncredits=\count525
+\c@savededitioncredits=\count526
+\c@pageref=\count527
+\c@savedpageref=\count528
 \shorthandwidth=\skip91
 \shortjournalwidth=\skip92
 \shortserieswidth=\skip93
@@ -1785,19 +1795,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/bibla
 tex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count528
-\c@textcitetotal=\count529
-\c@textcitemaxnames=\count530
-\c@biburlbigbreakpenalty=\count531
-\c@biburlbreakpenalty=\count532
-\c@biburlnumpenalty=\count533
-\c@biburlucpenalty=\count534
-\c@biburllcpenalty=\count535
+\c@textcitecount=\count529
+\c@textcitetotal=\count530
+\c@textcitemaxnames=\count531
+\c@biburlbigbreakpenalty=\count532
+\c@biburlbreakpenalty=\count533
+\c@biburlnumpenalty=\count534
+\c@biburlucpenalty=\count535
+\c@biburllcpenalty=\count536
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count536
+\c@smartand=\count537
 )
 Package biblatex Info: Trying to load bibliography style 'gost-numeric'...
 Package biblatex Info: ... file 'gost-numeric.bbx' found.
@@ -1818,9 +1828,9 @@ Package biblatex Info: ... file 'biblatex-gost.def' found.
 biblatex-gost.def
 File: biblatex-gost.def 2023/04/25 v1.24 biblatex-gost styles
 )
-\c@blx@gost@pointer=\count537
-\c@bbx:relatedcount=\count538
-\c@bbx:relatedtotal=\count539
+\c@blx@gost@pointer=\count538
+\c@bbx:relatedcount=\count539
+\c@bbx:relatedtotal=\count540
 Package biblatex Info: Redefining autocite command 'footnote'.
 Package biblatex Info: Redefining autocite command 'superscript'.
 ))
@@ -1836,10 +1846,10 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/cbx/n
 umeric-comp.cbx
 File: numeric-comp.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count540
-\c@cbx@tempcntb=\count541
-\c@cbx@tempcntc=\count542
-\c@cbx@tempcntd=\count543
+\c@cbx@tempcnta=\count541
+\c@cbx@tempcntb=\count542
+\c@cbx@tempcntc=\count543
+\c@cbx@tempcntd=\count544
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1884,9 +1894,14 @@ Package biblatex-gost Warning: You set maxbibnames or maxcitenames
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count544
-\@quotereset=\count545
-(./master_thesis.aux)
+\@quotelevel=\count545
+\@quotereset=\count546
+(./master_thesis.aux
+
+LaTeX Warning: Label `cental_bank_russia_natiional_statistics' multiply defined
+.
+
+)
 \openout1 = `master_thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 353.
@@ -1956,7 +1971,7 @@ Package unicode-math Warning: I'm going to overwrite the following commands
 (unicode-math)                colon-like commands, using them will lead to
 (unicode-math)                inconsistencies.
 
-\c@lstlisting=\count546
+\c@lstlisting=\count547
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
@@ -2052,7 +2067,7 @@ File: hse_logo.png Graphic file (type bmp)
 
  [2
 
-]
+] [3]
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
 (Font)              scaled to size 14.40152pt on input line 436.
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
@@ -2097,164 +2112,164 @@ Underfull \hbox (badness 10000) in paragraph at lines 439--439
 bilnogo-banka-rastet-no-rossiyane-stanovyatsya-menee-
  []
 
-[3
+[4
 
-] [4] [5] [6]
+] [5] [6] [7]
 Chapter 1.
-[7
+[8
 
-] [8] [9]
+] [9] [10]
 File: operation.png Graphic file (type bmp)
 <operation.png>
- [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
-[22] [23] [24]
-Overfull \hbox (0.76347pt too wide) in paragraph at lines 794--794
+ [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22]
+[23] [24] [25]
+Overfull \hbox (0.76347pt too wide) in paragraph at lines 791--791
  []|\TU/TimesNewRoman(0)/b/n/12 Relevance| 
  []
 
-[25] [26]
+[26] [27]
 File: life_cycle_graph.png Graphic file (type bmp)
 <life_cycle_graph.png>
- [27] [28] [29]
+ [28] [29] [30]
 Chapter 2.
-[30
+[31
 
-] [31] [32] [33] [34] [35] [36] [37] [38]
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1058--1066
+] [32] [33] [34] [35] [36] [37] [38] [39]
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1056--1064
  [] [] [] [] 
  []
 
 
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1066--1069
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1064--1067
  [] [] [] [] 
  []
 
 
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1069--1072
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1067--1070
  [] [] [] [] 
  []
 
 
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1072--1075
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1070--1073
  [] [] [] [] 
  []
 
 
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1075--1090
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1073--1088
  [] [] [] [] 
  []
 
-[39]
+[40]
 File: corr.png Graphic file (type bmp)
 <corr.png>
- [40]
+ [41]
 File: losers.png Graphic file (type bmp)
 <losers.png>
 File: top.png Graphic file (type bmp)
 <top.png>
 File: middle.png Graphic file (type bmp)
 <middle.png>
- [41]
+ [42]
 File: index_whole.png Graphic file (type bmp)
 <index_whole.png>
- [42] [43]
+ [43] [44]
 File: cashless_russia.png Graphic file (type bmp)
 <cashless_russia.png>
- [44] [45]
-Overfull \hbox (0.51685pt too wide) in paragraph at lines 1196--1196
+ [45] [46]
+Overfull \hbox (0.51685pt too wide) in paragraph at lines 1194--1194
 [][]\TU/TimesNewRoman(0)/m/n/10 https://www.nes.ru/files/research/demogr/mort-d
 atabase/description/ENG/01-DemographicDatabaseDescription-
  []
 
 
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1208--1216
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1206--1214
  [] [] [] [] 
  []
 
 
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1216--1219
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1214--1217
  [] [] [] [] 
  []
 
 
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1219--1222
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1217--1220
  [] [] [] [] 
  []
 
 
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1222--1225
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1220--1223
  [] [] [] [] 
  []
 
 
-Overfull \hbox (2.44934pt too wide) in alignment at lines 1225--1346
+Overfull \hbox (2.44934pt too wide) in alignment at lines 1223--1344
  [] [] [] [] 
  []
 
-[46] [47] [48] [49] [50]
+[47] [48] [49] [50] [51]
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 1388.
+(Font)              scaled to size 12.00128pt on input line 1386.
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00085pt on input line 1388.
+(Font)              scaled to size 8.00085pt on input line 1386.
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 1388.
+(Font)              scaled to size 6.00064pt on input line 1386.
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 1388.
+(Font)              scaled to size 11.99872pt on input line 1386.
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 1388.
+(Font)              scaled to size 7.99915pt on input line 1386.
 LaTeX Font Info:    Font shape `TU/Asana-Math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 1388.
- [51] [52] [53]
+(Font)              scaled to size 5.99936pt on input line 1386.
+ [52] [53] [54]
 File: margin_effects.png Graphic file (type bmp)
 <margin_effects.png>
- [54]
+ [55]
 Chapter 3.
-[55
+[56
 
-] [56] [57]
-Overfull \hbox (2.05621pt too wide) in paragraph at lines 1611--1612
+] [57] [58]
+Overfull \hbox (2.05621pt too wide) in paragraph at lines 1609--1610
 []\TU/TimesNewRoman(0)/m/n/14.4 Active technology adoption — the share of elect
 ronic payments reaches
  []
 
-[58]
+[59]
 File: map.png Graphic file (type bmp)
 <map.png>
- [59] [60] [61] [62] [63
+ [60] [61] [62] [63] [64
 
-] [64]
-Underfull \hbox (badness 4621) in paragraph at lines 1730--1731
-[]\TU/TimesNewRoman(0)/m/n/14.4 Центральный Банк Российской Федерации. Основные
- направления
+] [65]
+Underfull \hbox (badness 10000) in paragraph at lines 1728--1729
+[]\TU/TimesNewRoman(0)/m/n/14.4 Bank of the Russia. The main directions of deve
+lopment of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1732--1733
-[]\TU/TimesNewRoman(0)/m/n/14.4 Центральный Банк Российской Федерации. Основные
-
+Underfull \hbox (badness 10000) in paragraph at lines 1728--1729
+\TU/TimesNewRoman(0)/m/n/14.4 the national payment system for the period 2025-2
+027. //
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1732--1733
-\TU/TimesNewRoman(0)/m/n/14.4 направления повышения доступности финансовых услу
-г
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1732--1733
-\TU/TimesNewRoman(0)/m/n/14.4 в Российской Федерации на период 2025-2027 годов.
- //
- []
-
-[65
-
-] [66] [67]
-Underfull \hbox (badness 2150) in paragraph at lines 1796--1797
+Underfull \hbox (badness 3690) in paragraph at lines 1735--1736
 []\TU/TimesNewRoman(0)/m/n/14.4 Тишин, А. (2020). Влияние демографии на развити
 е финансового
  []
 
-[68]
+[66
+
+]
+Underfull \hbox (badness 5681) in paragraph at lines 1764--1765
+[]\TU/TimesNewRoman(0)/m/n/14.4 Hyndman, Rob J., and Yanan Fan. “Sample Quantil
+es in Statisti-
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 1764--1765
+\TU/TimesNewRoman(0)/m/n/14.4 cal Packages.” The American Statistician 50, no. 
+4 (1996): 361–65.
+ []
+
+[67] [68] [69]
 Appendix A.
 
 (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/listings/lstla
@@ -2262,14 +2277,14 @@ ng1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 1832.
- [69
+nput line 1833.
+ [70
 
-] [70] [71] [72]
+] [71] [72] [73]
 Appendix B.
-[73
+[74
 
-] [74] [75] [76] [77] [78] [79] (./master_thesis.aux)
+] [75] [76] [77] [78] [79] [80] (./master_thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2281,8 +2296,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `master_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4C3C9D70CE727E9EB8DE0EB811246B93;8074.
+(rerunfilecheck)             Checksum: CC5B95268CCA442CC6E51ABC3A5EC15B;8092.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                master_thesis
@@ -2293,12 +2311,12 @@ Package logreq Info: Writing requests to 'master_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53488 strings out of 474773
- 1200576 string characters out of 5749267
- 2643444 words of memory out of 5000000
- 74812 multiletter control sequences out of 15000+600000
+ 53731 strings out of 474773
+ 1207019 string characters out of 5749267
+ 2651236 words of memory out of 5000000
+ 75046 multiletter control sequences out of 15000+600000
  567313 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,12n,117p,2071b,3850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on master_thesis.pdf (79 pages).
+Output written on master_thesis.pdf (80 pages).
